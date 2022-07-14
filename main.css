@@ -1,0 +1,331 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: url(Cursors/ring_clickable.svg) 64 64, auto;
+}
+
+/* Begin section for project thumbnail images */
+/* #abhc_vrchitecture_experience_thumbnail {
+    cursor: url(Cursors/ring_clickable_orange.svg) 64 64, auto;
+}
+#sensorial_overdrive_ar_experience_thumbnail {
+    cursor: url(Cursors/ring_clickable_neon_pink.svg) 64 64, auto;
+}
+#abhc_thumbnail {
+    cursor: url(Cursors/ring_clickable_orange.svg) 64 64, auto;
+}
+#forsaken_realm_thumbnail {
+    cursor: url(Cursors/ring_clickable_black.svg) 64 64, auto;
+}
+#mo-son{
+
+}
+#hesperovida_thumbnail {
+    cursor: url(Cursors/ring_clickable_dark_blue.svg) 64 64, auto;
+}
+#the_lurking_mine_thumbnail {
+    cursor: url(Cursors/ring_clickable_teal.svg) 64 64, auto;
+}
+#unusual_activity {
+    cursor: url(Cursors/ring_clickable_neon_pink.svg) 64 64, auto;
+}
+#rolled_flat_thumbnail {
+
+}
+#ascension_thumbnail {
+    cursor: url(Cursors/ring_clickable_beige.svg) 64 64, auto;
+}
+#conference_center_plasencia_thumbnail {
+    cursor: url(Cursors/ring_clickable_orange.svg) 64 64, auto;
+}
+#sensorial_overdrive_thumbnail {
+    cursor: url(Cursors/ring_clickable_neon_pink.svg) 64 64, auto;
+}
+#white_oak_x_ventura_thumbnail {
+    cursor: url(Cursors/ring_clickable_pink.svg) 64 64, auto;
+}
+#the_virtual_parking_lot_thumbnail {
+    cursor: url(Cursors/ring_clickable_dark_green.svg) 64 64, auto;
+}
+#virtual_nostalgia_as_i_recall_it_thumbnail {
+    cursor: url(Cursors/ring_clickable_black.svg) 64 64, auto;
+}
+#abstract_pittman_dowell_residence_thumbnail {
+    cursor: url(Cursors/ring_clickable_neon_purple.svg) 64 64, auto;
+}
+#charles_shaw_white_wine_thumbnail {
+    cursor: url(Cursors/ring_clickable_brown.svg) 64 64, auto;
+}
+#blur_art_thumbnail {
+    cursor: url(Cursors/ring_clickable_neon_green.svg) 64 64, auto;
+}
+#formal_drafting_thumbnail {
+
+}
+#hand_drawings_thumbnail {
+
+}
+#metaphysical_machine_writings_thumbnail {
+    cursor: url(Cursors/ring_clickable_neon_blue.svg) 64 64, auto;
+} */
+/* End section for project thumbnail images */
+
+body {
+    background: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    /* Auto after cursor URL is fallback cursor in case custom cursor can't load*/
+    cursor: url(Cursors/ring_default.svg) 16 16, auto;
+}
+
+/* #full_page_blur {
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+} */
+
+/* Font controls for "scrolls to immerse"*/
+#scroll_instructions {
+    z-index: 1;
+    top: 0px;
+    color:white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 100%;
+    margin-top: 1%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#blank_space_for_scroll_animation {
+    height: 1950px;
+}
+
+/* Video scroll playback controls */
+#v0 {
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    object-fit: scale-down;
+    z-index: 0;
+}
+
+#set-height {
+    display:contents;
+}
+
+/* Settings required for content to not overlap incorrectly */
+/* div {
+    position: relative;
+    z-index: 1;
+} */
+
+/* "Master" <div> container that holds each project category section, including both its category title and all of its project previews*/
+.project_section {
+    display: grid;
+    grid-template-columns: 25.5% 60.5%;
+}
+
+/* <div> container that holds the project category titles text, but not the text itself*/
+.project_category {
+    padding-left: 48px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13pt;
+    margin-top: 0;
+    /* Justify Content altars the alignment of a text box without adjusting the alignment of the text itslef. To align both the text box and text simultaneously, use text-align */
+    justify-content:left;
+}
+
+/* The text of the project category titles, parented to the <div> container */
+.project_category_title {
+    position: sticky;
+    position: -webkit-sticky;
+    margin: 0;
+    top: 5%;
+    z-index: 2;
+}
+
+/* <div> container that holds all project previews (project thumbnails and titles)*/
+.project_previews {
+    margin: 0;
+}
+
+/* Project thumbnail image controls */
+.project_thumbnail {
+    border: 0;
+    padding: 10px;
+    border-radius: 18px;
+    float: left;
+    clear: both;
+    width:fit-content;
+    max-width: 200px
+}
+
+/* Project title font controls*/
+.project_title {
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    margin-left: 7%;
+    float:left;
+    line-height: 24pt;
+    margin-top: 50px;
+    width: 60%;
+}
+
+/* <div> container that holds each individual project preview */
+.project {
+    margin-bottom: 50px;
+    float:left;
+    width: 100%;
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    background: hsla(0, 0%, 0%, 0.45);
+    border: 1px solid hsl(0, 0%, 15%);
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    cursor: url(Cursors/ring_clickable.svg) 64 64, auto;
+    text-decoration: none;
+}
+
+#footer {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 2;
+    background: hsla(0, 0%, 0%, 0.45);
+    height: 100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid hsl(0, 0%, 15%);
+}
+
+.footer_text {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+    transform: translate(0, 30px);
+    float: left;
+    margin-left: 14.2857142857%;
+    text-decoration: none;
+}
+
+#footer_favicon {
+    float: left;
+    height: 70px;
+    margin-left: 15%;
+    transform: translate(0, 10px);
+}
+
+#left_footer_text {
+    margin-left: 5%;
+}
+
+@media (max-width:1100px) {
+    .project_section {
+        display: grid;
+        grid-template-columns: 33.5% 45.5%;
+    }
+    .project_title {
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14pt;
+        margin-left: 0;
+        float: none;
+        line-height: 14pt;
+        margin-top: 10px;
+        width: 100%;    
+        text-align: center;
+    }
+    .project_thumbnail {
+        display: block;
+        margin: 0 auto;
+        border: 0;
+        padding: 10px;
+        border-radius: 18px;
+        float: none;
+        clear: both;
+        width:fit-content;
+        max-width: 200px
+    }
+}
+
+@media (max-width:780px) {
+    .project_section {
+        display: grid;
+        grid-template-columns: 42.5% 36.5%;
+    }
+    .project_title {
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14pt;
+        text-align: center;
+        line-height: 24pt;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .project_thumbnail {
+        display: block;
+        margin: 0 auto;
+        border: 0;
+        padding: 10px;
+        border-radius: 18px;
+        float: none;
+        clear: both;
+        width:fit-content;
+        max-width: 175px
+    }
+}
+
+@media (max-width:600px) {
+    .project_section {
+        display: grid;
+        grid-template-columns: 45.5% 170px;
+    }
+    .project_title {
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 12pt;
+        text-align: center;
+        line-height: 24pt;
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .project_thumbnail {
+        display: block;
+        margin: 0 auto;
+        border: 0;
+        padding: 10px;
+        border-radius: 18px;
+        float: none;
+        clear: both;
+        width:fit-content;
+        max-width: 150px;
+    }
+}
