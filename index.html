@@ -5,6 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Aiyo x Ariel - Welcome</title>
         <link rel="icon" type="image/jpg" href="favicon.jpg">
+        <script type="text/javascript" src="script.js"></script>
         <link href="main.css" rel="stylesheet" type="text/css" />
         <style>
             img {
@@ -14,8 +15,6 @@
     </head>
     <body>
 
-        <div id="full_page_blur"></div>
-
         <div id="header">
             <div id="scroll_instructions">
                 <p><i>scroll</i>_to_<b>immerse.</b></p>
@@ -24,7 +23,7 @@
 
         <div id="set-height"></div>
         <video id="v0" tabindex="0", autobuffer preload>
-            <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2" ' src="Videos/Home_Screen_Animations/MQ_FI16.mp4"></source>
+            <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2" ' src="Videos/Home_Screen_Animations/CRTV_Intro.mp4"></source>
         </video>
         <script>
             var frameNumber = 0, // start video at frame 0
@@ -54,134 +53,34 @@
         <div id="blank_space_for_scroll_animation"></div>
 
         <div id="project_body">
-            <div class="project_section">
-                <div class="project_category">
-                    <h2 class="project_category_title">Extended Reality<br>
-                        Experiences (XR;<br>
-                        VR + AR)
-                    </h2>
-                </div>
-                <div class="project_previews">
-                    <a href="https://sites.google.com/view/ariel-aiyo/portfolio/extended-reality-experiences-xr-vr-ar/a-boyle-heights-canvas-vrchitecture-experience" class="project">
-                        <img src="Project_Thumbnails/1.jpg" class="project_thumbnail" id="abhc_vrchitecture_experience_thumbnail">
-                        <p class="project_title">ABHC - VRchitecture Experience</p>
-                    </a>
-                    <div class="project">
-                        <img src="Project_Thumbnails/2.jpg" class="project_thumbnail" id="sensorial_overdrive_ar_experience_thumbnail">
-                        <p class="project_title">Sensorial Overdrive - AR Experience</p>
-                    </div>
-                </div>
+            <img src="Images/Old_TV_Alpha.png" id="alpha_tv_cover">
+            <div class="project_titles">
+                <p id="abhc_vrchitecture_experience_title">abhc_vrchitecture_experience</p>
+                <p id="sensorial_overdrive_ar_experience_title">sensorial_overdrive_ar_experience</p>
             </div>
-
-            <div class="project_section">
-                <div class="project_category">
-                    <h2 class="project_category_title">Architectural Designs</h2>
-                </div>
-                <div class="project_previews">
-                    <div class="project">
-                        <img src="Project_Thumbnails/3.jpg" class="project_thumbnail" id="abhc_thumbnail">
-                        <p class="project_title">A Boyle Heights Canvas (ABHC)</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/4.jpg" class="project_thumbnail" id="forsaken_realm_thumbnail">
-                        <p class="project_title">Forsaken Realm</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/5.jpg" class="project_thumbnail" id="mo-son">
-                        <p class="project_title">Museum of Sound of Nails (MO-SON)</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/6.jpg" class="project_thumbnail" id="hesperovida_thumbnail">
-                        <p class="project_title">Hesperovida</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/7.jpg" class="project_thumbnail" id="the_lurking_mine_thumbnail">
-                        <p class="project_title">The Lurking Mine</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/8.jpg" class="project_thumbnail" id="unusual_activity">
-                        <p class="project_title">Unusual Activity</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/9.jpg" class="project_thumbnail" id="rolled_flat_thumbnail">
-                        <p class="project_title">Spatial Bodies in Motion: Rolled Flat</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/10.jpg" class="project_thumbnail" id="ascension_thumbnail">
-                        <p class="project_title">Ascension</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project_section">
-                <div class="project_category">
-                    <h2 class="project_category_title">Studies</h2>
-                </div>
-                <div class="project_previews">
-                    <div class="project">
-                        <img src="Project_Thumbnails/11.jpg" class="project_thumbnail" id="conference_center_plasencia_thumbnail">
-                        <p class="project_title">Conference Center, Plasencia</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/12.jpg" class="project_thumbnail" id="sensorial_overdrive_thumbnail">
-                        <p class="project_title">Sensorial Overdrive</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/13.jpg" class="project_thumbnail" id="white_oak_x_ventura_thumbnail">
-                        <p class="project_title">White Oak Avenue x Ventura Boulevard</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project_section">
-                <div class="project_category">
-                    <h2 class="project_category_title">Digital 3D Art</h2>
-                </div>
-                <div class="project_previews">
-                    <div class="project">
-                        <img src="Project_Thumbnails/14.jpg" class="project_thumbnail" id="the_virtual_parking_lot_thumbnail">
-                        <p class="project_title">The Virtual Parking Lot</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/15.jpg" class="project_thumbnail" id="virtual_nostalgia_as_i_recall_it_thumbnail">
-                        <p class="project_title">Virtual Nostalgia, As I Recall It</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/16.jpg" class="project_thumbnail" id="abstract_pittman_dowell_residence_thumbnail">
-                        <p class="project_title">Abstract: Pittman-Dowell Residence</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/17.jpg" class="project_thumbnail" id="charles_shaw_white_wine_thumbnail">
-                        <p class="project_title">Charles Shaw Pinot Grigio White Wine</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project_section">
-                <div class="project_category">
-                    <h2 class="project_category_title">Other</h2>
-                </div>
-                <div class="project_previews">
-                    <div class="project">
-                        <img src="Project_Thumbnails/18.jpg" class="project_thumbnail" id="blur_art_thumbnail">
-                        <p class="project_title">Blur Art</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/19.jpg" class="project_thumbnail" id="formal_drafting_thumbnail">
-                        <p class="project_title">Formal Drafting</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/20.jpg" class="project_thumbnail" id="hand_drawings_thumbnail">
-                        <p class="project_title">Hand-Drawings</p>
-                    </div>
-                    <div class="project">
-                        <img src="Project_Thumbnails/21.jpg" class="project_thumbnail" id="metaphysical_machine_writings_thumbnail">
-                        <p class="project_title">Memories In The Back of Your Mind<br>
-                            That Lay Dormant Awaiting Activation<br>
-                            (Metaphysical Writings)
-                        </p>
-                    </div>
-                </div>
+            <div>
+                <img class="project_thumbnails" src="Videos/Home_Screen_Animations/Animated_Static.gif" id="animated_tv_static">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/1.jpg" id="abhc_vrchitecture_experience_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/2.jpg" id="sensorial_overdrive_ar_experience_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/3.jpg" id="a_boyle_heights_canvas_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/4.jpg" id="forsaken_realm_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/5.jpg" id="moson_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/6.jpg" id="hesperovida_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/7.jpg" id="the_lurking_mine_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/8.jpg" id="unusual_activity_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/9.jpg" id="rolled_flat_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/10.jpg" id="ascension_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/11.jpg" id="conference_center_plasencia_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/12.jpg" id="sensorial_overdrive_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/13.jpg" id="white_oak_ventura_boulevard_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/14.jpg" id="the_virtual_parking_lot_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/15.jpg" id="virtual_nostalgia_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/16.jpg" id="abstract_pittman_dowell_residence_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/17.jpg" id="charles_shaw_white_wine_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/18.jpg" id="blur_art_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/19.jpg" id="formal_drafting_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/20.jpg" id="hand_drawings_thumbnail">
+                <img class="project_thumbnails" src="Images/Project_Thumbnails/21.jpg" id="metaphysical_writings_thumbnail">
             </div>
         </div>
 
@@ -191,7 +90,6 @@
             <a href="https://www.youtube.com/channel/UC8OqEH9Aafx0cLOC7Vw5PTA" target="_blank" class="footer_text">YouTube</a>
             <a href="" target="_blank" class="footer_text">About</a>
             <a href="" target="_blank" class="footer_text">VR</a>
-            <a href="#header" class="footer_text">To Top</a>
         </div>
     </body>
 </html>
