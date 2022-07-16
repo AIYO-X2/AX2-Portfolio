@@ -38,6 +38,7 @@ body {
     color: white;
     top: 50%;
     text-align: center;
+    cursor: none;
 }
 
 /* Font controls for "scrolls to immerse"*/
