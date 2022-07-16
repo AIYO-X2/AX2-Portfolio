@@ -5,7 +5,12 @@ body, html {
 }
 
 body {
-    background: rgb(31, 30, 31);
+    background: linear-gradient(
+        to bottom,
+        black 0%,
+        rgb(31, 30, 31) 100%
+    );
+    background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
     cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
 }
@@ -21,10 +26,12 @@ body {
     height: 100%;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: -m;
     z-index: 10000;
     background: rgba(0, 0, 0, 0.5);
     opacity: 1;
     display: block;
+    font-size: 12pt;
 }
 
 #loading_text {
@@ -34,6 +41,17 @@ body {
     color: white;
     top: 50%;
     text-align: center;
+    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
+}
+
+#version_text {
+    width: 100%;
+    position: fixed;
+    z-index: 10001;
+    color: white;
+    bottom: 0;
+    text-align: right;
+    font-size: 6pt;
     cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
 }
 
@@ -72,6 +90,23 @@ body {
 
 #set-height {
     display:contents;
+}
+
+#lingering_screen_static {
+    position: fixed;
+    z-index: 102;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    pointer-events: none;
+    mask-size: 100vw, 100%;
+    mask-repeat: no-repeat;
+    mask-image: url(Images/Heavy_Static_Mask.svg)
 }
 
 #alpha_tv_cover {
@@ -141,24 +176,22 @@ body {
 
 /* Project title font controls*/
 .project_titles {
-    padding-left: 48px;
     color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0);
     font-family:'Courier New', Courier, monospace;
-    font-size: 13pt;
-    margin-top: 0;
+    font-size: 20pt;
     /* Justify Content altars the alignment of a text box without adjusting the alignment of the text itslef. To align both the text box and text simultaneously, use text-align */
-    justify-content:left;
+    width: 100vw;
+    top: 10%;
+    text-align: center;
     position: fixed;
-    margin: 0;
-    top: auto;
-    bottom: 10%;
     z-index: 101;
-    opacity:0;
-    line-height: 50%;
+    visibility: hidden;
 }
 
 .project_title {
+    line-height: 0;
+    margin: 0;
     cursor: url(Cursors/ring/ring_clickable.svg) 64 64, auto;
 }
 
