@@ -31,13 +31,12 @@ body {
 }
 
 #loading_text {
+    width: 100%;
     position: fixed;
     z-index: 10001;
     color: white;
-    left: 50%;
     top: 50%;
-    bottom: 50%;
-    right: 50%;
+    text-align: center;
 }
 
 /* Font controls for "scrolls to immerse"*/
@@ -120,7 +119,6 @@ body {
     position: fixed;
     border: 0;
     width: 185px;
-    margin-left: auto;
     margin-right: auto;
     padding-left: 5%;
     opacity: 0;
@@ -146,7 +144,8 @@ body {
     justify-content:left;
     position: fixed;
     margin: 0;
-    top: 5%;
+    top: auto;
+    bottom: 10%;
     z-index: 101;
     opacity:0;
     line-height: 50%;
