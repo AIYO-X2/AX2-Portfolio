@@ -14,6 +14,32 @@ body {
     cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
 }
 
+#loading_screen {
+    margin: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+#loading_text {
+    position: fixed;
+    z-index: 10001;
+    color: white;
+    left: 50%;
+    top: 50%;
+    bottom: 50%;
+    right: 50%;
+}
+
 /* Font controls for "scrolls to immerse"*/
 #scroll_instructions {
     top: 0px;

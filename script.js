@@ -1,5 +1,6 @@
 // TV Channel Switching Controls
 window.onload = function() {
+    // Constant "title" defines what the constant is targeting
     const alpha_tv_appear = document.querySelector("#alpha_tv_cover");
     const animated_tv_static = document.querySelector("#animated_tv_static");
     const project_titles = document.querySelector(".project_titles");
@@ -25,7 +26,9 @@ window.onload = function() {
     const hand_drawings_thumbnail = document.querySelector("#hand_drawings_thumbnail");
     const metaphysical_writings_thumbnail = document.querySelector("#metaphysical_writings_thumbnail");
 
-    // Constant "title" defines what the constant is targeting
+    // Time is in ms
+    window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 5000)
+    loading_screen.style.transition = '0.5s ease-in-out';
 
     window.addEventListener('scroll', scrollEffect);
     // Styling format: [constant_name].style.[style_parameter]
