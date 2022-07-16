@@ -237,6 +237,7 @@ body {
     float: left;
     margin-left: 14.2857142857%;
     text-decoration: none;
+    cursor: url(Cursors/ring/ring_clickable.svg) 64 64, auto;
 }
 
 #footer_favicon {
