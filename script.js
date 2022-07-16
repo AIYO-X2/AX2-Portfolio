@@ -28,6 +28,7 @@ window.onload = function() {
 
     // Time is in ms
     window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 5000)
+    window.setTimeout("document.getElementById('loading_screen').style.display='none';", 5500)
     loading_screen.style.transition = '0.5s ease-in-out';
 
     window.addEventListener('scroll', scrollEffect);

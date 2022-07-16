@@ -28,6 +28,7 @@ body {
     z-index: 10000;
     background: rgba(0, 0, 0, 0.5);
     opacity: 1;
+    display: block;
 }
 
 #loading_text {
