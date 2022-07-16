@@ -38,7 +38,7 @@ body {
     color: white;
     top: 50%;
     text-align: center;
-    cursor: none;
+    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
 }
 
 /* Font controls for "scrolls to immerse"*/
