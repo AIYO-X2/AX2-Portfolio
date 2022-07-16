@@ -46,17 +46,21 @@ window.onload = function() {
         // ABHC - VRchitecture Experience
         if(window.scrollY>=2800 & window.scrollY<=3000) {
             abhc_vrchitecture_experience_thumbnail_appear.style.opacity = '0.85';
+            abhc_vrchitecture_experience_thumbnail_appear.style.visibility = 'visible';
             abhc_vrchitecture_experience_thumbnail_appear.style.transform = 'translateY(0px)';
             abhc_vrchitecture_experience_thumbnail_appear.style.transition = '0.2s ease-in-out';
         }
         else {
             abhc_vrchitecture_experience_thumbnail_appear.style.opacity = '0';
             abhc_vrchitecture_experience_thumbnail_appear.style.transform = 'translateY(3px)';
+            abhc_vrchitecture_experience_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Sensorial Overdrive AR Experience
         if(window.scrollY>=3100 & window.scrollY<=3300) {
             sensorial_overdrive_ar_experience_thumbnail_appear.style.opacity = '0.85';
+            sensorial_overdrive_ar_experience_thumbnail_appear.style.visibility = 'visible';
+
             sensorial_overdrive_ar_experience_thumbnail_appear.style.transform = 'translateY(0px)';
             sensorial_overdrive_ar_experience_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -64,11 +68,13 @@ window.onload = function() {
         else {
             sensorial_overdrive_ar_experience_thumbnail_appear.style.opacity = '0';
             sensorial_overdrive_ar_experience_thumbnail_appear.style.transform = 'translateY(3px)';
+            sensorial_overdrive_ar_experience_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // A Boyle Heights Canvas
         if(window.scrollY>=3400 & window.scrollY<=3600) {
             a_boyle_heights_canvas_thumbnail_appear.style.opacity = '0.85';
+            a_boyle_heights_canvas_thumbnail_appear.style.visibility = 'visible';
             a_boyle_heights_canvas_thumbnail_appear.style.transform = 'translateY(0px)';
             a_boyle_heights_canvas_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -76,11 +82,13 @@ window.onload = function() {
         else {
             a_boyle_heights_canvas_thumbnail_appear.style.opacity = '0';
             a_boyle_heights_canvas_thumbnail_appear.style.transform = 'translateY(3px)';
+            a_boyle_heights_canvas_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Forsaken Realm
         if(window.scrollY>=3700 & window.scrollY<=3900) {
             forsaken_realm_thumbnail_appear.style.opacity = '0.85';
+            forsaken_realm_thumbnail_appear.style.visibility = 'visible';
             forsaken_realm_thumbnail_appear.style.transform = 'translateY(0px)';
             forsaken_realm_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -88,11 +96,13 @@ window.onload = function() {
         else {
             forsaken_realm_thumbnail_appear.style.opacity = '0';
             forsaken_realm_thumbnail_appear.style.transform = 'translateY(3px)';
+            forsaken_realm_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // MO-SON
         if(window.scrollY>=4000 & window.scrollY<=4200) {
             moson_thumbnail_appear.style.opacity = '0.85';
+            moson_thumbnail_appear.style.visibility = 'visible';
             moson_thumbnail_appear.style.transform = 'translateY(0px)';
             moson_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -100,11 +110,13 @@ window.onload = function() {
         else {
             moson_thumbnail_appear.style.opacity = '0';
             moson_thumbnail_appear.style.transform = 'translateY(3px)';
+            moson_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Hesperovida
         if(window.scrollY>=4300 & window.scrollY<=4500) {
             hesperovida_thumbnail_appear.style.opacity = '0.85';
+            hesperovida_thumbnail_appear.style.visibility = 'visible';
             hesperovida_thumbnail_appear.style.transform = 'translateY(0px)';
             hesperovida_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -112,11 +124,13 @@ window.onload = function() {
         else {
             hesperovida_thumbnail_appear.style.opacity = '0';
             hesperovida_thumbnail_appear.style.transform = 'translateY(3px)';
+            hesperovida_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // The Lurking Mine
         if(window.scrollY>=4600 & window.scrollY<=4800) {
             the_lurking_mine_thumbnail_appear.style.opacity = '0.85';
+            the_lurking_mine_thumbnail_appear.style.visibility = 'visible';
             the_lurking_mine_thumbnail_appear.style.transform = 'translateY(0px)';
             the_lurking_mine_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -124,11 +138,13 @@ window.onload = function() {
         else {
             the_lurking_mine_thumbnail_appear.style.opacity = '0';
             the_lurking_mine_thumbnail_appear.style.transform = 'translateY(3px)';
+            the_lurking_mine_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Unusual Activity
         if(window.scrollY>=4900 & window.scrollY<=5100) {
             unusual_activity_thumbnail_appear.style.opacity = '0.85';
+            unusual_activity_thumbnail_appear.style.visibility = 'visible';
             unusual_activity_thumbnail_appear.style.transform = 'translateY(0px)';
             unusual_activity_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -136,11 +152,13 @@ window.onload = function() {
         else {
             unusual_activity_thumbnail_appear.style.opacity = '0';
             unusual_activity_thumbnail_appear.style.transform = 'translateY(3px)';
+            unusual_activity_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Rolled Flat
         if(window.scrollY>=5200 & window.scrollY<=5400) {
             rolled_flat_thumbnail_appear.style.opacity = '0.85';
+            rolled_flat_thumbnail_appear.style.visibility = 'visible';
             rolled_flat_thumbnail_appear.style.transform = 'translateY(0px)';
             rolled_flat_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -148,11 +166,13 @@ window.onload = function() {
         else {
             rolled_flat_thumbnail_appear.style.opacity = '0';
             rolled_flat_thumbnail_appear.style.transform = 'translateY(3px)';
+            rolled_flat_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Ascension
         if(window.scrollY>=5500 & window.scrollY<=5700) {
             ascension_thumbnail_appear.style.opacity = '0.85';
+            ascension_thumbnail_appear.style.visibility = 'visible';
             ascension_thumbnail_appear.style.transform = 'translateY(0px)';
             ascension_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -160,11 +180,13 @@ window.onload = function() {
         else {
             ascension_thumbnail_appear.style.opacity = '0';
             ascension_thumbnail_appear.style.transform = 'translateY(3px)';
+            ascension_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Conference Center, Plasencia
         if(window.scrollY>=5800 & window.scrollY<=6000) {
             conference_center_plasencia_thumbnail_appear.style.opacity = '0.85';
+            conference_center_plasencia_thumbnail_appear.style.visibility = 'visible';
             conference_center_plasencia_thumbnail_appear.style.transform = 'translateY(0px)';
             conference_center_plasencia_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -172,11 +194,13 @@ window.onload = function() {
         else {
             conference_center_plasencia_thumbnail_appear.style.opacity = '0';
             conference_center_plasencia_thumbnail_appear.style.transform = 'translateY(3px)';
+            conference_center_plasencia_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Sensorial Overdrive
         if(window.scrollY>=6100 & window.scrollY<=6300) {
             sensorial_overdrive_thumbnail_appear.style.opacity = '0.85';
+            sensorial_overdrive_thumbnail_appear.style.visibility = 'visible';
             sensorial_overdrive_thumbnail_appear.style.transform = 'translateY(0px)';
             sensorial_overdrive_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -184,11 +208,13 @@ window.onload = function() {
         else {
             sensorial_overdrive_thumbnail_appear.style.opacity = '0';
             sensorial_overdrive_thumbnail_appear.style.transform = 'translateY(3px)';
+            sensorial_overdrive_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // White Oak Avenue x Ventura Boulevard
         if(window.scrollY>=6400 & window.scrollY<=6600) {
             white_oak_ventura_boulevard_thumbnail_appear.style.opacity = '0.85';
+            white_oak_ventura_boulevard_thumbnail_appear.style.visibility = 'visible';
             white_oak_ventura_boulevard_thumbnail_appear.style.transform = 'translateY(0px)';
             white_oak_ventura_boulevard_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -196,11 +222,13 @@ window.onload = function() {
         else {
             white_oak_ventura_boulevard_thumbnail_appear.style.opacity = '0';
             white_oak_ventura_boulevard_thumbnail_appear.style.transform = 'translateY(3px)';
+            white_oak_ventura_boulevard_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // The Virtual Parking Lot
         if(window.scrollY>=6700 & window.scrollY<=6900) {
             the_virtual_parking_lot_thumbnail_appear.style.opacity = '0.85';
+            the_virtual_parking_lot_thumbnail_appear.style.visibility = 'visible';
             the_virtual_parking_lot_thumbnail_appear.style.transform = 'translateY(0px)';
             the_virtual_parking_lot_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -208,11 +236,13 @@ window.onload = function() {
         else {
             the_virtual_parking_lot_thumbnail_appear.style.opacity = '0';
             the_virtual_parking_lot_thumbnail_appear.style.transform = 'translateY(3px)';
+            the_virtual_parking_lot_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Virtual Nostalgia, As I Recall It
         if(window.scrollY>=7000 & window.scrollY<=7200) {
             virtual_nostalgia_thumbnail_appear.style.opacity = '0.85';
+            virtual_nostalgia_thumbnail_appear.style.visibility = 'visible';
             virtual_nostalgia_thumbnail_appear.style.transform = 'translateY(0px)';
             virtual_nostalgia_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -220,11 +250,13 @@ window.onload = function() {
         else {
             virtual_nostalgia_thumbnail_appear.style.opacity = '0';
             virtual_nostalgia_thumbnail_appear.style.transform = 'translateY(3px)';
+            virtual_nostalgia_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Abstract: Pittman-Dowell Residence
         if(window.scrollY>=7300 & window.scrollY<=7500) {
             abstract_pittman_dowell_residence_thumbnail_appear.style.opacity = '0.85';
+            abstract_pittman_dowell_residence_thumbnail_appear.style.visibility = 'visible';
             abstract_pittman_dowell_residence_thumbnail_appear.style.transform = 'translateY(0px)';
             abstract_pittman_dowell_residence_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -232,11 +264,13 @@ window.onload = function() {
         else {
             abstract_pittman_dowell_residence_thumbnail_appear.style.opacity = '0';
             abstract_pittman_dowell_residence_thumbnail_appear.style.transform = 'translateY(3px)';
+            abstract_pittman_dowell_residence_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Charles Shaw White Wine
         if(window.scrollY>=7600 & window.scrollY<=7800) {
             charles_shaw_white_wine_thumbnail_appear.style.opacity = '0.85';
+            charles_shaw_white_wine_thumbnail_appear.style.visibility = 'visible';
             charles_shaw_white_wine_thumbnail_appear.style.transform = 'translateY(0px)';
             charles_shaw_white_wine_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -244,11 +278,13 @@ window.onload = function() {
         else {
             charles_shaw_white_wine_thumbnail_appear.style.opacity = '0';
             charles_shaw_white_wine_thumbnail_appear.style.transform = 'translateY(3px)';
+            charles_shaw_white_wine_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Blur Art
         if(window.scrollY>=7900 & window.scrollY<=8100) {
             blur_art_thumbnail_appear.style.opacity = '0.85';
+            blur_art_thumbnail_appear.style.visibility = 'visible';
             blur_art_thumbnail_appear.style.transform = 'translateY(0px)';
             blur_art_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -256,11 +292,13 @@ window.onload = function() {
         else {
             blur_art_thumbnail_appear.style.opacity = '0';
             blur_art_thumbnail_appear.style.transform = 'translateY(3px)';
+            blur_art_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Formal Drafting
         if(window.scrollY>=8200 & window.scrollY<=8400) {
             formal_drafting_thumbnail_appear.style.opacity = '0.85';
+            formal_drafting_thumbnail_appear.style.visibility = 'visible';
             formal_drafting_thumbnail_appear.style.transform = 'translateY(0px)';
             formal_drafting_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
@@ -268,11 +306,13 @@ window.onload = function() {
         else {
             formal_drafting_thumbnail_appear.style.opacity = '0';
             formal_drafting_thumbnail_appear.style.transform = 'translateY(3px)';
+            formal_drafting_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // Hand-Drawings
         if(window.scrollY>=8500 & window.scrollY<=8700) {
             hand_drawings_thumbnail.style.opacity = '0.85';
+            hand_drawings_thumbnail.style.visibility = 'visible';
             hand_drawings_thumbnail.style.transform = 'translateY(0px)';
             hand_drawings_thumbnail.style.transition = '0.2s ease-in-out';
 
@@ -280,11 +320,13 @@ window.onload = function() {
         else {
             hand_drawings_thumbnail.style.opacity = '0';
             hand_drawings_thumbnail.style.transform = 'translateY(3px)';
+            hand_drawings_thumbnail.style.visibility = 'hidden';
         }
 
         // Metaphysical Writings
         if(window.scrollY>=8800 & window.scrollY<=9000) {
             metaphysical_writings_thumbnail.style.opacity = '0.85';
+            metaphysical_writings_thumbnail.style.visibility = 'visible';
             metaphysical_writings_thumbnail.style.transform = 'translateY(0px)';
             metaphysical_writings_thumbnail.style.transition = '0.2s ease-in-out';
 
@@ -292,6 +334,7 @@ window.onload = function() {
         else {
             metaphysical_writings_thumbnail.style.opacity = '0';
             metaphysical_writings_thumbnail.style.transform = 'translateY(3px)';
+            metaphysical_writings_thumbnail.style.visibility = 'hidden';
         }
     }
     tv_scroll();

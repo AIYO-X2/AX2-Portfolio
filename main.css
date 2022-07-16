@@ -4,10 +4,6 @@ body, html {
     scroll-behavior: smooth;
 }
 
-a {
-    cursor: url(Cursors/ring/ring_clickable.svg) 64 64, auto;
-}
-
 body {
     background: rgb(31, 30, 31);
     font-family: 'Courier New', Courier, monospace;
@@ -91,6 +87,7 @@ body {
     object-fit: scale-down;
     z-index: 100;
     opacity: 0;
+    pointer-events: none;
 }
 
 /* <div> container that holds the project category titles text, but not the text itself*/
@@ -117,7 +114,7 @@ body {
 
 .project_thumbnails {
     left: 38vw;
-    top: 53vh;
+    top: 52.5vh;
     position: fixed;
     border: 0;
     width: 185px;
@@ -126,12 +123,20 @@ body {
     opacity: 0;
     position: fixed;
     z-index: 2;
+    visibility: hidden;
+    cursor: url(Cursors/ring/ring_immersable_black.svg) 64 64, auto;
 }
 
 #animated_tv_static {
     position: fixed;
     opacity: 0;
     z-index: 1;
+    visibility:visible;
+    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
+}
+
+#metaphysical_writings_thumbnail {
+    cursor: not-allowed;
 }
 
 /* Project title font controls*/
@@ -153,7 +158,7 @@ body {
     line-height: 50%;
 }
 
-p {
+.project_title {
     cursor: url(Cursors/ring/ring_clickable.svg) 64 64, auto;
 }
 
@@ -169,7 +174,6 @@ p {
     border-radius: 15px;
     position: relative;
     z-index: 1;
-    cursor: url(Cursors/ring/ring_clickable.svg) 64 64, auto;
     text-decoration: none;
     scroll-snap-align: center;
 }
