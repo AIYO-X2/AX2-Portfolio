@@ -26,12 +26,6 @@ window.onload = function() {
     const hand_drawings_thumbnail = document.querySelector("#hand_drawings_thumbnail");
     const metaphysical_writings_thumbnail = document.querySelector("#metaphysical_writings_thumbnail");
 
-    // LOADING SCREEN SCRIPT
-    // Time is in ms
-    window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 3000)
-    window.setTimeout("document.getElementById('loading_screen').style.display='none';", 3500)
-    loading_screen.style.transition = '0.5s ease-in-out';
-
     // TV SCROLL SCRIPT
     // Styling format: [constant_name].style.[style_parameter]
     window.addEventListener('scroll', tv_scroll);
@@ -366,4 +360,10 @@ window.onload = function() {
     document.querySelector("#metaphysical_writings_title").addEventListener("click", function(){
         window.scroll(0, 8800)
     });
+
+       // LOADING SCREEN SCRIPT
+    // Time is in ms
+    window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
+    window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1000)
+    loading_screen.style.transition = '0.5s ease-in-out';
 }
