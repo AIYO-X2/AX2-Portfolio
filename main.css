@@ -152,6 +152,9 @@ body {
     line-height: 50%;
 }
 
+p {
+    cursor: url(Cursors/ring/ring_clickable.svg) 64 64, auto;
+}
 
 /* <div> container that holds each individual project preview */
 .project {

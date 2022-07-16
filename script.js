@@ -26,14 +26,16 @@ window.onload = function() {
     const hand_drawings_thumbnail = document.querySelector("#hand_drawings_thumbnail");
     const metaphysical_writings_thumbnail = document.querySelector("#metaphysical_writings_thumbnail");
 
+    // LOADING SCREEN SCRIPT
     // Time is in ms
-    window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 5000)
-    window.setTimeout("document.getElementById('loading_screen').style.display='none';", 5500)
+    window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 3000)
+    window.setTimeout("document.getElementById('loading_screen').style.display='none';", 3500)
     loading_screen.style.transition = '0.5s ease-in-out';
 
-    window.addEventListener('scroll', scrollEffect);
+    // TV SCROLL SCRIPT
     // Styling format: [constant_name].style.[style_parameter]
-    function scrollEffect () {
+    window.addEventListener('scroll', tv_scroll);
+    function tv_scroll () {
         if(window.scrollY>=2665) {
             alpha_tv_appear.style.opacity = '1';
             alpha_tv_appear.style.transition = '0.1s ease-in-out';
@@ -298,5 +300,70 @@ window.onload = function() {
             metaphysical_writings_thumbnail.style.transform = 'translateY(3px)';
         }
     }
-    scrollEffect();
+    tv_scroll();
+
+    // PROJECT TEXT CLICK SCRIPT
+    document.querySelector("#abhc_vrchitecture_experience_title").addEventListener("click", function(){
+        window.scroll(0, 2800)
+    });
+    document.querySelector("#sensorial_overdrive_ar_experience_title").addEventListener("click", function(){
+        window.scroll(0, 3100)
+    });
+    document.querySelector("#a_boyle_heights_canvas_title").addEventListener("click", function(){
+        window.scroll(0, 3400)
+    });
+    document.querySelector("#forsaken_realm_title").addEventListener("click", function(){
+        window.scroll(0, 3700)
+    });
+    document.querySelector("#museum_of_sound_of_nails_title").addEventListener("click", function(){
+        window.scroll(0, 4000)
+    });
+    document.querySelector("#hesperovida_title").addEventListener("click", function(){
+        window.scroll(0, 4300)
+    });
+    document.querySelector("#the_lurking_mine_title").addEventListener("click", function(){
+        window.scroll(0, 4600)
+    });
+    document.querySelector("#unusual_activity_title").addEventListener("click", function(){
+        window.scroll(0, 4900)
+    });
+    document.querySelector("#spatial_bodies_in_motion_rolled_flat_title").addEventListener("click", function(){
+        window.scroll(0, 5200)
+    });
+    document.querySelector("#ascension_title").addEventListener("click", function(){
+        window.scroll(0, 5500)
+    });
+    document.querySelector("#conference_center_plasencia_title").addEventListener("click", function(){
+        window.scroll(0, 5800)
+    });
+    document.querySelector("#sensorial_overdrive_title").addEventListener("click", function(){
+        window.scroll(0, 6100)
+    });
+    document.querySelector("#white_oak_avenue_x_ventura_boulevard_title").addEventListener("click", function(){
+        window.scroll(0, 6400)
+    });
+    document.querySelector("#the_virtual_parking_lot_title").addEventListener("click", function(){
+        window.scroll(0, 6700)
+    });
+    document.querySelector("#virtual_nostalgia_as_i_recall_it_title").addEventListener("click", function(){
+        window.scroll(0, 7000)
+    });
+    document.querySelector("#abstract_pittman_dowell_residence_title").addEventListener("click", function(){
+        window.scroll(0, 7300)
+    });
+    document.querySelector("#charles_shaw_pinot_grigio_white_wine_title").addEventListener("click", function(){
+        window.scroll(0, 7600)
+    });
+    document.querySelector("#blur_art_trio_title").addEventListener("click", function(){
+        window.scroll(0, 7900)
+    });
+    document.querySelector("#formal_drafting_title").addEventListener("click", function(){
+        window.scroll(0, 8200)
+    });
+    document.querySelector("#hand-drawings_title").addEventListener("click", function(){
+        window.scroll(0, 8500)
+    });
+    document.querySelector("#metaphysical_writings_title").addEventListener("click", function(){
+        window.scroll(0, 8800)
+    });
 }
