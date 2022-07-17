@@ -10,6 +10,7 @@ body {
         black 0%,
         rgb(31, 30, 31) 100%
     );
+    background-color: black;
     background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
     cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
@@ -106,7 +107,10 @@ body {
     pointer-events: none;
     mask-size: 100vw, 100%;
     mask-repeat: no-repeat;
-    mask-image: url(Images/Heavy_Static_Mask.svg)
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: url(Images/Heavy_Static_Mask.svg);
+    mask-image: url(Images/Heavy_Static_Mask.svg);
+    -moz-mask-image: url(Images/Heavy_Static_Mask.svg);
 }
 
 #alpha_tv_cover {
@@ -192,7 +196,6 @@ body {
 .project_title {
     line-height: 0;
     margin: 0;
-    cursor: url(Cursors/ring/ring_clickable.svg) 64 64, auto;
 }
 
 /* <div> container that holds each individual project preview */
