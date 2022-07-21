@@ -1,2 +1,5 @@
 *.webm filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
+git lfs track --Forsaken Realm - Short Animated Architecture Film.mp4 [/Users/ariellevy/Documents/GitHub/Aiyo-x-Ariel-Portfolio/Videos]
+git lfs track --MO-SON Animated North-South Section.MP4 [/Users/ariellevy/Documents/GitHub/Aiyo-x-Ariel-Portfolio/Videos]
+git lfs track --Unusual Activity (Cut).mp4 [/Users/ariellevy/Documents/GitHub/Aiyo-x-Ariel-Portfolio/Videos]
+git lfs track --MO-SON POV Walkthrough.mp4 [/Users/ariellevy/Documents/GitHub/Aiyo-x-Ariel-Portfolio/Videos]
