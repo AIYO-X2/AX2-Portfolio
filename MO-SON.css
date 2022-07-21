@@ -9,7 +9,7 @@ body {
 }
 
 #headliner_graphics {
-    padding-top: 7%;
+    padding-top: 10%;
 }
 
 .project_description_link_text {
@@ -43,7 +43,7 @@ body {
 
 .grid_photo {
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -66,6 +66,7 @@ body {
 }
 
 #featured_video {
+    padding-top: 6%;
     display: block;
     margin-left: auto;
     margin-right: auto;
