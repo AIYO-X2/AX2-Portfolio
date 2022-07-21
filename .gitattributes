@@ -1,2 +1,5 @@
 *.webm filter=lfs diff=lfs merge=lfs -text
 Forsaken[[:space:]]Realm[[:space:]]-[[:space:]]Short[[:space:]]Animated[[:space:]]Architecture[[:space:]]Film.mp4 filter=lfs diff=lfs merge=lfs -text
+Unusual[[:space:]]Activity[[:space:]](Cut).mp4 filter=lfs diff=lfs merge=lfs -text
+MO-SON[[:space:]]POV[[:space:]]Walkthrough.mp4 filter=lfs diff=lfs merge=lfs -text
+/Users/ariellevy/Documents/GitHub/Aiyo-x-Ariel-Portfolio/Videos filter=lfs diff=lfs merge=lfs -text
