@@ -63,7 +63,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 66%;
-    height: 50vh;
+    height: auto;
 }
 
 #text_description {
