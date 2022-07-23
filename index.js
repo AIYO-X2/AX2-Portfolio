@@ -502,3 +502,9 @@ window.onload = function() {
 function delay (URL) {
     setTimeout( function() { window.location = URL }, 400 );
 };
+
+window.onbeforeunload = function() {
+    fullscreen_static.style.visibility = 'visible';
+    fullscreen_static.style.opacity = '0';
+    fullscreen_static.style.pointerEvents = 'none';
+}
