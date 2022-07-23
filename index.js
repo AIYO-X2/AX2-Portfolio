@@ -36,6 +36,7 @@ window.onload = function() {
 
             animated_tv_static.style.opacity = '1';
             animated_tv_static.style.transition = '0.2s ease-in-out';
+            animated_tv_static.style.visibility = 'visible';
 
             lingering_screen_static.style.visibility = 'visible';
         }
@@ -43,6 +44,7 @@ window.onload = function() {
             alpha_tv_appear.style.opacity = '0';
 
             animated_tv_static.style.opacity = '0';
+            animated_tv_static.style.visibility = 'hidden';
 
             lingering_screen_static.style.visibility = 'hidden';
         }
