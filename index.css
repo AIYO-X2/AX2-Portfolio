@@ -16,7 +16,7 @@ body {
     cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
 }
 
-/* #loading_screen {
+#loading_screen {
     margin: 0;
     position: fixed;
     right: 0;
@@ -56,7 +56,7 @@ body {
     cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
 }
 
-#alpha_notice_text {
+/* #alpha_notice_text {
     width: 100%;
     position: fixed;
     z-index: 10001;
