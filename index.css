@@ -196,6 +196,21 @@ body {
     cursor: url(Cursors/ring/ring_immersable_black.svg) 64 64, auto;
 }
 
+/* Legacy project thumbnails are for projects that have not yet been natively created and still link to the old portfolio site*/
+.legacy_project_thumbnail {
+    left: 38vw;
+    top: 52.5vh;
+    position: fixed;
+    border: 0;
+    width: 185px;
+    margin-right: auto;
+    padding-left: 5%;
+    opacity: 0;
+    z-index: 2;
+    visibility: hidden;
+    cursor: url(Cursors/ring/ring_immersable_black.svg) 64 64, auto;
+}
+
 #animated_tv_static {
     position: fixed;
     opacity: 0;
