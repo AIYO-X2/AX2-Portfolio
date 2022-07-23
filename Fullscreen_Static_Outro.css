@@ -1,0 +1,15 @@
+#fullscreen_static {
+    position: fixed;
+    z-index: 10000000;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    pointer-events: none;
+    visibility: visible;
+    cursor: none;
+}

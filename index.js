@@ -1,9 +1,9 @@
-// TV Channel Switching Controls
 window.onload = function() {
     // Constant "title" defines what the constant is targeting
     const alpha_tv_appear = document.querySelector("#alpha_tv_cover");
-    const lingering_screen_static = document.querySelector("#lingering_screen_static")
+    const lingering_screen_static = document.querySelector("#lingering_screen_static");
     const animated_tv_static = document.querySelector("#animated_tv_static");
+
     const abhc_vrchitecture_experience_thumbnail_appear = document.querySelector("#abhc_vrchitecture_experience_thumbnail");
     const sensorial_overdrive_ar_experience_thumbnail_appear = document.querySelector("#sensorial_overdrive_ar_experience_thumbnail");
     const a_boyle_heights_canvas_thumbnail_appear = document.querySelector("#a_boyle_heights_canvas_thumbnail");
@@ -478,7 +478,27 @@ window.onload = function() {
 
     // LOADING SCREEN SCRIPT
     // Time is in ms
-    window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
-    window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1000)
-    loading_screen.style.transition = '0.5s ease-in-out';
+    // window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
+    // window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1000)
+    // loading_screen.style.transition = '0.5s ease-in-out';
+
+
+    
+    // Page Transition Animation
+    var project_thumbnails = document.getElementsByClassName('project_thumbnail');
+    const fullscreen_static = document.querySelector("#fullscreen_static");
+
+    for(var i = 0, j=project_thumbnails.length; i<j; i++){
+    project_thumbnails[i].addEventListener("click", function(){
+        fullscreen_static.style.visibility = 'visible';
+        fullscreen_static.style.opacity = '1';
+        fullscreen_static.style.transition = '0.4s ease-in-out';
+        fullscreen_static.style.pointerEvents = 'all';
+    });
+    }
 }
+
+// Page Transition Animation
+function delay (URL) {
+    setTimeout( function() { window.location = URL }, 400 );
+};
