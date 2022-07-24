@@ -494,7 +494,7 @@ window.onload = function() {
     project_thumbnails[i].addEventListener("click", function(){
         fullscreen_static.style.visibility = 'visible';
         fullscreen_static.style.opacity = '1';
-        fullscreen_static.style.transition = '0.4s ease-in-out';
+        fullscreen_static.style.transition = '0.3s ease-in-out';
         fullscreen_static.style.pointerEvents = 'all';
     });
     }
