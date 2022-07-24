@@ -33,6 +33,7 @@ body {
 
 #project_description {
     color: hsl(0, 0%, 75%);
+    text-align: left;
 }
 
 #project_details {
