@@ -486,7 +486,7 @@ window.onload = function() {
 
 
     
-    // Page Transition Animation
+    // Page Transition Animation (Static Fade In)
     var project_thumbnails = document.getElementsByClassName('project_thumbnail');
     const fullscreen_static = document.querySelector("#fullscreen_static");
 
@@ -500,11 +500,12 @@ window.onload = function() {
     }
 }
 
-// Page Transition Animation
+// Page Transition URL Click Delay
 function delay (URL) {
     setTimeout( function() { window.location = URL }, 400 );
 };
 
+// Page Transition Animation (Static Disappears on Page Leave)
 window.onbeforeunload = function() {
     fullscreen_static.style.visibility = 'visible';
     fullscreen_static.style.opacity = '0';
