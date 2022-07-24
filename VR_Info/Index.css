@@ -1,0 +1,41 @@
+body, html {
+    background-color: rgb(10, 10, 10);
+    margin: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
+}
+
+.project_description_link_text {
+    cursor: url(Cursors/ring/ring_clickable.svg) 64 64, auto;
+    color: hsl(0, 0%, 75%);
+    background-color: rgba(0, 255, 13, 0.5);
+    text-decoration: none;
+}
+
+#text_description {
+    padding-top: 6%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    line-height: 250%;
+    padding-bottom: 10%;
+}
+
+#project_title {
+    color: hsl(0, 0%, 90%);
+    font-size: 40pt;
+}
+
+#project_description {
+    color: hsl(0, 0%, 75%);
+}
+
+#project_details {
+    padding-top: 5%;
+    color: hsl(0, 0%, 50%);
+}
