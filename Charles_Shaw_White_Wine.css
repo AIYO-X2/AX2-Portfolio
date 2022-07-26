@@ -1,0 +1,76 @@
+body, html {
+    background-color: rgb(10, 10, 10);
+    margin: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
+}
+
+#headliner_graphics {
+    padding-top: 7%;
+}
+
+.project_description_link_text {
+    cursor: url(Cursors/ring/ring_clickable.svg) 64 64, auto;
+    color: hsl(0, 0%, 75%);
+    background-color: rgba(0, 255, 13, 0.5);
+    text-decoration: none;
+}
+
+#grid_photos {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15%;
+}
+
+.grid_photo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headline_banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+#featured_video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 100%;
+}
+
+#text_description {
+    padding-top: 6%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    line-height: 250%;
+    padding-bottom: 10%;
+}
+
+#project_title {
+    color: hsl(0, 0%, 90%);
+}
+
+#project_description {
+    color: hsl(0, 0%, 75%);
+}
+
+#project_details {
+    padding-top: 5%;
+    color: hsl(0, 0%, 50%);
+}
