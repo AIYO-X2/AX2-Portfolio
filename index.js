@@ -16,7 +16,7 @@ window.onload = function() {
     const ascension_thumbnail_appear = document.querySelector("#ascension_thumbnail");
     const conference_center_plasencia_thumbnail_appear = document.querySelector("#conference_center_plasencia_thumbnail");
     const sensorial_overdrive_thumbnail_appear = document.querySelector("#sensorial_overdrive_thumbnail");
-    const white_oak_ventura_boulevard_thumbnail_appear = document.querySelector("#white_oak_ventura_boulevard_thumbnail");
+    const ventura_x_white_oak_thumbnail_appear = document.querySelector("#ventura_x_white_oak_thumbnail");
     const the_virtual_parking_lot_thumbnail_appear = document.querySelector("#the_virtual_parking_lot_thumbnail");
     const virtual_nostalgia_thumbnail_appear = document.querySelector("#virtual_nostalgia_thumbnail");
     const abstract_pittman_dowell_residence_thumbnail_appear = document.querySelector("#abstract_pittman_dowell_residence_thumbnail");
@@ -291,24 +291,24 @@ window.onload = function() {
             sensorial_overdrive_thumbnail_appear.style.visibility = 'hidden';
         }
 
-        // White Oak Avenue x Ventura Boulevard
+        // Ventura Boulevard x White Oak Avenue
         if(window.scrollY>=6400 & window.scrollY<=6600) {
-            document.querySelector("#white_oak_avenue_x_ventura_boulevard_title").style.visibility = 'visible';
+            document.querySelector("#ventura_x_white_oak_title").style.visibility = 'visible';
 
-            white_oak_ventura_boulevard_thumbnail_appear.style.opacity = '0.85';
-            white_oak_ventura_boulevard_thumbnail_appear.style.visibility = 'visible';
-            white_oak_ventura_boulevard_thumbnail_appear.style.transform = 'translateY(0px)';
-            white_oak_ventura_boulevard_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            ventura_x_white_oak_thumbnail_appear.style.opacity = '0.85';
+            ventura_x_white_oak_thumbnail_appear.style.visibility = 'visible';
+            ventura_x_white_oak_thumbnail_appear.style.transform = 'translateY(0px)';
+            ventura_x_white_oak_thumbnail_appear.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#white_oak_avenue_x_ventura_boulevard_title").style.visibility = 'hidden';
+            document.querySelector("#ventura_x_white_oak_title").style.visibility = 'hidden';
 
-            white_oak_ventura_boulevard_thumbnail_appear.style.opacity = '0';
-            white_oak_ventura_boulevard_thumbnail_appear.style.transform = 'translateY(3px)';
-            white_oak_ventura_boulevard_thumbnail_appear.style.visibility = 'hidden';
+            ventura_x_white_oak_thumbnail_appear.style.opacity = '0';
+            ventura_x_white_oak_thumbnail_appear.style.transform = 'translateY(3px)';
+            ventura_x_white_oak_thumbnail_appear.style.visibility = 'hidden';
         }
 
         // The Virtual Parking Lot
