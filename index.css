@@ -188,7 +188,6 @@ body {
     position: fixed;
     border: 0;
     width: 185px;
-    margin-right: auto;
     padding-left: 5%;
     opacity: 0;
     z-index: 2;
