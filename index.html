@@ -35,30 +35,6 @@
         <video id="v0" tabindex="0", autobuffer preload>
             <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2" ' src="Videos/Home_Screen_Animations/CRTTV_Intro_iMovie_MQ_30fps.mp4"></video>
         </video>
-        <script>
-            var frameNumber = 0, // start video at frame 0
-            // lower numbers = faster playback
-            playbackConst = 300, 
-            // get page height from video duration
-            setHeight = document.getElementById("set-height"), 
-            // select video element         
-            vid = document.getElementById('v0'); 
-            // var vid = $('#v0')[0]; // jquery option
-
-            // dynamically set the page height according to video length
-            vid.addEventListener('loadedmetadata', function() {
-            setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
-            });
-
-            // Use requestAnimationFrame for smooth playback
-            function scrollPlay(){  
-            var frameNumber  = window.pageYOffset/playbackConst;
-            vid.currentTime  = frameNumber;
-            window.requestAnimationFrame(scrollPlay);
-            }
-
-            window.requestAnimationFrame(scrollPlay);
-        </script>
 
         <div id="blank_space_for_scroll_animation"></div>
 
@@ -154,7 +130,9 @@
                 <a href="javascript:delay('Hand-Drawings')">
                     <img class="project_thumbnail" src="Images/Project_Thumbnails/20.jpg" id="hand_drawings_thumbnail">
                 </a>
-                <img class="legacy_project_thumbnail" src="Images/Project_Thumbnails/21.jpg" id="metaphysical_writings_thumbnail">
+                <a href="">
+                    <img class="legacy_project_thumbnail" src="Images/Project_Thumbnails/21.jpg" id="metaphysical_writings_thumbnail">
+                </a>
             </div>
         </div>
 
