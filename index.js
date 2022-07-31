@@ -33,7 +33,7 @@ window.onload = function() {
     // get page height from video duration
     setHeight = document.getElementById("set-height"), 
     // select video element         
-    vid = document.getElementById('v0'); 
+    vid = document.getElementById('scroll_video'); 
     // var vid = $('#v0')[0]; // jquery option
 
     // dynamically set the page height according to video length
