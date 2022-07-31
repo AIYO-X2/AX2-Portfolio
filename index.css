@@ -271,3 +271,9 @@ body {
     text-decoration: none;
     scroll-snap-align: center;
 }
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    #mobile_notice {
+        visibility: visible;
+    }
+}
