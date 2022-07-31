@@ -45,6 +45,17 @@ body {
     cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
 }
 
+#mobile_notice {
+    width: 100%;
+    position: fixed;
+    z-index: 10001;
+    color: rgb(255, 0, 0);
+    top: 60%;
+    text-align: center;
+    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
+    visibility: hidden;
+}
+
 #version_text {
     width: 100%;
     position: fixed;
