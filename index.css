@@ -181,12 +181,11 @@ body {
 }
 
 .project_thumbnail {
-    left: 38vw;
+    left: 43vw;
     top: 52.5vh;
     position: fixed;
     border: 0;
     width: 185px;
-    padding-left: 5%;
     opacity: 0;
     z-index: 2;
     visibility: hidden;
