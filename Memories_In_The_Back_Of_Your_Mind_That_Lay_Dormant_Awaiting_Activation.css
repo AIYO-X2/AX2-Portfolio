@@ -34,7 +34,7 @@ body {
     width: 100%;
     height: auto;
     padding-top: 2.5%;
-    padding-bottom: 10%;
+    padding-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     background: rgb(0, 0, 0);
@@ -51,7 +51,6 @@ body {
 }
 
 .audio_player {
-    width: auto;
     margin-left: auto;
     margin-right: auto;
     display: flex;

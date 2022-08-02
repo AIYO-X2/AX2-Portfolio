@@ -53,7 +53,7 @@ window.onload = function() {
     // Styling format: [constant_name].style.[style_parameter]
     window.addEventListener('scroll', tv_scroll);
     function tv_scroll () {
-        if(window.scrollY>=2665) {
+        if(window.scrollY>=0) {
             alpha_tv_appear.style.opacity = '1';
             alpha_tv_appear.style.transition = '0.2s ease-in-out';
 
@@ -73,7 +73,7 @@ window.onload = function() {
         }
         
         // ABHC - VRchitecture Experience
-        if(window.scrollY>=2800 & window.scrollY<=3000) {
+        if(window.scrollY>=100 & window.scrollY<=300) {
             document.querySelector("#abhc_vrchitecture_experience_title").style.visibility = 'visible';
 
             abhc_vrchitecture_experience_thumbnail_appear.style.opacity = '0.85';
@@ -95,7 +95,7 @@ window.onload = function() {
         }
 
         // Sensorial Overdrive AR Experience
-        if(window.scrollY>=3100 & window.scrollY<=3300) {
+        if(window.scrollY>=400 & window.scrollY<=600) {
             document.querySelector("#sensorial_overdrive_ar_experience_title").style.visibility = 'visible';
 
             sensorial_overdrive_ar_experience_thumbnail_appear.style.opacity = '0.85';
@@ -115,7 +115,7 @@ window.onload = function() {
         }
 
         // A Boyle Heights Canvas
-        if(window.scrollY>=3400 & window.scrollY<=3600) {
+        if(window.scrollY>=700 & window.scrollY<=900) {
             document.querySelector("#a_boyle_heights_canvas_title").style.visibility = 'visible';
 
             a_boyle_heights_canvas_thumbnail_appear.style.opacity = '0.85';
@@ -135,7 +135,7 @@ window.onload = function() {
         }
 
         // Forsaken Realm
-        if(window.scrollY>=3700 & window.scrollY<=3900) {
+        if(window.scrollY>=1000 & window.scrollY<=1200) {
             document.querySelector("#forsaken_realm_title").style.visibility = 'visible';
 
             forsaken_realm_thumbnail_appear.style.opacity = '0.85';
@@ -155,7 +155,7 @@ window.onload = function() {
         }
 
         // MO-SON
-        if(window.scrollY>=4000 & window.scrollY<=4200) {
+        if(window.scrollY>=1300 & window.scrollY<=1500) {
             document.querySelector("#museum_of_sound_of_nails_title").style.visibility = 'visible';
 
             moson_thumbnail_appear.style.opacity = '0.85';
@@ -175,7 +175,7 @@ window.onload = function() {
         }
 
         // Hesperovida
-        if(window.scrollY>=4300 & window.scrollY<=4500) {
+        if(window.scrollY>=1600 & window.scrollY<=1800) {
             document.querySelector("#hesperovida_title").style.visibility = 'visible';
 
             hesperovida_thumbnail_appear.style.opacity = '0.85';
@@ -195,7 +195,7 @@ window.onload = function() {
         }
 
         // The Lurking Mine
-        if(window.scrollY>=4600 & window.scrollY<=4800) {
+        if(window.scrollY>=1900 & window.scrollY<=2100) {
             document.querySelector("#the_lurking_mine_title").style.visibility = 'visible';
 
             the_lurking_mine_thumbnail_appear.style.opacity = '0.85';
@@ -215,7 +215,7 @@ window.onload = function() {
         }
 
         // Unusual Activity
-        if(window.scrollY>=4900 & window.scrollY<=5100) {
+        if(window.scrollY>=2200 & window.scrollY<=2400) {
             document.querySelector("#unusual_activity_title").style.visibility = 'visible';
 
             unusual_activity_thumbnail_appear.style.opacity = '0.85';
@@ -235,7 +235,7 @@ window.onload = function() {
         }
 
         // Rolled Flat
-        if(window.scrollY>=5200 & window.scrollY<=5400) {
+        if(window.scrollY>=2500 & window.scrollY<=2600) {
             document.querySelector("#spatial_bodies_in_motion_rolled_flat_title").style.visibility = 'visible';
 
             rolled_flat_thumbnail_appear.style.opacity = '0.85';
@@ -255,7 +255,7 @@ window.onload = function() {
         }
 
         // Conference Center, Plasencia
-        if(window.scrollY>=5500 & window.scrollY<=5700) {
+        if(window.scrollY>=2700 & window.scrollY<=2900) {
             document.querySelector("#conference_center_plasencia_title").style.visibility = 'visible';
 
             conference_center_plasencia_thumbnail_appear.style.opacity = '0.85';
@@ -275,7 +275,7 @@ window.onload = function() {
         }
 
         // Sensorial Overdrive
-        if(window.scrollY>=5800 & window.scrollY<=6000) {
+        if(window.scrollY>=3000 & window.scrollY<=3200) {
             document.querySelector("#sensorial_overdrive_title").style.visibility = 'visible';
 
             sensorial_overdrive_thumbnail_appear.style.opacity = '0.85';
@@ -295,7 +295,7 @@ window.onload = function() {
         }
 
         // Ventura Boulevard x White Oak Avenue
-        if(window.scrollY>=6100 & window.scrollY<=6300) {
+        if(window.scrollY>=3300 & window.scrollY<=3500) {
             document.querySelector("#ventura_x_white_oak_title").style.visibility = 'visible';
 
             ventura_x_white_oak_thumbnail_appear.style.opacity = '0.85';
@@ -315,7 +315,7 @@ window.onload = function() {
         }
 
         // The Virtual Parking Lot
-        if(window.scrollY>=6500 & window.scrollY<=6700) {
+        if(window.scrollY>=3600 & window.scrollY<=3800) {
             document.querySelector("#the_virtual_parking_lot_title").style.visibility = 'visible';
 
             the_virtual_parking_lot_thumbnail_appear.style.opacity = '0.85';
@@ -335,7 +335,7 @@ window.onload = function() {
         }
 
         // Virtual Nostalgia, As I Recall It
-        if(window.scrollY>=6800 & window.scrollY<=7000) {
+        if(window.scrollY>=3900 & window.scrollY<=4100) {
             document.querySelector("#virtual_nostalgia_as_i_recall_it_title").style.visibility = 'visible';
 
             virtual_nostalgia_thumbnail_appear.style.opacity = '0.85';
@@ -355,7 +355,7 @@ window.onload = function() {
         }
 
         // Abstract: Pittman-Dowell Residence
-        if(window.scrollY>=7100 & window.scrollY<=7300) {
+        if(window.scrollY>=4200 & window.scrollY<=4400) {
             document.querySelector("#abstract_pittman_dowell_residence_title").style.visibility = 'visible';
 
             abstract_pittman_dowell_residence_thumbnail_appear.style.opacity = '0.85';
@@ -375,7 +375,7 @@ window.onload = function() {
         }
 
         // Charles Shaw White Wine
-        if(window.scrollY>=7400 & window.scrollY<=7600) {
+        if(window.scrollY>=4500 & window.scrollY<=4700) {
             document.querySelector("#charles_shaw_pinot_grigio_white_wine_title").style.visibility = 'visible';
 
             charles_shaw_white_wine_thumbnail_appear.style.opacity = '0.85';
@@ -395,7 +395,7 @@ window.onload = function() {
         }
 
         // Blur Art
-        if(window.scrollY>=7700 & window.scrollY<=7900) {
+        if(window.scrollY>=4800 & window.scrollY<=5000) {
             document.querySelector("#blur_art_trio_title").style.visibility = 'visible';
 
             blur_art_thumbnail_appear.style.opacity = '0.85';
@@ -415,7 +415,7 @@ window.onload = function() {
         }
 
         // Formal Drafting
-        if(window.scrollY>=8000 & window.scrollY<=8200) {
+        if(window.scrollY>=5100 & window.scrollY<=5300) {
             document.querySelector("#formal_drafting_title").style.visibility = 'visible';
 
             formal_drafting_thumbnail_appear.style.opacity = '0.85';
@@ -435,7 +435,7 @@ window.onload = function() {
         }
 
         // Hand-Drawings
-        if(window.scrollY>=8300 & window.scrollY<=8500) {
+        if(window.scrollY>=5400 & window.scrollY<=5600) {
             document.querySelector("#hand-drawings_title").style.visibility = 'visible';
 
             hand_drawings_thumbnail.style.opacity = '0.85';
@@ -455,7 +455,7 @@ window.onload = function() {
         }
 
         // Metaphysical Writings
-        if(window.scrollY>=8600 & window.scrollY<=8800) {
+        if(window.scrollY>=5700 & window.scrollY<=5900) {
             document.querySelector("#metaphysical_writings_title").style.visibility = 'visible';
 
             metaphysical_writings_thumbnail.style.opacity = '0.85';
@@ -509,7 +509,7 @@ function delay (URL) {
 };
 
 // Page Transition Animation (Static Disappears on Page Leave)
-window.onunload = function() {
+window.onbeforeunload = function() {
     fullscreen_static.style.visibility = 'visible';
     fullscreen_static.style.opacity = '0';
     fullscreen_static.style.pointerEvents = 'none';
