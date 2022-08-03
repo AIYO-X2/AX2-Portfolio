@@ -157,7 +157,7 @@ body::-webkit-scrollbar {
     right: 0;
     left: 0;
     top: 0;
-    width: auto;
+    width: 100vw;
     height: 100vh;
     object-fit: scale-down;
     z-index: 100;
@@ -192,11 +192,12 @@ body::-webkit-scrollbar {
     top: 52.5vh;
     position: fixed;
     border: 0;
-    width: 185px;
+    width: 14.5vw;
     opacity: 0;
     z-index: 2;
     visibility: hidden;
     cursor: url(Cursors/ring/ring_immersable_black.svg) 64 64, auto;
+    rotate: 359deg;
 }
 
 #animated_tv_static {
