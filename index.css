@@ -201,18 +201,16 @@ body::-webkit-scrollbar {
 }
 
 #animated_tv_static {
+    left: 43vw;
+    top: 52.5vh;
     position: fixed;
+    border: 0;
     opacity: 0;
     z-index: 1;
     visibility:hidden;
     cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
-    left: 38vw;
-    top: 52.5vh;
     border: 0;
-    width: 185px;
-    margin-right: auto;
-    padding-left: 5%;
-    position: fixed;
+    width: 14.5vw;
 }
 
 /* Project title font controls*/
