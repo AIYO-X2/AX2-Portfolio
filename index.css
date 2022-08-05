@@ -13,7 +13,7 @@ body {
     background-color: black;
     background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
-    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
+    cursor: url(Cursors/ring/ring_default.svg), 16 16, auto !important;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-y: scroll; 
@@ -34,7 +34,6 @@ body::-webkit-scrollbar {
     height: 100%;
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
-    backdrop-filter: -m;
     z-index: 10000;
     background: rgba(0, 0, 0, 0.5);
     opacity: 1;
