@@ -13,7 +13,7 @@ body {
     background-color: black;
     background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
-    cursor: url(Cursors/ring/ring_default.svg), 16 16, auto !important;
+    cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-y: scroll; 
@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
     color: white;
     top: 50%;
     text-align: center;
-    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
+    cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
 }
 
 #mobile_notice {
@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
     color: rgb(255, 0, 0);
     top: 60%;
     text-align: center;
-    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
+    cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
     visibility: hidden;
 }
 
@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
     bottom: 0;
     text-align: right;
     font-size: 6pt;
-    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
+    cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
 }
 
 /* Font controls for "scrolls to immerse"*/
@@ -195,7 +195,7 @@ body::-webkit-scrollbar {
     opacity: 0;
     z-index: 2;
     visibility: hidden;
-    cursor: url(Cursors/ring/ring_immersable_black.svg) 64 64, auto;
+    cursor: url(Cursors/ring/ring_immersable_black.png) 64 64, auto;
     rotate: 359deg;
 }
 
@@ -207,7 +207,7 @@ body::-webkit-scrollbar {
     opacity: 0;
     z-index: 1;
     visibility:hidden;
-    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
+    cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
     border: 0;
     width: 14.5vw;
 }
