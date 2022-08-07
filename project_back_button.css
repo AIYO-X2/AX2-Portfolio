@@ -10,7 +10,7 @@
     top: 25px;
     left: 25px;
     border-radius: 100px;
-    cursor: url(Cursors/ring/ring_clickable.svg) 64 64, auto;
+    cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
 }
 
 #back_button_graphic {
