@@ -17,7 +17,6 @@ body {
 }
 
 .project_description_link_text {
-    cursor: url(Cursors/ring/ring_clickable.svg) 64 64, auto;
     color: hsl(0, 0%, 75%);
     background-color: rgba(0, 255, 13, 0.5);
     text-decoration: none;

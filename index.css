@@ -94,7 +94,6 @@ body::-webkit-scrollbar {
 /* Video scroll playback controls */
 #scroll_video {
     position: fixed;
-    display: block;
     margin: 0 auto;
     bottom: 0;
     right: 0;
@@ -195,7 +194,7 @@ body::-webkit-scrollbar {
     opacity: 0;
     z-index: 2;
     visibility: hidden;
-    cursor: url(Cursors/ring/ring_immersable_black.png) 64 64, auto;
+    cursor: url(Cursors/ring/ring_immersable_white.png) 64 64, auto;
     rotate: 359deg;
 }
 

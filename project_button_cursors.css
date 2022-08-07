@@ -1,0 +1,30 @@
+body {
+    cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
+}
+
+#back_button {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    background: hsla(0, 0%, 0%, 0.45);
+    border: 2px solid hsl(0, 0%, 15%);
+    backdrop-filter: invert() blur(20px);
+    -webkit-backdrop-filter: invert() blur(20px);
+    top: 25px;
+    left: 25px;
+    border-radius: 100px;
+    cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
+}
+
+#back_button_graphic {
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    transform: translate(13px, 14px);
+    z-index: 1001;
+}
+
+.project_description_link_text {
+    cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
+}
