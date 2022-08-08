@@ -1,4 +1,11 @@
+var project_thumbnails = document.getElementsByClassName('project_thumbnail');
+const fullscreen_static = document.querySelector("#fullscreen_static");
+
 window.onload = function() {
+    fullscreen_static.style.visibility = 'visible';
+    fullscreen_static.style.opacity = '0';
+    fullscreen_static.style.pointerEvents = 'none';
+
     // Constant "title" defines what the constant is targeting
     const alpha_tv_appear = document.querySelector("#alpha_tv_cover");
     const lingering_screen_static = document.querySelector("#lingering_screen_static");
@@ -490,9 +497,6 @@ window.onload = function() {
 
     
     // Page Transition Animation (Static Fade In)
-    var project_thumbnails = document.getElementsByClassName('project_thumbnail');
-    const fullscreen_static = document.querySelector("#fullscreen_static");
-
     for(var i = 0, j=project_thumbnails.length; i<j; i++){
     project_thumbnails[i].addEventListener("click", function(){
         fullscreen_static.style.visibility = 'visible';
@@ -507,10 +511,3 @@ window.onload = function() {
 function delay (URL) {
     setTimeout( function() { window.location = URL }, 400 );
 };
-
-// Page Transition Animation (Static Disappears on Page Leave)
-window.onbeforeunload = function() {
-    fullscreen_static.style.visibility = 'visible';
-    fullscreen_static.style.opacity = '0';
-    fullscreen_static.style.pointerEvents = 'none';
-}
