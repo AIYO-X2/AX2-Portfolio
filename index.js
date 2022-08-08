@@ -476,11 +476,6 @@ window.onload = function() {
     }
     tv_scroll();
 
-    // PROJECT TEXT CLICK SCRIPT (UNUSED)
-    // document.querySelector("#abhc_vrchitecture_experience_title").addEventListener("click", function(){
-    //    window.scroll(0, 2800)
-    // });
-
     // LOADING SCREEN SCRIPT
     // Time is in ms
     window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
@@ -499,6 +494,10 @@ window.onload = function() {
         fullscreen_static.style.opacity = '1';
         fullscreen_static.style.transition = '0.3s ease-in-out';
         fullscreen_static.style.pointerEvents = 'all';
+
+        window.setTimeout("fullscreen_static.style.visibility = 'hidden';", 500)
+        window.setTimeout("fullscreen_static.style.opacity = '0';", 500)
+        window.setTimeout("fullscreen_static.style.pointerEvents = 'none';", 500)
     });
     }
 }
@@ -506,11 +505,4 @@ window.onload = function() {
 // Page Transition URL Click Delay
 function delay (URL) {
     setTimeout( function() { window.location = URL }, 400 );
-};
-
-// Page Transition Animation (Static Disappears on Page Leave)
-window.onbeforeunload = function() {
-    fullscreen_static.style.visibility = 'visible';
-    fullscreen_static.style.opacity = '0';
-    fullscreen_static.style.pointerEvents = 'none';
 };
