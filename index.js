@@ -495,9 +495,9 @@ window.onload = function() {
         fullscreen_static.style.transition = '0.3s ease-in-out';
         fullscreen_static.style.pointerEvents = 'all';
 
-        window.setTimeout("fullscreen_static.style.visibility = 'hidden';", 500)
-        window.setTimeout("fullscreen_static.style.opacity = '0';", 500)
-        window.setTimeout("fullscreen_static.style.pointerEvents = 'none';", 500)
+        window.setTimeout("fullscreen_static.style.visibility = 'hidden';", 300)
+        window.setTimeout("fullscreen_static.style.opacity = '0';", 300)
+        window.setTimeout("fullscreen_static.style.pointerEvents = 'none';", 300)
     });
     }
 }
@@ -506,3 +506,10 @@ window.onload = function() {
 function delay (URL) {
     setTimeout( function() { window.location = URL }, 400 );
 };
+
+// Page Transition Animation (Static Disappears on Page Leave)
+// window.onunload = function() {
+//    fullscreen_static.style.visibility = 'visible';
+//    fullscreen_static.style.opacity = '0';
+//    fullscreen_static.style.pointerEvents = 'none';
+//};
