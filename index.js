@@ -509,7 +509,7 @@ function delay (URL) {
 };
 
 // Page Transition Animation (Static Disappears on Page Leave)
-window.onunload = function() {
+window.onbeforeunload = function() {
     fullscreen_static.style.visibility = 'visible';
     fullscreen_static.style.opacity = '0';
     fullscreen_static.style.pointerEvents = 'none';
