@@ -123,6 +123,7 @@ body::-webkit-scrollbar {
     opacity: 1;
     pointer-events: none;
     mask-size:cover;
+    -webkit-mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: top, center;
     -webkit-mask-repeat: no-repeat;
