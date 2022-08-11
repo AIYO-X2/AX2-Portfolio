@@ -122,9 +122,9 @@ body::-webkit-scrollbar {
     top: 0;
     opacity: 1;
     pointer-events: none;
-    mask-size: 100vw, 100vh;
-    -webkit-mask-size: 100vw, 100vh;
+    mask-size:cover;
     mask-repeat: no-repeat;
+    mask-position: top, center;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-image: url(Images/Heavy_Static_Mask.svg);
     mask-image: url(Images/Heavy_Static_Mask.svg);
