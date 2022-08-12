@@ -84,7 +84,7 @@ body::-webkit-scrollbar {
     margin-top: 1%;
     text-align: center;
     position: relative;
-    z-index: 1;
+    z-index: 103;
 }
 
 #blank_space_for_scroll_animation {
