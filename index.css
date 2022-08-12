@@ -211,11 +211,10 @@ body::-webkit-scrollbar {
 
 /* Project title font controls*/
 .project_titles {
-    color: rgb(0, 255, 13);
-    background-color: rgba(255, 255, 255, 0);
-    font-family:'Courier New', Courier, monospace;
-    font-size: 20pt;
     /* Justify Content altars the alignment of a text box without adjusting the alignment of the text itslef. To align both the text box and text simultaneously, use text-align */
+}
+
+.project_title {
     width: 90vw;
     top: 10%;
     margin-left: 5%;
@@ -223,13 +222,12 @@ body::-webkit-scrollbar {
     position: fixed;
     z-index: 101;
     visibility: hidden;
-    word-break: break-all;
-    transform: translateY(-100%);
-}
-
-.project_title {
-    margin: 0;
     line-height: 100%;
+    word-break: break-all;
+    color: rgb(0, 255, 13);
+    background-color: rgba(255, 255, 255, 0);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20pt;
 }
 
 /* <div> container that holds each individual project preview */
@@ -263,7 +261,7 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width:800px) {
-    .project_titles{
+    .project_title {
         font-size: 16pt;
     }
     .project_thumbnail {
@@ -275,19 +273,19 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width:600px) {
-    .project_titles{
+    .project_title {
         font-size: 14pt;
     }
 }
 
 @media (max-width:400px) {
-    .project_titles{
+    .project_title {
         font-size: 12pt;
     }
 }
 
 @media (max-width:300px) {
-    .project_titles{
+    .project_title {
         font-size: 12pt;
     }
     .project_thumbnail {
