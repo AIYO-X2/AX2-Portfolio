@@ -483,9 +483,9 @@ window.onload = function() {
 
     // LOADING SCREEN SCRIPT (Temporarily //'d while mobile is not yet supported)
     // Time is in ms
-    // window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
-    // window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1000)
-    // loading_screen.style.transition = '0.5s ease-in-out';
+    window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
+    window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1000)
+    loading_screen.style.transition = '0.5s ease-in-out';
 
 
     

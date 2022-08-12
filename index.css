@@ -94,14 +94,11 @@ body::-webkit-scrollbar {
 /* Video scroll playback controls */
 #scroll_video {
     position: fixed;
-    margin: 0 auto;
-    bottom: 0;
-    right: 0;
-    left: 0;
     top: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 100vw;
     height: 100vh;
-    object-fit: scale-down;
     z-index: 0;
     visibility: visible;
 }
@@ -250,7 +247,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (hover: none) and (pointer: coarse) {
     #mobile_notice {
-        visibility: visible;
+        visibility: hidden;
     }
 
     #blank_space_for_scroll_animation {
@@ -259,5 +256,29 @@ body::-webkit-scrollbar {
 
     #scroll_video {
         visibility: hidden;
+    }
+}
+
+@media (max-width:800px) {
+    .project_titles{
+        font-size: 16pt;
+    }
+    .project_thumbnail {
+        top: 51.5vh
+    }
+    #animated_tv_static {
+        top: 51.5vh
+    }
+}
+
+@media (max-width:600px) {
+    .project_titles{
+        font-size: 14pt;
+    }
+}
+
+@media (max-width:400px) {
+    .project_titles{
+        font-size: 12pt;
     }
 }
