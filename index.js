@@ -482,8 +482,6 @@ window.onload = function() {
     window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1000)
     loading_screen.style.transition = '0.5s ease-in-out';
 
-
-    
     // Page Transition Animation (Static Fade In)
     var project_thumbnails = document.getElementsByClassName('project_thumbnail');
     const fullscreen_static = document.querySelector("#fullscreen_static");

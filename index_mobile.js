@@ -487,8 +487,6 @@ window.onload = function() {
     window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1000)
     loading_screen.style.transition = '0.5s ease-in-out';
 
-
-    
     // Page Transition Animation (Static Fade In)
     var project_thumbnails = document.getElementsByClassName('project_thumbnail');
     const fullscreen_static = document.querySelector("#fullscreen_static");
@@ -499,6 +497,10 @@ window.onload = function() {
         fullscreen_static.style.opacity = '1';
         fullscreen_static.style.transition = '0.3s ease-in-out';
         fullscreen_static.style.pointerEvents = 'all';
+
+        window.setTimeout("fullscreen_static.style.visibility = 'hidden';", 300)
+        window.setTimeout("fullscreen_static.style.opacity = '0';", 300)
+        window.setTimeout("fullscreen_static.style.pointerEvents = 'none';", 300)
     });
     }
 }
@@ -509,8 +511,8 @@ function delay (URL) {
 };
 
 // Page Transition Animation (Static Disappears on Page Leave)
-window.onbeforeunload = function() {
-    fullscreen_static.style.visibility = 'visible';
-    fullscreen_static.style.opacity = '0';
-    fullscreen_static.style.pointerEvents = 'none';
-}
+// window.onunload = function() {
+//    fullscreen_static.style.visibility = 'visible';
+//    fullscreen_static.style.opacity = '0';
+//    fullscreen_static.style.pointerEvents = 'none';
+//};

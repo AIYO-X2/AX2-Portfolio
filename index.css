@@ -216,17 +216,20 @@ body::-webkit-scrollbar {
     font-family:'Courier New', Courier, monospace;
     font-size: 20pt;
     /* Justify Content altars the alignment of a text box without adjusting the alignment of the text itslef. To align both the text box and text simultaneously, use text-align */
-    width: 100vw;
+    width: 90vw;
     top: 10%;
+    margin-left: 5%;
     text-align: center;
     position: fixed;
     z-index: 101;
     visibility: hidden;
+    word-break: break-all;
+    transform: translateY(-100%);
 }
 
 .project_title {
-    line-height: 0;
     margin: 0;
+    line-height: 100%;
 }
 
 /* <div> container that holds each individual project preview */
@@ -280,5 +283,17 @@ body::-webkit-scrollbar {
 @media (max-width:400px) {
     .project_titles{
         font-size: 12pt;
+    }
+}
+
+@media (max-width:300px) {
+    .project_titles{
+        font-size: 12pt;
+    }
+    .project_thumbnail {
+        top: 50.5vh
+    }
+    #animated_tv_static {
+        top: 50.5vh
     }
 }
