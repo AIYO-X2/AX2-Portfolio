@@ -94,13 +94,14 @@ body::-webkit-scrollbar {
 /* Video scroll playback controls */
 #scroll_video {
     position: fixed;
+    margin: 0 auto;
     top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 0;
     visibility: visible;
+    object-position: center;
+    object-fit:cover;
 }
 
 #set-height {
@@ -110,8 +111,8 @@ body::-webkit-scrollbar {
 #lingering_screen_static {
     position: fixed;
     z-index: 102;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     bottom: 0;
     right: 0;
@@ -147,15 +148,12 @@ body::-webkit-scrollbar {
 
 #alpha_tv_cover {
     position: fixed;
-    display: block;
     margin: 0 auto;
-    bottom: 0;
-    right: 0;
-    left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     z-index: 100;
     opacity: 0;
     pointer-events: none;
@@ -188,7 +186,8 @@ body::-webkit-scrollbar {
     top: 52.5vh;
     position: fixed;
     border: 0;
-    width: 14.5vw;
+    height: 22vh;
+    width: auto;
     opacity: 0;
     z-index: 2;
     visibility: hidden;
@@ -201,19 +200,16 @@ body::-webkit-scrollbar {
     top: 52.5vh;
     position: fixed;
     border: 0;
+    height: 22vh;
+    width: auto;
     opacity: 0;
     z-index: 1;
     visibility:hidden;
     cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
-    border: 0;
-    width: 14.5vw;
+    rotate: 359deg;
 }
 
 /* Project title font controls*/
-.project_titles {
-    /* Justify Content altars the alignment of a text box without adjusting the alignment of the text itslef. To align both the text box and text simultaneously, use text-align */
-}
-
 .project_title {
     width: 90vw;
     top: 10%;
@@ -260,15 +256,24 @@ body::-webkit-scrollbar {
     }
 }
 
+@media (max-width:1100px) {
+    .project_thumbnail {
+        left: 41.5vw;
+    }
+    #animated_tv_static {
+        left: 41.5vw;
+    }
+}
+
 @media (max-width:800px) {
     .project_title {
         font-size: 16pt;
     }
     .project_thumbnail {
-        top: 51.5vh
+        left: 39vw;
     }
     #animated_tv_static {
-        top: 51.5vh
+        left: 39vw;
     }
 }
 
@@ -276,11 +281,23 @@ body::-webkit-scrollbar {
     .project_title {
         font-size: 14pt;
     }
+    .project_thumbnail {
+        left: 37.5vw;
+    }
+    #animated_tv_static {
+        left: 37.5vw;
+    }
 }
 
 @media (max-width:400px) {
     .project_title {
         font-size: 12pt;
+    }
+    .project_thumbnail {
+        left: 35vw;
+    }
+    #animated_tv_static {
+        left: 35vw;
     }
 }
 
@@ -289,9 +306,9 @@ body::-webkit-scrollbar {
         font-size: 12pt;
     }
     .project_thumbnail {
-        top: 50.5vh
+        left: 34vw;
     }
     #animated_tv_static {
-        top: 50.5vh
+        left: 34vh
     }
 }

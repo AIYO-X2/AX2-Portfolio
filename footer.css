@@ -7,7 +7,9 @@
     margin-left: auto;
     margin-right: auto;
     border-top: 1px solid hsl(0, 0%, 15%);
-    top: 6315px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    top: 5915px;
     /* Top value determines the amount of scrollable space for the projects in TV*/
 }
 

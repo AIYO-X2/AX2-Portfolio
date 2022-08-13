@@ -3,6 +3,7 @@ window.onload = function() {
     const alpha_tv_appear = document.querySelector("#alpha_tv_cover");
     const lingering_screen_static = document.querySelector("#lingering_screen_static");
     const animated_tv_static = document.querySelector("#animated_tv_static");
+    const scroll_video = document.querySelector("#scroll_video");
 
     const abhc_vrchitecture_experience_thumbnail_appear = document.querySelector("#abhc_vrchitecture_experience_thumbnail");
     const sensorial_overdrive_ar_experience_thumbnail_appear = document.querySelector("#sensorial_overdrive_ar_experience_thumbnail");
@@ -30,20 +31,17 @@ window.onload = function() {
     // lower numbers = faster playback
     playbackConst = 300, 
     // get page height from video duration
-    setHeight = document.getElementById("set-height"), 
-    // select video element         
-    vid = document.getElementById('scroll_video'); 
-    // var vid = $('#v0')[0]; // jquery option
+    setHeight = document.getElementById("set-height");        
 
     // dynamically set the page height according to video length
-    vid.addEventListener('loadedmetadata', function() {
-    setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+    scroll_video.addEventListener('loadedmetadata', function() {
+    setHeight.style.height = Math.floor(scroll_video.duration) * playbackConst + "px";
     });
 
     // Use requestAnimationFrame for smooth playback
     function scrollPlay(){  
     var frameNumber  = window.pageYOffset/playbackConst;
-    vid.currentTime  = frameNumber;
+    scroll_video.currentTime  = frameNumber;
     window.requestAnimationFrame(scrollPlay);
     }
 
@@ -62,6 +60,8 @@ window.onload = function() {
             animated_tv_static.style.visibility = 'visible';
 
             lingering_screen_static.style.visibility = 'visible';
+
+            window.setTimeout("scroll_video.style.visibility = 'hidden';", 200);
         }
         else {
             alpha_tv_appear.style.opacity = '0';
@@ -70,6 +70,8 @@ window.onload = function() {
             animated_tv_static.style.visibility = 'hidden';
 
             lingering_screen_static.style.visibility = 'hidden';
+
+            scroll_video.style.visibility = 'visible';
         }
 
         // A Boyle Heights Canvas
