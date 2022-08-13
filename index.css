@@ -254,6 +254,9 @@ body::-webkit-scrollbar {
     #scroll_video {
         visibility: hidden;
     }
+    #scroll_instructions {
+        background-color: black;
+    }
 }
 
 @media (max-width:1100px) {
