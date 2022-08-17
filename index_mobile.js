@@ -4,26 +4,45 @@ window.onload = function() {
     const lingering_screen_static = document.querySelector("#lingering_screen_static");
     const animated_tv_static = document.querySelector("#animated_tv_static");
 
-    const a_boyle_heights_canvas_thumbnail_appear = document.querySelector("#a_boyle_heights_canvas_thumbnail");
-    const forsaken_realm_thumbnail_appear = document.querySelector("#forsaken_realm_thumbnail");
-    const moson_thumbnail_appear = document.querySelector("#moson_thumbnail");
-    const hesperovida_thumbnail_appear = document.querySelector("#hesperovida_thumbnail");
-    const the_lurking_mine_thumbnail_appear = document.querySelector("#the_lurking_mine_thumbnail");
-    const unusual_activity_thumbnail_appear = document.querySelector("#unusual_activity_thumbnail");
-    const rolled_flat_thumbnail_appear = document.querySelector("#rolled_flat_thumbnail");
-    const abhc_vrchitecture_experience_thumbnail_appear = document.querySelector("#abhc_vrchitecture_experience_thumbnail");
-    const sensorial_overdrive_ar_experience_thumbnail_appear = document.querySelector("#sensorial_overdrive_ar_experience_thumbnail");
-    const conference_center_plasencia_thumbnail_appear = document.querySelector("#conference_center_plasencia_thumbnail");
-    const sensorial_overdrive_thumbnail_appear = document.querySelector("#sensorial_overdrive_thumbnail");
-    const ventura_x_white_oak_thumbnail_appear = document.querySelector("#ventura_x_white_oak_thumbnail");
-    const the_virtual_parking_lot_thumbnail_appear = document.querySelector("#the_virtual_parking_lot_thumbnail");
-    const virtual_nostalgia_thumbnail_appear = document.querySelector("#virtual_nostalgia_thumbnail");
-    const abstract_pittman_dowell_residence_thumbnail_appear = document.querySelector("#abstract_pittman_dowell_residence_thumbnail");
-    const charles_shaw_white_wine_thumbnail_appear = document.querySelector("#charles_shaw_white_wine_thumbnail");
-    const blur_art_thumbnail_appear = document.querySelector("#blur_art_thumbnail");
-    const formal_drafting_thumbnail_appear = document.querySelector("#formal_drafting_thumbnail");
-    const hand_drawings_thumbnail = document.querySelector("#hand_drawings_thumbnail");
-    const metaphysical_writings_thumbnail = document.querySelector("#metaphysical_writings_thumbnail");
+    const project_title_1 = document.querySelector("#project_title_1");
+    const project_title_2 = document.querySelector("#project_title_2");
+    const project_title_3 = document.querySelector("#project_title_3");
+    const project_title_4 = document.querySelector("#project_title_4");
+    const project_title_5 = document.querySelector("#project_title_5");
+    const project_title_6 = document.querySelector("#project_title_6");
+    const project_title_7 = document.querySelector("#project_title_7");
+    const project_title_8 = document.querySelector("#project_title_8");
+    const project_title_9 = document.querySelector("#project_title_9");
+    const project_title_10 = document.querySelector("#project_title_10");
+    const project_title_11 = document.querySelector("#project_title_11");
+    const project_title_12 = document.querySelector("#project_title_12");
+    const project_title_13 = document.querySelector("#project_title_13");
+    const project_title_14 = document.querySelector("#project_title_14");
+    const project_title_15 = document.querySelector("#project_title_15");
+    const project_title_16 = document.querySelector("#project_title_16");
+    const project_title_17 = document.querySelector("#project_title_17");
+    const project_title_18 = document.querySelector("#project_title_18");
+    const project_title_19 = document.querySelector("#project_title_19");
+
+    const project_thumbnail_1 = document.querySelector("#project_thumbnail_1");
+    const project_thumbnail_2 = document.querySelector("#project_thumbnail_2");
+    const project_thumbnail_3 = document.querySelector("#project_thumbnail_3");
+    const project_thumbnail_4 = document.querySelector("#project_thumbnail_4");
+    const project_thumbnail_5 = document.querySelector("#project_thumbnail_5");
+    const project_thumbnail_6 = document.querySelector("#project_thumbnail_6");
+    const project_thumbnail_7 = document.querySelector("#project_thumbnail_7");
+    const project_thumbnail_8 = document.querySelector("#project_thumbnail_8");
+    const project_thumbnail_9 = document.querySelector("#project_thumbnail_9");
+    const project_thumbnail_10 = document.querySelector("#project_thumbnail_10");
+    const project_thumbnail_11 = document.querySelector("#project_thumbnail_11");
+    const project_thumbnail_12 = document.querySelector("#project_thumbnail_12");
+    const project_thumbnail_13 = document.querySelector("#project_thumbnail_13");
+    const project_thumbnail_14 = document.querySelector("#project_thumbnail_14");
+    const project_thumbnail_15 = document.querySelector("#project_thumbnail_15");
+    const project_thumbnail_16 = document.querySelector("#project_thumbnail_16");
+    const project_thumbnail_17 = document.querySelector("#project_thumbnail_17");
+    const project_thumbnail_18 = document.querySelector("#project_thumbnail_18");
+    const project_thumbnail_19 = document.querySelector("#project_thumbnail_19");
 
     // TV SCROLL SCRIPT
     // Styling format: [constant_name].style.[style_parameter]
@@ -38,6 +57,8 @@ window.onload = function() {
             animated_tv_static.style.visibility = 'visible';
 
             lingering_screen_static.style.visibility = 'visible';
+
+            window.setTimeout("scroll_video.style.visibility = 'hidden';", 200);
         }
         else {
             alpha_tv_appear.style.opacity = '0';
@@ -46,408 +67,390 @@ window.onload = function() {
             animated_tv_static.style.visibility = 'hidden';
 
             lingering_screen_static.style.visibility = 'hidden';
+
+            scroll_video.style.visibility = 'visible';
         }
 
-        // A Boyle Heights Canvas
+        // TV Channel 1
         if(window.scrollY>=100 & window.scrollY<=300) {
-            document.querySelector("#a_boyle_heights_canvas_title").style.visibility = 'visible';
+            project_title_1.style.visibility = 'visible';
 
-            a_boyle_heights_canvas_thumbnail_appear.style.opacity = '0.85';
-            a_boyle_heights_canvas_thumbnail_appear.style.visibility = 'visible';
-            a_boyle_heights_canvas_thumbnail_appear.style.transform = 'translateY(0px)';
-            a_boyle_heights_canvas_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_1.style.opacity = '0.85';
+            project_thumbnail_1.style.visibility = 'visible';
+            project_thumbnail_1.style.transform = 'translateY(0px)';
+            project_thumbnail_1.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#a_boyle_heights_canvas_title").style.visibility = 'hidden';
+            project_title_1.style.visibility = 'hidden';
 
-            a_boyle_heights_canvas_thumbnail_appear.style.opacity = '0';
-            a_boyle_heights_canvas_thumbnail_appear.style.transform = 'translateY(3px)';
-            a_boyle_heights_canvas_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_1.style.opacity = '0';
+            project_thumbnail_1.style.transform = 'translateY(3px)';
+            project_thumbnail_1.style.visibility = 'hidden';
 
             lingering_screen_static.style.opacity = '1';
         }
 
-        // Forsaken Realm
+        // TV Channel 2
         if(window.scrollY>=400 & window.scrollY<=600) {
-            document.querySelector("#forsaken_realm_title").style.visibility = 'visible';
+            project_title_2.style.visibility = 'visible';
 
-            forsaken_realm_thumbnail_appear.style.opacity = '0.85';
-            forsaken_realm_thumbnail_appear.style.visibility = 'visible';
-            forsaken_realm_thumbnail_appear.style.transform = 'translateY(0px)';
-            forsaken_realm_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_2.style.opacity = '0.85';
+            project_thumbnail_2.style.visibility = 'visible';
+            project_thumbnail_2.style.transform = 'translateY(0px)';
+            project_thumbnail_2.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#forsaken_realm_title").style.visibility = 'hidden';
+            project_title_2.style.visibility = 'hidden';
 
-            forsaken_realm_thumbnail_appear.style.opacity = '0';
-            forsaken_realm_thumbnail_appear.style.transform = 'translateY(3px)';
-            forsaken_realm_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_2.style.opacity = '0';
+            project_thumbnail_2.style.transform = 'translateY(3px)';
+            project_thumbnail_2.style.visibility = 'hidden';
         }
 
-        // MO-SON
+        // TV Channel 3
         if(window.scrollY>=700 & window.scrollY<=900) {
-            document.querySelector("#museum_of_sound_of_nails_title").style.visibility = 'visible';
+            project_title_3.style.visibility = 'visible';
 
-            moson_thumbnail_appear.style.opacity = '0.85';
-            moson_thumbnail_appear.style.visibility = 'visible';
-            moson_thumbnail_appear.style.transform = 'translateY(0px)';
-            moson_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_3.style.opacity = '0.85';
+            project_thumbnail_3.style.visibility = 'visible';
+            project_thumbnail_3.style.transform = 'translateY(0px)';
+            project_thumbnail_3.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#museum_of_sound_of_nails_title").style.visibility = 'hidden';
+            project_title_3.style.visibility = 'hidden';
 
-            moson_thumbnail_appear.style.opacity = '0';
-            moson_thumbnail_appear.style.transform = 'translateY(3px)';
-            moson_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_3.style.opacity = '0';
+            project_thumbnail_3.style.transform = 'translateY(3px)';
+            project_thumbnail_3.style.visibility = 'hidden';
         }
 
-        // Hesperovida
+        // TV Channel 4
         if(window.scrollY>=1000 & window.scrollY<=1200) {
-            document.querySelector("#hesperovida_title").style.visibility = 'visible';
+            project_title_4.style.visibility = 'visible';
 
-            hesperovida_thumbnail_appear.style.opacity = '0.85';
-            hesperovida_thumbnail_appear.style.visibility = 'visible';
-            hesperovida_thumbnail_appear.style.transform = 'translateY(0px)';
-            hesperovida_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_4.style.opacity = '0.85';
+            project_thumbnail_4.style.visibility = 'visible';
+            project_thumbnail_4.style.transform = 'translateY(0px)';
+            project_thumbnail_4.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#hesperovida_title").style.visibility = 'hidden';
+            project_title_4.style.visibility = 'hidden';
 
-            hesperovida_thumbnail_appear.style.opacity = '0';
-            hesperovida_thumbnail_appear.style.transform = 'translateY(3px)';
-            hesperovida_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_4.style.opacity = '0';
+            project_thumbnail_4.style.transform = 'translateY(3px)';
+            project_thumbnail_4.style.visibility = 'hidden';
         }
 
-        // The Lurking Mine
+        // TV Channel 5
         if(window.scrollY>=1300 & window.scrollY<=1500) {
-            document.querySelector("#the_lurking_mine_title").style.visibility = 'visible';
+            project_title_5.style.visibility = 'visible';
 
-            the_lurking_mine_thumbnail_appear.style.opacity = '0.85';
-            the_lurking_mine_thumbnail_appear.style.visibility = 'visible';
-            the_lurking_mine_thumbnail_appear.style.transform = 'translateY(0px)';
-            the_lurking_mine_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_5.style.opacity = '0.85';
+            project_thumbnail_5.style.visibility = 'visible';
+            project_thumbnail_5.style.transform = 'translateY(0px)';
+            project_thumbnail_5.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#the_lurking_mine_title").style.visibility = 'hidden';
+            project_title_5.style.visibility = 'hidden';
 
-            the_lurking_mine_thumbnail_appear.style.opacity = '0';
-            the_lurking_mine_thumbnail_appear.style.transform = 'translateY(3px)';
-            the_lurking_mine_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_5.style.opacity = '0';
+            project_thumbnail_5.style.transform = 'translateY(3px)';
+            project_thumbnail_5.style.visibility = 'hidden';
         }
 
-        // Unusual Activity
+        // TV Channel 6
         if(window.scrollY>=1600 & window.scrollY<=1800) {
-            document.querySelector("#unusual_activity_title").style.visibility = 'visible';
+            project_title_6.style.visibility = 'visible';
 
-            unusual_activity_thumbnail_appear.style.opacity = '0.85';
-            unusual_activity_thumbnail_appear.style.visibility = 'visible';
-            unusual_activity_thumbnail_appear.style.transform = 'translateY(0px)';
-            unusual_activity_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_6.style.opacity = '0.85';
+            project_thumbnail_6.style.visibility = 'visible';
+            project_thumbnail_6.style.transform = 'translateY(0px)';
+            project_thumbnail_6.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#unusual_activity_title").style.visibility = 'hidden';
+            project_title_6.style.visibility = 'hidden';
 
-            unusual_activity_thumbnail_appear.style.opacity = '0';
-            unusual_activity_thumbnail_appear.style.transform = 'translateY(3px)';
-            unusual_activity_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_6.style.opacity = '0';
+            project_thumbnail_6.style.transform = 'translateY(3px)';
+            project_thumbnail_6.style.visibility = 'hidden';
         }
 
-        // Rolled Flat
+        // TV Channel 7
         if(window.scrollY>=1900 & window.scrollY<=2100) {
-            document.querySelector("#spatial_bodies_in_motion_rolled_flat_title").style.visibility = 'visible';
+            project_title_7.style.visibility = 'visible';
 
-            rolled_flat_thumbnail_appear.style.opacity = '0.85';
-            rolled_flat_thumbnail_appear.style.visibility = 'visible';
-            rolled_flat_thumbnail_appear.style.transform = 'translateY(0px)';
-            rolled_flat_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_7.style.opacity = '0.85';
+            project_thumbnail_7.style.visibility = 'visible';
+            project_thumbnail_7.style.transform = 'translateY(0px)';
+            project_thumbnail_7.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#spatial_bodies_in_motion_rolled_flat_title").style.visibility = 'hidden';
+            project_title_7.style.visibility = 'hidden';
 
-            rolled_flat_thumbnail_appear.style.opacity = '0';
-            rolled_flat_thumbnail_appear.style.transform = 'translateY(3px)';
-            rolled_flat_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_7.style.opacity = '0';
+            project_thumbnail_7.style.transform = 'translateY(3px)';
+            project_thumbnail_7.style.visibility = 'hidden';
         }
 
-        // ABHC - VRchitecture Experience
+        // TV Channel 8
         if(window.scrollY>=2200 & window.scrollY<=2400) {
-            document.querySelector("#abhc_vrchitecture_experience_title").style.visibility = 'visible';
+            project_title_8.style.visibility = 'visible';
 
-            abhc_vrchitecture_experience_thumbnail_appear.style.opacity = '0.85';
-            abhc_vrchitecture_experience_thumbnail_appear.style.visibility = 'visible';
-            abhc_vrchitecture_experience_thumbnail_appear.style.transform = 'translateY(0px)';
-            abhc_vrchitecture_experience_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_8.style.opacity = '0.85';
+            project_thumbnail_8.style.visibility = 'visible';
+            project_thumbnail_8.style.transform = 'translateY(0px)';
+            project_thumbnail_8.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#abhc_vrchitecture_experience_title").style.visibility = 'hidden';
+            project_title_8.style.visibility = 'hidden';
 
-            abhc_vrchitecture_experience_thumbnail_appear.style.opacity = '0';
-            abhc_vrchitecture_experience_thumbnail_appear.style.transform = 'translateY(3px)';
-            abhc_vrchitecture_experience_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_8.style.opacity = '0';
+            project_thumbnail_8.style.transform = 'translateY(3px)';
+            project_thumbnail_8.style.visibility = 'hidden';
         }
 
-        // Sensorial Overdrive AR Experience
+        // TV Channel 9
         if(window.scrollY>=2500 & window.scrollY<=2700) {
-            document.querySelector("#sensorial_overdrive_ar_experience_title").style.visibility = 'visible';
+            project_title_9.style.visibility = 'visible';
 
-            sensorial_overdrive_ar_experience_thumbnail_appear.style.opacity = '0.85';
-            sensorial_overdrive_ar_experience_thumbnail_appear.style.visibility = 'visible';
-            sensorial_overdrive_ar_experience_thumbnail_appear.style.transform = 'translateY(0px)';
-            sensorial_overdrive_ar_experience_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_9.style.opacity = '0.85';
+            project_thumbnail_9.style.visibility = 'visible';
+            project_thumbnail_9.style.transform = 'translateY(0px)';
+            project_thumbnail_9.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#sensorial_overdrive_ar_experience_title").style.visibility = 'hidden';
+            project_title_9.style.visibility = 'hidden';
 
-            sensorial_overdrive_ar_experience_thumbnail_appear.style.opacity = '0';
-            sensorial_overdrive_ar_experience_thumbnail_appear.style.transform = 'translateY(3px)';
-            sensorial_overdrive_ar_experience_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_9.style.opacity = '0';
+            project_thumbnail_9.style.transform = 'translateY(3px)';
+            project_thumbnail_9.style.visibility = 'hidden';
         }
 
-        // Conference Center, Plasencia
+        // TV Channel 10
         if(window.scrollY>=2800 & window.scrollY<=3000) {
-            document.querySelector("#conference_center_plasencia_title").style.visibility = 'visible';
+            project_title_10.style.visibility = 'visible';
 
-            conference_center_plasencia_thumbnail_appear.style.opacity = '0.85';
-            conference_center_plasencia_thumbnail_appear.style.visibility = 'visible';
-            conference_center_plasencia_thumbnail_appear.style.transform = 'translateY(0px)';
-            conference_center_plasencia_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_10.style.opacity = '0.85';
+            project_thumbnail_10.style.visibility = 'visible';
+            project_thumbnail_10.style.transform = 'translateY(0px)';
+            project_thumbnail_10.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#conference_center_plasencia_title").style.visibility = 'hidden';
+            project_title_10.style.visibility = 'hidden';
 
-            conference_center_plasencia_thumbnail_appear.style.opacity = '0';
-            conference_center_plasencia_thumbnail_appear.style.transform = 'translateY(3px)';
-            conference_center_plasencia_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_10.style.opacity = '0';
+            project_thumbnail_10.style.transform = 'translateY(3px)';
+            project_thumbnail_10.style.visibility = 'hidden';
         }
 
-        // Sensorial Overdrive
+        // TV Channel 11
         if(window.scrollY>=3100 & window.scrollY<=3300) {
-            document.querySelector("#sensorial_overdrive_title").style.visibility = 'visible';
+            project_title_11.style.visibility = 'visible';
 
-            sensorial_overdrive_thumbnail_appear.style.opacity = '0.85';
-            sensorial_overdrive_thumbnail_appear.style.visibility = 'visible';
-            sensorial_overdrive_thumbnail_appear.style.transform = 'translateY(0px)';
-            sensorial_overdrive_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_11.style.opacity = '0.85';
+            project_thumbnail_11.style.visibility = 'visible';
+            project_thumbnail_11.style.transform = 'translateY(0px)';
+            project_thumbnail_11.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#sensorial_overdrive_title").style.visibility = 'hidden';
+            project_title_11.style.visibility = 'hidden';
 
-            sensorial_overdrive_thumbnail_appear.style.opacity = '0';
-            sensorial_overdrive_thumbnail_appear.style.transform = 'translateY(3px)';
-            sensorial_overdrive_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_11.style.opacity = '0';
+            project_thumbnail_11.style.transform = 'translateY(3px)';
+            project_thumbnail_11.style.visibility = 'hidden';
         }
 
-        // Ventura Boulevard x White Oak Avenue
+        // TV Channel 12
         if(window.scrollY>=3400 & window.scrollY<=3600) {
-            document.querySelector("#ventura_x_white_oak_title").style.visibility = 'visible';
+            project_title_12.style.visibility = 'visible';
 
-            ventura_x_white_oak_thumbnail_appear.style.opacity = '0.85';
-            ventura_x_white_oak_thumbnail_appear.style.visibility = 'visible';
-            ventura_x_white_oak_thumbnail_appear.style.transform = 'translateY(0px)';
-            ventura_x_white_oak_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_12.style.opacity = '0.85';
+            project_thumbnail_12.style.visibility = 'visible';
+            project_thumbnail_12.style.transform = 'translateY(0px)';
+            project_thumbnail_12.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#ventura_x_white_oak_title").style.visibility = 'hidden';
+            project_title_12.style.visibility = 'hidden';
 
-            ventura_x_white_oak_thumbnail_appear.style.opacity = '0';
-            ventura_x_white_oak_thumbnail_appear.style.transform = 'translateY(3px)';
-            ventura_x_white_oak_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_12.style.opacity = '0';
+            project_thumbnail_12.style.transform = 'translateY(3px)';
+            project_thumbnail_12.style.visibility = 'hidden';
         }
 
-        // The Virtual Parking Lot
+        // TV Channel 13
         if(window.scrollY>=3700 & window.scrollY<=3900) {
-            document.querySelector("#the_virtual_parking_lot_title").style.visibility = 'visible';
+            project_title_13.style.visibility = 'visible';
 
-            the_virtual_parking_lot_thumbnail_appear.style.opacity = '0.85';
-            the_virtual_parking_lot_thumbnail_appear.style.visibility = 'visible';
-            the_virtual_parking_lot_thumbnail_appear.style.transform = 'translateY(0px)';
-            the_virtual_parking_lot_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_13.style.opacity = '0.85';
+            project_thumbnail_13.style.visibility = 'visible';
+            project_thumbnail_13.style.transform = 'translateY(0px)';
+            project_thumbnail_13.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#the_virtual_parking_lot_title").style.visibility = 'hidden';
+            project_title_13.style.visibility = 'hidden';
 
-            the_virtual_parking_lot_thumbnail_appear.style.opacity = '0';
-            the_virtual_parking_lot_thumbnail_appear.style.transform = 'translateY(3px)';
-            the_virtual_parking_lot_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_13.style.opacity = '0';
+            project_thumbnail_13.style.transform = 'translateY(3px)';
+            project_thumbnail_13.style.visibility = 'hidden';
         }
 
-        // Virtual Nostalgia, As I Recall It
+        // TV Channel 14
         if(window.scrollY>=4000 & window.scrollY<=4200) {
-            document.querySelector("#virtual_nostalgia_as_i_recall_it_title").style.visibility = 'visible';
+            project_title_14.style.visibility = 'visible';
 
-            virtual_nostalgia_thumbnail_appear.style.opacity = '0.85';
-            virtual_nostalgia_thumbnail_appear.style.visibility = 'visible';
-            virtual_nostalgia_thumbnail_appear.style.transform = 'translateY(0px)';
-            virtual_nostalgia_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_14.style.opacity = '0.85';
+            project_thumbnail_14.style.visibility = 'visible';
+            project_thumbnail_14.style.transform = 'translateY(0px)';
+            project_thumbnail_14.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#virtual_nostalgia_as_i_recall_it_title").style.visibility = 'hidden';
+            project_title_14.style.visibility = 'hidden';
 
-            virtual_nostalgia_thumbnail_appear.style.opacity = '0';
-            virtual_nostalgia_thumbnail_appear.style.transform = 'translateY(3px)';
-            virtual_nostalgia_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_14.style.opacity = '0';
+            project_thumbnail_14.style.transform = 'translateY(3px)';
+            project_thumbnail_14.style.visibility = 'hidden';
         }
 
-        // Abstract: Pittman-Dowell Residence
+        // TV Channel 15
         if(window.scrollY>=4300 & window.scrollY<=4500) {
-            document.querySelector("#abstract_pittman_dowell_residence_title").style.visibility = 'visible';
+            project_title_15.style.visibility = 'visible';
 
-            abstract_pittman_dowell_residence_thumbnail_appear.style.opacity = '0.85';
-            abstract_pittman_dowell_residence_thumbnail_appear.style.visibility = 'visible';
-            abstract_pittman_dowell_residence_thumbnail_appear.style.transform = 'translateY(0px)';
-            abstract_pittman_dowell_residence_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_15.style.opacity = '0.85';
+            project_thumbnail_15.style.visibility = 'visible';
+            project_thumbnail_15.style.transform = 'translateY(0px)';
+            project_thumbnail_15.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#abstract_pittman_dowell_residence_title").style.visibility = 'hidden';
+            project_title_15.style.visibility = 'hidden';
 
-            abstract_pittman_dowell_residence_thumbnail_appear.style.opacity = '0';
-            abstract_pittman_dowell_residence_thumbnail_appear.style.transform = 'translateY(3px)';
-            abstract_pittman_dowell_residence_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_15.style.opacity = '0';
+            project_thumbnail_15.style.transform = 'translateY(3px)';
+            project_thumbnail_15.style.visibility = 'hidden';
         }
 
-        // Charles Shaw White Wine
+        // TV Channel 16
         if(window.scrollY>=4600 & window.scrollY<=4800) {
-            document.querySelector("#charles_shaw_pinot_grigio_white_wine_title").style.visibility = 'visible';
+            project_title_16.style.visibility = 'visible';
 
-            charles_shaw_white_wine_thumbnail_appear.style.opacity = '0.85';
-            charles_shaw_white_wine_thumbnail_appear.style.visibility = 'visible';
-            charles_shaw_white_wine_thumbnail_appear.style.transform = 'translateY(0px)';
-            charles_shaw_white_wine_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_16.style.opacity = '0.85';
+            project_thumbnail_16.style.visibility = 'visible';
+            project_thumbnail_16.style.transform = 'translateY(0px)';
+            project_thumbnail_16.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#charles_shaw_pinot_grigio_white_wine_title").style.visibility = 'hidden';
+            project_title_16.style.visibility = 'hidden';
 
-            charles_shaw_white_wine_thumbnail_appear.style.opacity = '0';
-            charles_shaw_white_wine_thumbnail_appear.style.transform = 'translateY(3px)';
-            charles_shaw_white_wine_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_16.style.opacity = '0';
+            project_thumbnail_16.style.transform = 'translateY(3px)';
+            project_thumbnail_16.style.visibility = 'hidden';
         }
 
-        // Blur Art
+        // TV Channel 17
         if(window.scrollY>=4900 & window.scrollY<=5100) {
-            document.querySelector("#blur_art_trio_title").style.visibility = 'visible';
+            project_title_17.style.visibility = 'visible';
 
-            blur_art_thumbnail_appear.style.opacity = '0.85';
-            blur_art_thumbnail_appear.style.visibility = 'visible';
-            blur_art_thumbnail_appear.style.transform = 'translateY(0px)';
-            blur_art_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_17.style.opacity = '0.85';
+            project_thumbnail_17.style.visibility = 'visible';
+            project_thumbnail_17.style.transform = 'translateY(0px)';
+            project_thumbnail_17.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#blur_art_trio_title").style.visibility = 'hidden';
+            project_title_17.style.visibility = 'hidden';
 
-            blur_art_thumbnail_appear.style.opacity = '0';
-            blur_art_thumbnail_appear.style.transform = 'translateY(3px)';
-            blur_art_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_17.style.opacity = '0';
+            project_thumbnail_17.style.transform = 'translateY(3px)';
+            project_thumbnail_17.style.visibility = 'hidden';
         }
 
-        // Formal Drafting
+        // TV Channel 18
         if(window.scrollY>=5200 & window.scrollY<=5400) {
-            document.querySelector("#formal_drafting_title").style.visibility = 'visible';
+            project_title_18.style.visibility = 'visible';
 
-            formal_drafting_thumbnail_appear.style.opacity = '0.85';
-            formal_drafting_thumbnail_appear.style.visibility = 'visible';
-            formal_drafting_thumbnail_appear.style.transform = 'translateY(0px)';
-            formal_drafting_thumbnail_appear.style.transition = '0.2s ease-in-out';
+            project_thumbnail_18.style.opacity = '0.85';
+            project_thumbnail_18.style.visibility = 'visible';
+            project_thumbnail_18.style.transform = 'translateY(0px)';
+            project_thumbnail_18.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#formal_drafting_title").style.visibility = 'hidden';
+            project_title_18.style.visibility = 'hidden';
 
-            formal_drafting_thumbnail_appear.style.opacity = '0';
-            formal_drafting_thumbnail_appear.style.transform = 'translateY(3px)';
-            formal_drafting_thumbnail_appear.style.visibility = 'hidden';
+            project_thumbnail_18.style.opacity = '0';
+            project_thumbnail_18.style.transform = 'translateY(3px)';
+            project_thumbnail_18.style.visibility = 'hidden';
         }
 
-        // Hand-Drawings
+        // TV Channel 19
         if(window.scrollY>=5500 & window.scrollY<=5700) {
-            document.querySelector("#hand-drawings_title").style.visibility = 'visible';
+            project_title_19.style.visibility = 'visible';
 
-            hand_drawings_thumbnail.style.opacity = '0.85';
-            hand_drawings_thumbnail.style.visibility = 'visible';
-            hand_drawings_thumbnail.style.transform = 'translateY(0px)';
-            hand_drawings_thumbnail.style.transition = '0.2s ease-in-out';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = '0.2s ease-in-out';
-        }
-        else {
-            document.querySelector("#hand-drawings_title").style.visibility = 'hidden';
-
-            hand_drawings_thumbnail.style.opacity = '0';
-            hand_drawings_thumbnail.style.transform = 'translateY(3px)';
-            hand_drawings_thumbnail.style.visibility = 'hidden';
-        }
-
-        // Metaphysical Writings
-        if(window.scrollY>=5800 & window.scrollY<=6000) {
-            document.querySelector("#metaphysical_writings_title").style.visibility = 'visible';
-
-            metaphysical_writings_thumbnail.style.opacity = '0.85';
-            metaphysical_writings_thumbnail.style.visibility = 'visible';
-            metaphysical_writings_thumbnail.style.transform = 'translateY(0px)';
-            metaphysical_writings_thumbnail.style.transition = '0.2s ease-in-out';
+            project_thumbnail_19.style.opacity = '0.85';
+            project_thumbnail_19.style.visibility = 'visible';
+            project_thumbnail_19.style.transform = 'translateY(0px)';
+            project_thumbnail_19.style.transition = '0.2s ease-in-out';
 
             lingering_screen_static.style.opacity = '0.2';
             lingering_screen_static.style.transition = '0.2s ease-in-out';
         }
         else {
-            document.querySelector("#metaphysical_writings_title").style.visibility = 'hidden';
+            project_title_19.style.visibility = 'hidden';
 
-            metaphysical_writings_thumbnail.style.opacity = '0';
-            metaphysical_writings_thumbnail.style.transform = 'translateY(3px)';
-            metaphysical_writings_thumbnail.style.visibility = 'hidden';
+            project_thumbnail_19.style.opacity = '0';
+            project_thumbnail_19.style.transform = 'translateY(3px)';
+            project_thumbnail_19.style.visibility = 'hidden';
         }
     }
     tv_scroll();
@@ -464,11 +467,11 @@ window.onload = function() {
     loading_screen.style.transition = '0.5s ease-in-out';
 
     // Page Transition Animation (Static Fade In)
-    var project_thumbnails = document.getElementsByClassName('project_thumbnail');
+    var project_thumbnail = document.getElementsByClassName('project_thumbnail');
     const fullscreen_static = document.querySelector("#fullscreen_static");
 
-    for(var i = 0, j=project_thumbnails.length; i<j; i++){
-    project_thumbnails[i].addEventListener("click", function(){
+    for(var i = 0, j=project_thumbnail.length; i<j; i++){
+    project_thumbnail[i].addEventListener("click", function(){
         fullscreen_static.style.visibility = 'visible';
         fullscreen_static.style.opacity = '1';
         fullscreen_static.style.transition = '0.3s ease-in-out';
