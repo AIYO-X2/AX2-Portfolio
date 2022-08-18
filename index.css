@@ -83,7 +83,6 @@ body::-webkit-scrollbar {
     cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
 }
 
-/* Font controls for "scrolls to immerse"*/
 #scroll_instructions {
     top: 0px;
     color:white;
@@ -95,6 +94,21 @@ body::-webkit-scrollbar {
     text-align: center;
     position: relative;
     z-index: 103;
+}
+
+#scroll_instructions2 {
+    position: fixed;
+    top: 0px;
+    color:white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    width: auto;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 103;
+    visibility: hidden;
 }
 
 #blank_space_for_scroll_animation {
@@ -228,6 +242,9 @@ body::-webkit-scrollbar {
     #scroll_instructions {
         background-color: black;
     }
+    #scroll_instructions2 {
+        background-color: black;
+    }
 }
 
 @media (max-width:1300px) {
@@ -298,10 +315,10 @@ body::-webkit-scrollbar {
         font-size: 12pt;
     }
     .project_thumbnail {
-        left: 35vw;
+        left: 32vw;
     }
     #animated_tv_static {
-        left: 35vw;
+        left: 32vw;
     }
 }
 
@@ -310,9 +327,9 @@ body::-webkit-scrollbar {
         font-size: 12pt;
     }
     .project_thumbnail {
-        left: 31vw;
+        left: 28vw;
     }
     #animated_tv_static {
-        left: 31vh
+        left: 28vh
     }
 }
