@@ -38,3 +38,9 @@
 #left_footer_text {
     margin-left: 5%;
 }
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    #footer {
+        top: 6015px;
+    }
+}
