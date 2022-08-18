@@ -94,6 +94,7 @@ body::-webkit-scrollbar {
     text-align: center;
     position: relative;
     z-index: 103;
+    visibility: visible;
 }
 
 #scroll_instructions2 {
@@ -228,10 +229,6 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
-    #mobile_notice {
-        visibility: visible;
-    }
-
     #blank_space_for_scroll_animation {
         height: 0px;
     }
@@ -241,6 +238,7 @@ body::-webkit-scrollbar {
     }
     #scroll_instructions {
         background-color: black;
+        visibility: hidden;
     }
     #scroll_instructions2 {
         background-color: black;

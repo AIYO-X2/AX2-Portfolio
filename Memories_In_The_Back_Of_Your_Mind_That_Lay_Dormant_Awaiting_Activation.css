@@ -8,10 +8,6 @@ body {
     cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
 }
 
-#headliner_graphics {
-    padding-top: 10%;
-}
-
 .project_description_link_text {
     color: hsl(0, 0%, 75%);
     background-color: rgba(0, 255, 13, 0.5);
@@ -55,28 +51,4 @@ body {
     display: flex;
     justify-content: center;
     cursor: url(Cursors/ring/ring_immersable_black.svg) 64 64, auto;
-}
-
-#text_description {
-    padding-top: 6%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    text-align: center;
-    line-height: 250%;
-    padding-bottom: 10%;
-}
-
-#project_title {
-    color: hsl(0, 0%, 90%);
-}
-
-#project_description {
-    color: hsl(0, 0%, 75%);
-}
-
-#project_details {
-    padding-top: 5%;
-    color: hsl(0, 0%, 50%);
 }
