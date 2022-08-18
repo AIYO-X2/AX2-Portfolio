@@ -75,12 +75,12 @@ window.onload = function() {
             scroll_video.style.visibility = 'visible';
         }
 
-        if(window.scrollY>=100) {
-            scroll_instructions2.innerHTML = null;
+        if(window.scrollY>=200) {
+            scroll_instructions2.style.visibility = 'hidden';
         }
 
         // TV Channel 1
-        if(window.scrollY>=100 & window.scrollY<=300) {
+        if(window.scrollY>=200 & window.scrollY<=400) {
             project_title_1.style.visibility = 'visible';
 
             project_thumbnail_1.style.opacity = '0.85';
@@ -102,7 +102,7 @@ window.onload = function() {
         }
 
         // TV Channel 2
-        if(window.scrollY>=400 & window.scrollY<=600) {
+        if(window.scrollY>=500 & window.scrollY<=700) {
             project_title_2.style.visibility = 'visible';
 
             project_thumbnail_2.style.opacity = '0.85';
@@ -122,7 +122,7 @@ window.onload = function() {
         }
 
         // TV Channel 3
-        if(window.scrollY>=700 & window.scrollY<=900) {
+        if(window.scrollY>=800 & window.scrollY<=1000) {
             project_title_3.style.visibility = 'visible';
 
             project_thumbnail_3.style.opacity = '0.85';
@@ -142,7 +142,7 @@ window.onload = function() {
         }
 
         // TV Channel 4
-        if(window.scrollY>=1000 & window.scrollY<=1200) {
+        if(window.scrollY>=1100 & window.scrollY<=1300) {
             project_title_4.style.visibility = 'visible';
 
             project_thumbnail_4.style.opacity = '0.85';
@@ -162,7 +162,7 @@ window.onload = function() {
         }
 
         // TV Channel 5
-        if(window.scrollY>=1300 & window.scrollY<=1500) {
+        if(window.scrollY>=1400 & window.scrollY<=1600) {
             project_title_5.style.visibility = 'visible';
 
             project_thumbnail_5.style.opacity = '0.85';
@@ -182,7 +182,7 @@ window.onload = function() {
         }
 
         // TV Channel 6
-        if(window.scrollY>=1600 & window.scrollY<=1800) {
+        if(window.scrollY>=1700 & window.scrollY<=1900) {
             project_title_6.style.visibility = 'visible';
 
             project_thumbnail_6.style.opacity = '0.85';
@@ -202,7 +202,7 @@ window.onload = function() {
         }
 
         // TV Channel 7
-        if(window.scrollY>=1900 & window.scrollY<=2100) {
+        if(window.scrollY>=2000 & window.scrollY<=2200) {
             project_title_7.style.visibility = 'visible';
 
             project_thumbnail_7.style.opacity = '0.85';
@@ -222,7 +222,7 @@ window.onload = function() {
         }
 
         // TV Channel 8
-        if(window.scrollY>=2200 & window.scrollY<=2400) {
+        if(window.scrollY>=2300 & window.scrollY<=2500) {
             project_title_8.style.visibility = 'visible';
 
             project_thumbnail_8.style.opacity = '0.85';
@@ -242,7 +242,7 @@ window.onload = function() {
         }
 
         // TV Channel 9
-        if(window.scrollY>=2500 & window.scrollY<=2700) {
+        if(window.scrollY>=2600 & window.scrollY<=2800) {
             project_title_9.style.visibility = 'visible';
 
             project_thumbnail_9.style.opacity = '0.85';
@@ -262,7 +262,7 @@ window.onload = function() {
         }
 
         // TV Channel 10
-        if(window.scrollY>=2800 & window.scrollY<=3000) {
+        if(window.scrollY>=2900 & window.scrollY<=3100) {
             project_title_10.style.visibility = 'visible';
 
             project_thumbnail_10.style.opacity = '0.85';
@@ -282,7 +282,7 @@ window.onload = function() {
         }
 
         // TV Channel 11
-        if(window.scrollY>=3100 & window.scrollY<=3300) {
+        if(window.scrollY>=3200 & window.scrollY<=3400) {
             project_title_11.style.visibility = 'visible';
 
             project_thumbnail_11.style.opacity = '0.85';
@@ -302,7 +302,7 @@ window.onload = function() {
         }
 
         // TV Channel 12
-        if(window.scrollY>=3400 & window.scrollY<=3600) {
+        if(window.scrollY>=3500 & window.scrollY<=3700) {
             project_title_12.style.visibility = 'visible';
 
             project_thumbnail_12.style.opacity = '0.85';
@@ -322,7 +322,7 @@ window.onload = function() {
         }
 
         // TV Channel 13
-        if(window.scrollY>=3700 & window.scrollY<=3900) {
+        if(window.scrollY>=3800 & window.scrollY<=4000) {
             project_title_13.style.visibility = 'visible';
 
             project_thumbnail_13.style.opacity = '0.85';
@@ -342,7 +342,7 @@ window.onload = function() {
         }
 
         // TV Channel 14
-        if(window.scrollY>=4000 & window.scrollY<=4200) {
+        if(window.scrollY>=4100 & window.scrollY<=4300) {
             project_title_14.style.visibility = 'visible';
 
             project_thumbnail_14.style.opacity = '0.85';
@@ -362,7 +362,7 @@ window.onload = function() {
         }
 
         // TV Channel 15
-        if(window.scrollY>=4300 & window.scrollY<=4500) {
+        if(window.scrollY>=4400 & window.scrollY<=4600) {
             project_title_15.style.visibility = 'visible';
 
             project_thumbnail_15.style.opacity = '0.85';
@@ -382,7 +382,7 @@ window.onload = function() {
         }
 
         // TV Channel 16
-        if(window.scrollY>=4600 & window.scrollY<=4800) {
+        if(window.scrollY>=4700 & window.scrollY<=4900) {
             project_title_16.style.visibility = 'visible';
 
             project_thumbnail_16.style.opacity = '0.85';
@@ -402,7 +402,7 @@ window.onload = function() {
         }
 
         // TV Channel 17
-        if(window.scrollY>=4900 & window.scrollY<=5100) {
+        if(window.scrollY>=5000 & window.scrollY<=5200) {
             project_title_17.style.visibility = 'visible';
 
             project_thumbnail_17.style.opacity = '0.85';
@@ -422,7 +422,7 @@ window.onload = function() {
         }
 
         // TV Channel 18
-        if(window.scrollY>=5200 & window.scrollY<=5400) {
+        if(window.scrollY>=5300 & window.scrollY<=5500) {
             project_title_18.style.visibility = 'visible';
 
             project_thumbnail_18.style.opacity = '0.85';
@@ -442,7 +442,7 @@ window.onload = function() {
         }
 
         // TV Channel 19
-        if(window.scrollY>=5500 & window.scrollY<=5700) {
+        if(window.scrollY>=5600 & window.scrollY<=5800) {
             project_title_19.style.visibility = 'visible';
 
             project_thumbnail_19.style.opacity = '0.85';
