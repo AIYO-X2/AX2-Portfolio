@@ -4,6 +4,7 @@ window.onload = function() {
     const lingering_screen_static = document.querySelector("#lingering_screen_static");
     const animated_tv_static = document.querySelector("#animated_tv_static");
     const scroll_video = document.querySelector("#scroll_video");
+    const scroll_instructions2 = document.querySelector("#scroll_instructions2")
 
     const project_title_1 = document.querySelector("#project_title_1");
     const project_title_2 = document.querySelector("#project_title_2");
@@ -71,6 +72,8 @@ window.onload = function() {
     window.addEventListener('scroll', tv_scroll);
     function tv_scroll () {
         if(window.scrollY>=2665) {
+            scroll_instructions2.style.visibility = 'visible';
+
             alpha_tv_appear.style.opacity = '1';
             alpha_tv_appear.style.transition = '0.2s ease-in-out';
 
@@ -83,6 +86,8 @@ window.onload = function() {
             window.setTimeout("scroll_video.style.visibility = 'hidden';", 200);
         }
         else {
+            scroll_instructions2.style.visibility = 'hidden';
+            
             alpha_tv_appear.style.opacity = '0';
 
             animated_tv_static.style.opacity = '0';
@@ -91,6 +96,10 @@ window.onload = function() {
             lingering_screen_static.style.visibility = 'hidden';
 
             scroll_video.style.visibility = 'visible';
+        }
+
+        if(window.scrollY>=2800) {
+            scroll_instructions2.innerHTML = null;
         }
 
         // TV Channel 1
