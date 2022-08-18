@@ -7,6 +7,7 @@
         <link rel="icon" type="image/jpg" href="favicon.jpg">
         <link href="About.css" rel="stylesheet" type="text/css" />
         <link href="project_button_cursors.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="back_button_fallback.js" defer></script>
         <style>
             img {
                 max-width: 100%;
@@ -14,11 +15,9 @@
         </style>
     </head>
     <body>
-        <a href="javascript:history.back()">
-            <div id="back_button">
-                <img id="back_button_graphic" src="Images/Back Arrow.svg">
-            </div>
-        </a>
+        <div id="back_button">
+            <img id="back_button_graphic" src="Images/Back Arrow.svg">
+        </div>
         <div id="content">
             <div id="headliner_graphics">
                 <img id="profile_photo" src="Images/profilepic.png">
