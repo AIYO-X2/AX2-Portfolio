@@ -71,3 +71,29 @@ body {
     width: 66%;
     height: 100%;
 }
+
+#text_description {
+    padding-top: 90vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    line-height: 250%;
+    padding-bottom: 10%;
+    position: relative;
+    z-index: 100;
+}
+
+#project_title {
+    color: hsl(0, 0%, 90%);
+}
+
+#project_description {
+    color: hsl(0, 0%, 75%);
+}
+
+#project_details {
+    padding-top: 5%;
+    color: hsl(0, 0%, 50%);
+}

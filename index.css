@@ -236,10 +236,12 @@ body::-webkit-scrollbar {
     #scroll_video {
         visibility: hidden;
     }
+
     #scroll_instructions {
         background-color: black;
         visibility: hidden;
     }
+    
     #scroll_instructions2 {
         background-color: black;
     }
