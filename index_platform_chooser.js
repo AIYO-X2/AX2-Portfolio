@@ -4,9 +4,10 @@ var index_platform_chooser = document.querySelector
 if (isMobile) {
     const index_mobile = document.createElement('script');
     index_mobile.type = 'text/javascript';
-    index_mobile.src = 'index_mobile.js';
+    index_mobile.src = 'index_lite.js';
     document.head.appendChild(index_mobile);
-    console.log("Mobile Interface");
+    console.log("Lite (Mobile) Interface");
+    document.querySelector("#scroll_video").innerHTML = null;
 }
 else {
     const index = document.createElement('script');

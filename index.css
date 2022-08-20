@@ -110,6 +110,7 @@ body::-webkit-scrollbar {
     transform: translateX(-50%);
     z-index: 103;
     visibility: hidden;
+    background-color: black;
 }
 
 #blank_space_for_scroll_animation {
@@ -235,14 +236,5 @@ body::-webkit-scrollbar {
 
     #scroll_video {
         visibility: hidden;
-    }
-
-    #scroll_instructions {
-        background-color: black;
-        visibility: hidden;
-    }
-    
-    #scroll_instructions2 {
-        background-color: black;
     }
 }
