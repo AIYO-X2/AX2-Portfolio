@@ -237,4 +237,8 @@ body::-webkit-scrollbar {
     #scroll_video {
         visibility: hidden;
     }
+
+    #scroll_instructions {
+        visibility: hidden;
+    }
 }
