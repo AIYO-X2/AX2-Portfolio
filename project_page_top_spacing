@@ -1,5 +1,0 @@
-#top_spacing {
-    height: 6vh;
-    width: 100vw;
-    min-height: 75px;
-}

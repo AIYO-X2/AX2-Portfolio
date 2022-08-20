@@ -1,52 +1,52 @@
 window.onload = function() {
     // Constant "title" defines what the constant is targeting
-    const alpha_tv_cover = document.querySelector("#alpha_tv_cover");
-    const lingering_screen_static = document.querySelector("#lingering_screen_static");
-    const animated_tv_static = document.querySelector("#animated_tv_static");
-    const scroll_video = document.querySelector("#scroll_video");
-    const scroll_instructions2 = document.querySelector("#scroll_instructions2");
-    var project_thumbnail = document.getElementsByClassName('project_thumbnail');
-    const fullscreen_static = document.querySelector("#fullscreen_static");
+    const alpha_tv_cover = document.querySelector("#alpha_tv_cover")
+    const lingering_screen_static = document.querySelector("#lingering_screen_static")
+    const animated_tv_static = document.querySelector("#animated_tv_static")
+    const scroll_video = document.querySelector("#scroll_video")
+    const scroll_instructions2 = document.querySelector("#scroll_instructions2")
+    var project_thumbnail = document.getElementsByClassName('project_thumbnail')
+    const fullscreen_static = document.querySelector("#fullscreen_static")
 
-    const project_title_1 = document.querySelector("#project_title_1");
-    const project_title_2 = document.querySelector("#project_title_2");
-    const project_title_3 = document.querySelector("#project_title_3");
-    const project_title_4 = document.querySelector("#project_title_4");
-    const project_title_5 = document.querySelector("#project_title_5");
-    const project_title_6 = document.querySelector("#project_title_6");
-    const project_title_7 = document.querySelector("#project_title_7");
-    const project_title_8 = document.querySelector("#project_title_8");
-    const project_title_9 = document.querySelector("#project_title_9");
-    const project_title_10 = document.querySelector("#project_title_10");
-    const project_title_11 = document.querySelector("#project_title_11");
-    const project_title_12 = document.querySelector("#project_title_12");
-    const project_title_13 = document.querySelector("#project_title_13");
-    const project_title_14 = document.querySelector("#project_title_14");
-    const project_title_15 = document.querySelector("#project_title_15");
-    const project_title_16 = document.querySelector("#project_title_16");
-    const project_title_17 = document.querySelector("#project_title_17");
-    const project_title_18 = document.querySelector("#project_title_18");
-    const project_title_19 = document.querySelector("#project_title_19");
+    const project_title_1 = document.querySelector("#project_title_1")
+    const project_title_2 = document.querySelector("#project_title_2")
+    const project_title_3 = document.querySelector("#project_title_3")
+    const project_title_4 = document.querySelector("#project_title_4")
+    const project_title_5 = document.querySelector("#project_title_5")
+    const project_title_6 = document.querySelector("#project_title_6")
+    const project_title_7 = document.querySelector("#project_title_7")
+    const project_title_8 = document.querySelector("#project_title_8")
+    const project_title_9 = document.querySelector("#project_title_9")
+    const project_title_10 = document.querySelector("#project_title_10")
+    const project_title_11 = document.querySelector("#project_title_11")
+    const project_title_12 = document.querySelector("#project_title_12")
+    const project_title_13 = document.querySelector("#project_title_13")
+    const project_title_14 = document.querySelector("#project_title_14")
+    const project_title_15 = document.querySelector("#project_title_15")
+    const project_title_16 = document.querySelector("#project_title_16")
+    const project_title_17 = document.querySelector("#project_title_17")
+    const project_title_18 = document.querySelector("#project_title_18")
+    const project_title_19 = document.querySelector("#project_title_19")
 
-    const project_thumbnail_1 = document.querySelector("#project_thumbnail_1");
-    const project_thumbnail_2 = document.querySelector("#project_thumbnail_2");
-    const project_thumbnail_3 = document.querySelector("#project_thumbnail_3");
-    const project_thumbnail_4 = document.querySelector("#project_thumbnail_4");
-    const project_thumbnail_5 = document.querySelector("#project_thumbnail_5");
-    const project_thumbnail_6 = document.querySelector("#project_thumbnail_6");
-    const project_thumbnail_7 = document.querySelector("#project_thumbnail_7");
-    const project_thumbnail_8 = document.querySelector("#project_thumbnail_8");
-    const project_thumbnail_9 = document.querySelector("#project_thumbnail_9");
-    const project_thumbnail_10 = document.querySelector("#project_thumbnail_10");
-    const project_thumbnail_11 = document.querySelector("#project_thumbnail_11");
-    const project_thumbnail_12 = document.querySelector("#project_thumbnail_12");
-    const project_thumbnail_13 = document.querySelector("#project_thumbnail_13");
-    const project_thumbnail_14 = document.querySelector("#project_thumbnail_14");
-    const project_thumbnail_15 = document.querySelector("#project_thumbnail_15");
-    const project_thumbnail_16 = document.querySelector("#project_thumbnail_16");
-    const project_thumbnail_17 = document.querySelector("#project_thumbnail_17");
-    const project_thumbnail_18 = document.querySelector("#project_thumbnail_18");
-    const project_thumbnail_19 = document.querySelector("#project_thumbnail_19");
+    const project_thumbnail_1 = document.querySelector("#project_thumbnail_1")
+    const project_thumbnail_2 = document.querySelector("#project_thumbnail_2")
+    const project_thumbnail_3 = document.querySelector("#project_thumbnail_3")
+    const project_thumbnail_4 = document.querySelector("#project_thumbnail_4")
+    const project_thumbnail_5 = document.querySelector("#project_thumbnail_5")
+    const project_thumbnail_6 = document.querySelector("#project_thumbnail_6")
+    const project_thumbnail_7 = document.querySelector("#project_thumbnail_7")
+    const project_thumbnail_8 = document.querySelector("#project_thumbnail_8")
+    const project_thumbnail_9 = document.querySelector("#project_thumbnail_9")
+    const project_thumbnail_10 = document.querySelector("#project_thumbnail_10")
+    const project_thumbnail_11 = document.querySelector("#project_thumbnail_11")
+    const project_thumbnail_12 = document.querySelector("#project_thumbnail_12")
+    const project_thumbnail_13 = document.querySelector("#project_thumbnail_13")
+    const project_thumbnail_14 = document.querySelector("#project_thumbnail_14")
+    const project_thumbnail_15 = document.querySelector("#project_thumbnail_15")
+    const project_thumbnail_16 = document.querySelector("#project_thumbnail_16")
+    const project_thumbnail_17 = document.querySelector("#project_thumbnail_17")
+    const project_thumbnail_18 = document.querySelector("#project_thumbnail_18")
+    const project_thumbnail_19 = document.querySelector("#project_thumbnail_19")
 
     // SCROLL PLAYBACK FUNCTION
     var frameNumber = 0, // start video at frame 0
@@ -509,8 +509,32 @@ window.onload = function() {
     }
 
     // Controls scale and equidistant spacing for project thumbnails
+    const project_thumbnail_class = document.querySelectorAll('.project_thumbnail')
+
+    if (alpha_tv_cover.width/alpha_tv_cover.height > 16/9) {
+            document.querySelector('#animated_tv_static').style.height = 'auto';
+            document.querySelector('#animated_tv_static').style.width = '15.5vw';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50% - 7.25vw)';
+
+            project_thumbnail_class.forEach(project_thumbnail => {
+                project_thumbnail.style.height = 'auto';
+                project_thumbnail.style.width = '15.5vw';
+                project_thumbnail.style.left = 'calc(50% - 7.25vw)';
+            });
+        }
+        else {
+            document.querySelector('#animated_tv_static').style.height = '21vh';
+            document.querySelector('#animated_tv_static').style.width = 'auto';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50% - (18vh * (3/4)))';
+
+            project_thumbnail_class.forEach(project_thumbnail => {
+                project_thumbnail.style.height = '21vh';
+                project_thumbnail.style.width = 'auto';
+                project_thumbnail.style.left = 'calc(50% - (18vh * (3/4)))';
+            })
+        }
+
     window.addEventListener('resize', function(){
-        const project_thumbnail_class = document.querySelectorAll('.project_thumbnail')
         if (alpha_tv_cover.width/alpha_tv_cover.height > 16/9) {
             document.querySelector('#animated_tv_static').style.height = 'auto';
             document.querySelector('#animated_tv_static').style.width = '15.5vw';
