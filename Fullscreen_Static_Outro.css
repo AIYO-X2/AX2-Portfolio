@@ -13,3 +13,19 @@
     visibility: visible;
     cursor: none;
 }
+
+#loading_text {
+    padding: 5px;
+    font-size: 22pt;
+    width: 25%;
+    left: calc(50% - (25%/2));
+    position: fixed;
+    z-index: 10001;
+    color: black;
+    top: 20%;
+    text-align: center;
+    line-height: 150%;
+    z-index: 10000001;
+    opacity: 1;
+    background-color: rgb(0, 255, 13);
+}

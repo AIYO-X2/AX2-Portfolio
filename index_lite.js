@@ -466,6 +466,7 @@ window.onload = function() {
     // Time is in ms
     window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
     window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1000)
+    window.setTimeout("document.getElementById('loading_screen').innerHTML = null;", 1000)
     loading_screen.style.transition = '0.5s ease-in-out';
 
     // Page Transition Animation (Static Fade In)
