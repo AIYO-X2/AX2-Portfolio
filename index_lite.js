@@ -46,28 +46,14 @@ window.onload = function() {
     const project_thumbnail_19 = document.querySelector("#project_thumbnail_19");
 
     // TV SCROLL SCRIPT
-    // Styling format: [constant_name].style.[style_parameter]
     window.addEventListener('scroll', tv_scroll);
     function tv_scroll () {
-        if(window.scrollY>=0) {
-            scroll_instructions2.style.visibility = 'visible';
+        scroll_instructions2.style.visibility = 'visible';
 
-            animated_tv_static.style.opacity = '1';
-            animated_tv_static.style.transition = '0.2s ease-in-out';
-            animated_tv_static.style.visibility = 'visible';
+        animated_tv_static.style.opacity = '1';
+        animated_tv_static.style.visibility = 'visible';
 
-            lingering_screen_static.style.visibility = 'visible';
-
-            window.setTimeout("scroll_video.style.visibility = 'hidden';", 200);
-        }
-        else {
-            scroll_instructions2.style.visibility = 'hidden';
-
-            animated_tv_static.style.opacity = '0';
-            animated_tv_static.style.visibility = 'hidden';
-
-            lingering_screen_static.style.visibility = 'hidden';
-        }
+        lingering_screen_static.style.visibility = 'visible';
 
         if(window.scrollY>=200) {
             scroll_instructions2.style.visibility = 'hidden';
@@ -457,17 +443,11 @@ window.onload = function() {
     }
     tv_scroll();
 
-    // PROJECT TEXT CLICK SCRIPT (UNUSED)
-    // document.querySelector("#abhc_vrchitecture_experience_title").addEventListener("click", function(){
-    //    window.scroll(0, 2800)
-    // });
-
-    // LOADING SCREEN SCRIPT (Temporarily //'d while mobile is not yet supported)
-    // Time is in ms
+    // LOADING SCREEN SCRIPT
     window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
-    window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1000)
-    window.setTimeout("document.getElementById('loading_screen').innerHTML = null;", 1000)
-    loading_screen.style.transition = '0.5s ease-in-out';
+    loading_screen.style.transition = '1.0s ease-in-out';
+    window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1500)
+    window.setTimeout("document.getElementById('loading_screen').innerHTML = null;", 1500)
 
     // Page Transition Animation (Static Fade In)
     var project_thumbnail = document.getElementsByClassName('project_thumbnail');
@@ -518,10 +498,3 @@ window.onload = function() {
 function delay (URL) {
     setTimeout( function() { window.location = URL }, 400 );
 };
-
-// Page Transition Animation (Static Disappears on Page Leave)
-// window.onunload = function() {
-//    fullscreen_static.style.visibility = 'visible';
-//    fullscreen_static.style.opacity = '0';
-//    fullscreen_static.style.pointerEvents = 'none';
-//};

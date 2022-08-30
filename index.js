@@ -70,7 +70,6 @@ window.onload = function() {
     window.requestAnimationFrame(scrollPlay);
 
     // TV SCROLL SCRIPT
-    // Styling format: [constant_name].style.[style_parameter]
     window.addEventListener('scroll', tv_scroll);
     function tv_scroll () {
         if(window.scrollY>=2665) {
@@ -489,13 +488,11 @@ window.onload = function() {
     tv_scroll();
 
     // LOADING SCREEN SCRIPT
-    // Time is in ms
     window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
-    window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1000)
-    window.setTimeout("document.getElementById('loading_screen').innerHTML = null;", 1000)
-    loading_screen.style.transition = '0.5s ease-in-out';
+    loading_screen.style.transition = '1.0s ease-in-out';
+    window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1500)
+    window.setTimeout("document.getElementById('loading_screen').innerHTML = null;", 1500)
     
-
     // Page Transition Animation (Static Fade In)
     for(var i = 0, j=project_thumbnail.length; i<j; i++){
         project_thumbnail[i].addEventListener("click", function(){

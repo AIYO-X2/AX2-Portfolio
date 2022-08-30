@@ -25,6 +25,6 @@ body {
     z-index: 1001;
 }
 
-.project_description_link_text {
+a {
     cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
 }

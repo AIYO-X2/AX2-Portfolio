@@ -5,7 +5,6 @@ body, html {
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    cursor: url(Cursors/ring/ring_default.svg) 16 16, auto;
 }
 
 #headliner_graphics {
