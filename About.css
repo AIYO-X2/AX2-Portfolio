@@ -11,12 +11,6 @@ body {
     padding-top: 10%;
 }
 
-.project_description_link_text {
-    color: hsl(0, 0%, 75%);
-    background-color: rgba(0, 255, 13, 0.5);
-    text-decoration: none;
-}
-
 #content {
     padding-top: 6%;
     padding-bottom: 1%;

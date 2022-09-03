@@ -1,0 +1,27 @@
+[
+  {
+    "libraryIdentifier" : "8139fcf43afc6ff661614345f26d78fd",
+    "format" : "image",
+    "displayName" : "AR Tracker.png"
+  },
+  {
+    "libraryIdentifier" : "cd6af047a8ea2867f51ac40c4b12fd24",
+    "format" : "model",
+    "displayName" : "(Room) 25 or 6 to 4 Sensory XR Model.usdz"
+  },
+  {
+    "libraryIdentifier" : "49ac7f8f1d35ec049c1475582ecc6ef5",
+    "format" : "model",
+    "displayName" : "(Lines 1) 25 or 6 to 4 Sensory XR Model.usdz"
+  },
+  {
+    "libraryIdentifier" : "9fd48b1f0a598001af1933d16e2c7b96",
+    "format" : "model",
+    "displayName" : "(Lines 2) 25 or 6 to 4 Sensory XR Model.usdz"
+  },
+  {
+    "libraryIdentifier" : "10f2228351786b7ccbf916efa2b3d2ae",
+    "format" : "model",
+    "displayName" : "(Lines 3) 25 or 6 to 4 Sensory XR Model.usdz"
+  }
+]

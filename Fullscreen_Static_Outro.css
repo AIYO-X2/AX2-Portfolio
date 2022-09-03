@@ -9,9 +9,8 @@
     left: 0;
     top: 0;
     opacity: 1;
-    pointer-events: none;
     visibility: visible;
-    cursor: none;
+    cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
 }
 
 #loading_screen {

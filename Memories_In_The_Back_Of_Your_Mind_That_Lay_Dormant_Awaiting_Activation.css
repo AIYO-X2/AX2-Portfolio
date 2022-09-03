@@ -7,25 +7,17 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.project_description_link_text {
-    color: hsl(0, 0%, 75%);
-    background-color: rgba(0, 255, 13, 0.5);
-    text-decoration: none;
-}
-
 .grid_panel {
     padding-top: 0;
-    padding-bottom: 1%;
     display: grid;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: auto auto auto auto auto;
-    column-gap: 5%;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .grid_item {
-    width: 100%;
+    width: 70%;
     height: auto;
     padding-top: 2.5%;
     padding-bottom: 0;
@@ -34,6 +26,7 @@ body {
     background: rgb(0, 0, 0);
     box-shadow: 0 0px 20px 0 hsl(0, 0%, 15%);
     border-radius: 15px;
+    margin-bottom: 15%;
 }
 
 .grid_text {
@@ -45,9 +38,19 @@ body {
 }
 
 .audio_player {
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: center;
-    cursor: url(Cursors/ring/ring_immersable_black.svg) 64 64, auto;
+    width: 100%;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    .grid_panel {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:700px) {
+    .grid_panel {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

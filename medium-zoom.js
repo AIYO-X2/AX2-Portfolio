@@ -478,7 +478,12 @@
     styleInject(css);
     return mediumZoom;
   });
+
   mediumZoom('.grid_photo', {
+    background: '#000',
+    scrollOffset: 30,
+  })
+  mediumZoom('#headline_banner', {
     background: '#000',
     scrollOffset: 30,
   })

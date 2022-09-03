@@ -1,16 +1,10 @@
 body, html {
-    background-color: rgb(10, 10, 10);
+    background-color: hsl(0, 0%, 4%);
     margin: 0;
 }
 
 body {
     font-family: 'Courier New', Courier, monospace;
-}
-
-.project_description_link_text {
-    color: hsl(0, 0%, 75%);
-    background-color: rgba(0, 255, 13, 0.5);
-    text-decoration: none;
 }
 
 .grid_photos {

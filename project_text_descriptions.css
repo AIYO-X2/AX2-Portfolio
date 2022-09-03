@@ -13,19 +13,120 @@
 
 #project_title {
     color: hsl(0, 0%, 90%);
+    position: sticky;
+    top: 0;
+    background: linear-gradient(
+        to bottom,
+        hsl(0, 0%, 4%) 50%,
+        hsla(0, 0%, 4%, 0) 100%
+    );
+    padding-top: 2%;
+    padding-bottom: 5%;
 }
 
 #project_description {
     color: hsl(0, 0%, 75%);
+    z-index: -1;
+}
+
+#project_description_collapsed {
+    color: hsl(0, 0%, 75%);
+    overflow: hidden;
+    max-height: 300px;
+    background: linear-gradient(
+        to bottom,
+        hsl(0, 0%, 75%) 50%,
+        hsl(0, 0%, 4%) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+}
+
+#expand_description_text {
+    color: hsl(0, 0%, 75%);
+    transform: translateY(-30px);
+    font-weight: bold;
+    cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
+    box-shadow: 0 0 0px 1px hsl(0, 0%, 75%);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+#expand_description_text:hover {
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 0px 2px hsl(0, 0%, 75%);
+    transition: 0.25s;
+}
+
+.project_description_link_text {
+    color: hsl(0, 0%, 75%);
+    background-color: rgba(0, 255, 13, 0.5);
+    text-decoration: none;
+    cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
+}
+
+.project_download_link_text {
+    color: hsl(0, 0%, 75%);
+    background-color: rgba(0, 255, 13, 0.5);
+    text-decoration: none;
+    cursor: url(Cursors/ring/ring_download.png) 64 64, auto;
 }
 
 #project_details {
     padding-top: 5%;
     color: hsl(0, 0%, 50%);
+    z-index: -1;
+}
+
+#corresponding_project {
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: auto;
+    background-color: hsl(0, 0%, 10%);
+    transition: 0.3s;
+    color: hsl(0, 0%, 75%);
+    padding-bottom: 15px;
+}
+
+#corresponding_project_text {
+    text-align: center;
+    padding: 15px;
+}
+
+#corresponding_project_button {
+    text-decoration: none;
+}
+
+#corresponding_project_button_shape {
+    width: 20%;
+    min-width: 100px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 9999px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px 1px hsl(0, 0%, 40%);
+    transition: 0.5s;
+    color: hsl(0, 0%, 75%);
+}
+
+#corresponding_project_button_shape:hover {
+    box-shadow: 0 0 0px 1px hsl(0, 0%, 60%);
+    transition: 0.25s;
+    color: hsl(0, 0%, 100%);
+}
+
+#corresponding_project_button_text {
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 100%;
 }
 
 @media (max-width:700px) {
-    #text_description {
+    p {
         font-size: 10pt;
     }
 }
