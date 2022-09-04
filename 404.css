@@ -47,6 +47,7 @@ body::-webkit-scrollbar {
 
 a {
     color: black;
+    cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
 }
 
 #email_button {

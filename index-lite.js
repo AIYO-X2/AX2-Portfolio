@@ -1,9 +1,12 @@
 window.onload = function() {
     // Constant "title" defines what the constant is targeting
-    const alpha_tv_appear = document.querySelector("#alpha_tv_cover");
+    const alpha_tv_cover = document.querySelector("#alpha_tv_cover");
     const lingering_screen_static = document.querySelector("#lingering_screen_static");
     const animated_tv_static = document.querySelector("#animated_tv_static");
     const scroll_instructions2 = document.querySelector("#scroll_instructions2")
+    var project_thumbnail = document.getElementsByClassName('project_thumbnail')
+    const fullscreen_static = document.querySelector("#fullscreen_static");
+    const project_thumbnail_class = document.querySelectorAll('.project_thumbnail')
 
     const project_title_1 = document.querySelector("#project_title_1");
     const project_title_2 = document.querySelector("#project_title_2");
@@ -443,6 +446,39 @@ window.onload = function() {
     }
     tv_scroll();
 
+    // TV ZOOM SCRIPT
+    for(var i = 0, j=project_thumbnail.length; i<j; i++){
+        project_thumbnail[i].addEventListener("mouseover", function(){
+            project_thumbnail_class.forEach(project_thumbnail => {
+                project_thumbnail.style.scale = '110%';
+            project_thumbnail.style.transition = '3.0s';
+            })
+        })
+    };
+    for(var i = 0, j=project_thumbnail.length; i<j; i++){
+        project_thumbnail[i].addEventListener("mouseout", function(){
+            project_thumbnail_class.forEach(project_thumbnail => {
+                project_thumbnail.style.scale = '100%';
+            project_thumbnail.style.transition = '0.5s';
+            })
+        })
+    };
+    function project_thumbnails_zoom_to_100_percent() {
+        project_thumbnail_class.forEach(project_thumbnail => {
+            project_thumbnail.style.scale = '100%';
+            project_thumbnail.style.transition = '9999999999999999s';
+        })
+    }
+    for(var i = 0, j=project_thumbnail.length; i<j; i++){
+        project_thumbnail[i].addEventListener("click", function(){
+            project_thumbnail_class.forEach(project_thumbnail => {
+                project_thumbnail.style.scale = '200%';
+                project_thumbnail.style.transition = '0.3s';
+                window.setTimeout(project_thumbnails_zoom_to_100_percent, 300)
+            })
+        })
+    };
+
     // LOADING SCREEN SCRIPT
     window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
     loading_screen.style.transition = '1.0s ease-in-out';
@@ -451,7 +487,6 @@ window.onload = function() {
 
     // Page Transition Animation (Static Fade In)
     var project_thumbnail = document.getElementsByClassName('project_thumbnail');
-    const fullscreen_static = document.querySelector("#fullscreen_static");
 
     for(var i = 0, j=project_thumbnail.length; i<j; i++){
         project_thumbnail[i].addEventListener("click", function(){
@@ -467,8 +502,30 @@ window.onload = function() {
     }
 
     // Controls scale and equidistant spacing for project thumbnails
+    if (alpha_tv_cover.width/alpha_tv_cover.height > 16/9) {
+            document.querySelector('#animated_tv_static').style.height = 'auto';
+            document.querySelector('#animated_tv_static').style.width = '15.5vw';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50% - 7.25vw)';
+
+            project_thumbnail_class.forEach(project_thumbnail => {
+                project_thumbnail.style.height = 'auto';
+                project_thumbnail.style.width = '15.5vw';
+                project_thumbnail.style.left = 'calc(50% - 7.25vw)';
+            });
+        }
+        else {
+            document.querySelector('#animated_tv_static').style.height = '21vh';
+            document.querySelector('#animated_tv_static').style.width = 'auto';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50% - (18vh * (3/4)))';
+
+            project_thumbnail_class.forEach(project_thumbnail => {
+                project_thumbnail.style.height = '21vh';
+                project_thumbnail.style.width = 'auto';
+                project_thumbnail.style.left = 'calc(50% - (18vh * (3/4)))';
+            })
+        }
+
     window.addEventListener('resize', function(){
-        const project_thumbnail_class = document.querySelectorAll('.project_thumbnail')
         if (alpha_tv_cover.width/alpha_tv_cover.height > 16/9) {
             document.querySelector('#animated_tv_static').style.height = 'auto';
             document.querySelector('#animated_tv_static').style.width = '15.5vw';

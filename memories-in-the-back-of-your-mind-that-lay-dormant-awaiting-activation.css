@@ -43,14 +43,14 @@ body {
     width: 100%;
 }
 
-@media only screen and (hover: none) and (pointer: coarse) {
-    .grid_panel {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 @media (max-width:700px) {
     .grid_panel {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:500px) {
+    .grid_panel {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

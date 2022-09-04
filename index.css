@@ -121,6 +121,13 @@ body::-webkit-scrollbar {
     z-index: 103;
     visibility: hidden;
     background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+green_highlight_text {
+    background-color: hsl(123, 100%, 50%);
+    color: black;
 }
 
 #blank_space_for_scroll_animation {
@@ -207,6 +214,7 @@ body::-webkit-scrollbar {
     visibility: hidden;
     cursor: url(Cursors/ring/ring_immersable_white.png) 64 64, auto;
     rotate: 359deg;
+    scale: 100%;
 }
 
 #animated_tv_static {
@@ -233,7 +241,7 @@ body::-webkit-scrollbar {
     visibility: hidden;
     line-height: 100%;
     word-break: break-all;
-    color: rgb(0, 255, 13);
+    color: hsl(123, 100%, 50%);
     background-color: rgba(255, 255, 255, 0);
     font-family:'Courier New', Courier, monospace;
     font-size: 20pt;

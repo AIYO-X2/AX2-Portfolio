@@ -4,7 +4,7 @@ var index_platform_chooser = document.querySelector
 if (isMobile) {
     const index_mobile = document.createElement('script');
     index_mobile.type = 'text/javascript';
-    index_mobile.src = 'index_lite.js';
+    index_mobile.src = 'index-lite.js';
     document.head.appendChild(index_mobile);
     console.log("Lite (Mobile) Interface");
     document.querySelector("#scroll_video").innerHTML = null;
@@ -12,7 +12,7 @@ if (isMobile) {
 else if (navigator.userAgent.indexOf("Firefox") != -1 ) {
     const index_mobile = document.createElement('script');
     index_mobile.type = 'text/javascript';
-    index_mobile.src = 'index_lite.js';
+    index_mobile.src = 'index-lite.js';
     document.head.appendChild(index_mobile);
     console.log("Lite (Mobile) Interface");
     document.querySelector("#scroll_video").innerHTML = null;
