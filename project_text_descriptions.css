@@ -111,6 +111,7 @@ audio {
 
 #corresponding_project_button {
     text-decoration: none;
+    cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
 }
 
 #corresponding_project_button_shape {

@@ -43,13 +43,13 @@ body {
     width: 100%;
 }
 
-@media (max-width:700px) {
+@media (max-width:900px) {
     .grid_panel {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     .grid_panel {
         grid-template-columns: repeat(1, 1fr);
     }

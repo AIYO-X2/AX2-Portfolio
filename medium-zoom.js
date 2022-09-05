@@ -51,6 +51,7 @@
       var overlay = document.createElement("div");
       overlay.classList.add("medium-zoom-overlay");
       overlay.style.background = background;
+      overlay.style.zIndex = '2';
       return overlay;
     };
     var cloneTarget = function cloneTarget(template) {
@@ -482,8 +483,12 @@
   mediumZoom('.grid_photo', {
     background: '#000',
     scrollOffset: 30,
-  })
+  });
+  mediumZoom('.grid_photo2', {
+    background: '#000',
+    scrollOffset: 30,
+  });
   mediumZoom('#headline_banner', {
     background: '#000',
     scrollOffset: 30,
-  })
+  });

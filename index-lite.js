@@ -463,18 +463,11 @@ window.onload = function() {
             })
         })
     };
-    function project_thumbnails_zoom_to_100_percent() {
-        project_thumbnail_class.forEach(project_thumbnail => {
-            project_thumbnail.style.scale = '100%';
-            project_thumbnail.style.transition = '9999999999999999s';
-        })
-    }
     for(var i = 0, j=project_thumbnail.length; i<j; i++){
         project_thumbnail[i].addEventListener("click", function(){
             project_thumbnail_class.forEach(project_thumbnail => {
                 project_thumbnail.style.scale = '200%';
                 project_thumbnail.style.transition = '0.3s';
-                window.setTimeout(project_thumbnails_zoom_to_100_percent, 300)
             })
         })
     };
@@ -486,20 +479,29 @@ window.onload = function() {
     window.setTimeout("document.getElementById('loading_screen').innerHTML = null;", 1500)
 
     // Page Transition Animation (Static Fade In)
-    var project_thumbnail = document.getElementsByClassName('project_thumbnail');
-
     for(var i = 0, j=project_thumbnail.length; i<j; i++){
         project_thumbnail[i].addEventListener("click", function(){
             fullscreen_static.style.visibility = 'visible';
             fullscreen_static.style.opacity = '1';
             fullscreen_static.style.transition = '0.3s ease-in-out';
             fullscreen_static.style.pointerEvents = 'all';
-
-            window.setTimeout("fullscreen_static.style.visibility = 'hidden';", 300)
-            window.setTimeout("fullscreen_static.style.opacity = '0';", 300)
-            window.setTimeout("fullscreen_static.style.pointerEvents = 'none';", 300)
         });
     }
+
+    window.onpageshow = function(){
+        // Rescales project thumbnails to 100% after immersive zoom
+        for(var i = 0, j=project_thumbnail.length; i<j; i++){
+            project_thumbnail_class.forEach(project_thumbnail => {
+                project_thumbnail.style.scale = '100%';
+                project_thumbnail.style.transition = '1s';
+            })
+        }
+
+        // Hides full screen static on page return
+        fullscreen_static.style.visibility = 'hidden';
+        fullscreen_static.style.opacity = '0';
+        fullscreen_static.style.transition = '0s';
+    };
 
     // Controls scale and equidistant spacing for project thumbnails
     if (alpha_tv_cover.width/alpha_tv_cover.height > 16/9) {
