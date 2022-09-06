@@ -24,7 +24,7 @@ body {
 }
 
 #back_button_graphic {
-    position: fixed;
+    position: relative;
     height: 20px;
     width: 20px;
     transform: translate(13px, 14px);
