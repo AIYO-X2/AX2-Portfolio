@@ -493,7 +493,7 @@ window.onload = function() {
         project_thumbnail[i].addEventListener("mouseover", function(){
             project_thumbnail_class.forEach(project_thumbnail => {
                 project_thumbnail.style.scale = '110%';
-            project_thumbnail.style.transition = '3.0s';
+                project_thumbnail.style.transition = '3.0s';
             })
         })
     };
@@ -501,7 +501,7 @@ window.onload = function() {
         project_thumbnail[i].addEventListener("mouseout", function(){
             project_thumbnail_class.forEach(project_thumbnail => {
                 project_thumbnail.style.scale = '100%';
-            project_thumbnail.style.transition = '0.5s';
+                project_thumbnail.style.transition = '0.5s';
             })
         })
     };
@@ -510,6 +510,7 @@ window.onload = function() {
             project_thumbnail_class.forEach(project_thumbnail => {
                 project_thumbnail.style.scale = '200%';
                 project_thumbnail.style.transition = '0.3s';
+                project_thumbnail.style.rotate = '360deg';
             })
         })
     };
@@ -535,6 +536,7 @@ window.onload = function() {
         for(var i = 0, j=project_thumbnail.length; i<j; i++){
             project_thumbnail_class.forEach(project_thumbnail => {
                 project_thumbnail.style.scale = '100%';
+                project_thumbnail.style.rotate = '359deg';
                 project_thumbnail.style.transition = '0s';
             })
         }

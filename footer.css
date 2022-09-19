@@ -10,6 +10,7 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     top: 5715px;
+    grid-template-columns: repeat(5, 1fr);
     /* Top value determines the amount of scrollable space for the projects in TV*/
 }
 
