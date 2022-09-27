@@ -137,6 +137,7 @@ audio {
     text-align: center;
     text-decoration: none;
     line-height: 100%;
+    color: hsl(0, 0%, 75%);
 }
 
 @media (max-width:700px) {
