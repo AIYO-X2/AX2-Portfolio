@@ -131,7 +131,7 @@ green_highlight_text {
 }
 
 #blank_space_for_scroll_animation {
-    height: 3350px;
+    height: 9025px;
 }
 
 /* Video scroll playback controls */
@@ -248,9 +248,6 @@ green_highlight_text {
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
-    #blank_space_for_scroll_animation {
-        height: 0px;
-    }
 
     #scroll_video {
         visibility: hidden;
@@ -266,9 +263,6 @@ green_highlight_text {
 }
 
 @-moz-document url-prefix() {
-    #blank_space_for_scroll_animation {
-        height: 0px;
-    }
 
     #scroll_video {
         visibility: hidden;

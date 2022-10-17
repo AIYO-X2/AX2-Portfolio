@@ -27,7 +27,6 @@ window.onload = function() {
     const project_title_16 = document.querySelector("#project_title_16")
     const project_title_17 = document.querySelector("#project_title_17")
     const project_title_18 = document.querySelector("#project_title_18")
-    const project_title_19 = document.querySelector("#project_title_19")
 
     const project_thumbnail_1 = document.querySelector("#project_thumbnail_1")
     const project_thumbnail_2 = document.querySelector("#project_thumbnail_2")
@@ -47,7 +46,6 @@ window.onload = function() {
     const project_thumbnail_16 = document.querySelector("#project_thumbnail_16")
     const project_thumbnail_17 = document.querySelector("#project_thumbnail_17")
     const project_thumbnail_18 = document.querySelector("#project_thumbnail_18")
-    const project_thumbnail_19 = document.querySelector("#project_thumbnail_19")
 
     // SCROLL PLAYBACK FUNCTION
     var frameNumber = 0, // start video at frame 0
@@ -445,45 +443,14 @@ window.onload = function() {
             project_thumbnail_17.style.transform = 'translateY(3px)';
             project_thumbnail_17.style.visibility = 'hidden';
         }
-
-        // TV Channel 18
-        if(window.scrollY>=8000 & window.scrollY<=8200) {
-            project_title_18.style.visibility = 'visible';
-
-            project_thumbnail_18.style.opacity = '0.85';
-            project_thumbnail_18.style.visibility = 'visible';
-            project_thumbnail_18.style.transform = 'translateY(0px)';
-            project_thumbnail_18.style.transition = '0.2s ease-in-out';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = '0.2s ease-in-out';
+        
+        // FOOTER
+        if(window.scrollY>=7900) {
+            document.querySelector("#footer").style.bottom = '0';
+            document.querySelector("#footer").style.transition = '0.2s ease-in-out';
         }
         else {
-            project_title_18.style.visibility = 'hidden';
-
-            project_thumbnail_18.style.opacity = '0';
-            project_thumbnail_18.style.transform = 'translateY(3px)';
-            project_thumbnail_18.style.visibility = 'hidden';
-        }
-
-        // TV Channel 19
-        if(window.scrollY>=8300 & window.scrollY<=8500) {
-            project_title_19.style.visibility = 'visible';
-
-            project_thumbnail_19.style.opacity = '0.85';
-            project_thumbnail_19.style.visibility = 'visible';
-            project_thumbnail_19.style.transform = 'translateY(0px)';
-            project_thumbnail_19.style.transition = '0.2s ease-in-out';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = '0.2s ease-in-out';
-        }
-        else {
-            project_title_19.style.visibility = 'hidden';
-
-            project_thumbnail_19.style.opacity = '0';
-            project_thumbnail_19.style.transform = 'translateY(3px)';
-            project_thumbnail_19.style.visibility = 'hidden';
+            document.querySelector("#footer").style.bottom = '-100px';
         }
     }
     tv_scroll();

@@ -1,5 +1,5 @@
 #footer {
-    position: relative;
+    position: fixed;
     z-index: 1000;
     background: hsl(0, 0%, 10%);
     height: 100px;
@@ -9,7 +9,7 @@
     border-top: 1px solid hsl(0, 0%, 15%);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    top: 5715px;
+    bottom: -100px;
     grid-template-columns: repeat(5, 1fr);
     /* Top value determines the amount of scrollable space for the projects in TV*/
 }
@@ -38,10 +38,4 @@
 
 #left_footer_text {
     margin-left: 5%;
-}
-
-@media only screen and (hover: none) and (pointer: coarse) {
-    #footer {
-        top: 6515px;
-    }
 }
