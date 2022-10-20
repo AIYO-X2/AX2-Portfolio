@@ -20,12 +20,6 @@ window.onload = function() {
     const project_title_10 = document.querySelector("#project_title_10");
     const project_title_11 = document.querySelector("#project_title_11");
     const project_title_12 = document.querySelector("#project_title_12");
-    const project_title_13 = document.querySelector("#project_title_13");
-    const project_title_14 = document.querySelector("#project_title_14");
-    const project_title_15 = document.querySelector("#project_title_15");
-    const project_title_16 = document.querySelector("#project_title_16");
-    const project_title_17 = document.querySelector("#project_title_17");
-    const project_title_18 = document.querySelector("#project_title_18");
 
     const project_thumbnail_1 = document.querySelector("#project_thumbnail_1");
     const project_thumbnail_2 = document.querySelector("#project_thumbnail_2");
@@ -39,12 +33,6 @@ window.onload = function() {
     const project_thumbnail_10 = document.querySelector("#project_thumbnail_10");
     const project_thumbnail_11 = document.querySelector("#project_thumbnail_11");
     const project_thumbnail_12 = document.querySelector("#project_thumbnail_12");
-    const project_thumbnail_13 = document.querySelector("#project_thumbnail_13");
-    const project_thumbnail_14 = document.querySelector("#project_thumbnail_14");
-    const project_thumbnail_15 = document.querySelector("#project_thumbnail_15");
-    const project_thumbnail_16 = document.querySelector("#project_thumbnail_16");
-    const project_thumbnail_17 = document.querySelector("#project_thumbnail_17");
-    const project_thumbnail_18 = document.querySelector("#project_thumbnail_18");
 
     // TV SCROLL SCRIPT
     window.addEventListener('scroll', tv_scroll);
@@ -302,108 +290,8 @@ window.onload = function() {
             project_thumbnail_12.style.visibility = 'hidden';
         }
 
-        // TV Channel 13
-        if(window.scrollY>=3800 & window.scrollY<=4000) {
-            project_title_13.style.visibility = 'visible';
-
-            project_thumbnail_13.style.opacity = '0.85';
-            project_thumbnail_13.style.visibility = 'visible';
-            project_thumbnail_13.style.transform = 'translateY(0px)';
-            project_thumbnail_13.style.transition = '0.2s ease-in-out';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = '0.2s ease-in-out';
-        }
-        else {
-            project_title_13.style.visibility = 'hidden';
-
-            project_thumbnail_13.style.opacity = '0';
-            project_thumbnail_13.style.transform = 'translateY(3px)';
-            project_thumbnail_13.style.visibility = 'hidden';
-        }
-
-        // TV Channel 14
-        if(window.scrollY>=4100 & window.scrollY<=4300) {
-            project_title_14.style.visibility = 'visible';
-
-            project_thumbnail_14.style.opacity = '0.85';
-            project_thumbnail_14.style.visibility = 'visible';
-            project_thumbnail_14.style.transform = 'translateY(0px)';
-            project_thumbnail_14.style.transition = '0.2s ease-in-out';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = '0.2s ease-in-out';
-        }
-        else {
-            project_title_14.style.visibility = 'hidden';
-
-            project_thumbnail_14.style.opacity = '0';
-            project_thumbnail_14.style.transform = 'translateY(3px)';
-            project_thumbnail_14.style.visibility = 'hidden';
-        }
-
-        // TV Channel 15
-        if(window.scrollY>=4400 & window.scrollY<=4600) {
-            project_title_15.style.visibility = 'visible';
-
-            project_thumbnail_15.style.opacity = '0.85';
-            project_thumbnail_15.style.visibility = 'visible';
-            project_thumbnail_15.style.transform = 'translateY(0px)';
-            project_thumbnail_15.style.transition = '0.2s ease-in-out';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = '0.2s ease-in-out';
-        }
-        else {
-            project_title_15.style.visibility = 'hidden';
-
-            project_thumbnail_15.style.opacity = '0';
-            project_thumbnail_15.style.transform = 'translateY(3px)';
-            project_thumbnail_15.style.visibility = 'hidden';
-        }
-
-        // TV Channel 16
-        if(window.scrollY>=4700 & window.scrollY<=4900) {
-            project_title_16.style.visibility = 'visible';
-
-            project_thumbnail_16.style.opacity = '0.85';
-            project_thumbnail_16.style.visibility = 'visible';
-            project_thumbnail_16.style.transform = 'translateY(0px)';
-            project_thumbnail_16.style.transition = '0.2s ease-in-out';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = '0.2s ease-in-out';
-        }
-        else {
-            project_title_16.style.visibility = 'hidden';
-
-            project_thumbnail_16.style.opacity = '0';
-            project_thumbnail_16.style.transform = 'translateY(3px)';
-            project_thumbnail_16.style.visibility = 'hidden';
-        }
-
-        // TV Channel 17
-        if(window.scrollY>=5000 & window.scrollY<=5200) {
-            project_title_17.style.visibility = 'visible';
-
-            project_thumbnail_17.style.opacity = '0.85';
-            project_thumbnail_17.style.visibility = 'visible';
-            project_thumbnail_17.style.transform = 'translateY(0px)';
-            project_thumbnail_17.style.transition = '0.2s ease-in-out';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = '0.2s ease-in-out';
-        }
-        else {
-            project_title_17.style.visibility = 'hidden';
-
-            project_thumbnail_17.style.opacity = '0';
-            project_thumbnail_17.style.transform = 'translateY(3px)';
-            project_thumbnail_17.style.visibility = 'hidden';
-        }
-
         // FOOTER
-        if(window.scrollY>=5200) {
+        if(window.scrollY>=3700) {
             document.querySelector("#footer").style.bottom = '0';
             document.querySelector("#footer").style.transition = '0.2s ease-in-out';
         }
