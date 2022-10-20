@@ -21,8 +21,6 @@ window.onload = function() {
     const project_title_10 = document.querySelector("#project_title_10")
     const project_title_11 = document.querySelector("#project_title_11")
     const project_title_12 = document.querySelector("#project_title_12")
-    const project_title_13 = document.querySelector("#project_title_13")
-    const project_title_14 = document.querySelector("#project_title_14")
 
     const project_thumbnail_1 = document.querySelector("#project_thumbnail_1")
     const project_thumbnail_2 = document.querySelector("#project_thumbnail_2")
@@ -36,8 +34,6 @@ window.onload = function() {
     const project_thumbnail_10 = document.querySelector("#project_thumbnail_10")
     const project_thumbnail_11 = document.querySelector("#project_thumbnail_11")
     const project_thumbnail_12 = document.querySelector("#project_thumbnail_12")
-    const project_thumbnail_13 = document.querySelector("#project_thumbnail_13")
-    const project_thumbnail_14 = document.querySelector("#project_thumbnail_14")
 
     // SCROLL PLAYBACK FUNCTION
     var frameNumber = 0, // start video at frame 0
