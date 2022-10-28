@@ -52,7 +52,7 @@ window.onload = function() {
         if(window.scrollY>=200 & window.scrollY<=400) {
             project_title_1.style.visibility = 'visible';
 
-            project_thumbnail_1.style.opacity = '0.85';
+            project_thumbnail_1.style.opacity = '0.75';
             project_thumbnail_1.style.visibility = 'visible';
             project_thumbnail_1.style.transform = 'translateY(0px)';
             project_thumbnail_1.style.transition = '0.2s ease-in-out';
@@ -74,7 +74,7 @@ window.onload = function() {
         if(window.scrollY>=500 & window.scrollY<=700) {
             project_title_2.style.visibility = 'visible';
 
-            project_thumbnail_2.style.opacity = '0.85';
+            project_thumbnail_2.style.opacity = '0.75';
             project_thumbnail_2.style.visibility = 'visible';
             project_thumbnail_2.style.transform = 'translateY(0px)';
             project_thumbnail_2.style.transition = '0.2s ease-in-out';
@@ -94,7 +94,7 @@ window.onload = function() {
         if(window.scrollY>=800 & window.scrollY<=1000) {
             project_title_3.style.visibility = 'visible';
 
-            project_thumbnail_3.style.opacity = '0.85';
+            project_thumbnail_3.style.opacity = '0.75';
             project_thumbnail_3.style.visibility = 'visible';
             project_thumbnail_3.style.transform = 'translateY(0px)';
             project_thumbnail_3.style.transition = '0.2s ease-in-out';
@@ -114,7 +114,7 @@ window.onload = function() {
         if(window.scrollY>=1100 & window.scrollY<=1300) {
             project_title_4.style.visibility = 'visible';
 
-            project_thumbnail_4.style.opacity = '0.85';
+            project_thumbnail_4.style.opacity = '0.75';
             project_thumbnail_4.style.visibility = 'visible';
             project_thumbnail_4.style.transform = 'translateY(0px)';
             project_thumbnail_4.style.transition = '0.2s ease-in-out';
@@ -134,7 +134,7 @@ window.onload = function() {
         if(window.scrollY>=1400 & window.scrollY<=1600) {
             project_title_5.style.visibility = 'visible';
 
-            project_thumbnail_5.style.opacity = '0.85';
+            project_thumbnail_5.style.opacity = '0.75';
             project_thumbnail_5.style.visibility = 'visible';
             project_thumbnail_5.style.transform = 'translateY(0px)';
             project_thumbnail_5.style.transition = '0.2s ease-in-out';
@@ -154,7 +154,7 @@ window.onload = function() {
         if(window.scrollY>=1700 & window.scrollY<=1900) {
             project_title_6.style.visibility = 'visible';
 
-            project_thumbnail_6.style.opacity = '0.85';
+            project_thumbnail_6.style.opacity = '0.75';
             project_thumbnail_6.style.visibility = 'visible';
             project_thumbnail_6.style.transform = 'translateY(0px)';
             project_thumbnail_6.style.transition = '0.2s ease-in-out';
@@ -174,7 +174,7 @@ window.onload = function() {
         if(window.scrollY>=2000 & window.scrollY<=2200) {
             project_title_7.style.visibility = 'visible';
 
-            project_thumbnail_7.style.opacity = '0.85';
+            project_thumbnail_7.style.opacity = '0.75';
             project_thumbnail_7.style.visibility = 'visible';
             project_thumbnail_7.style.transform = 'translateY(0px)';
             project_thumbnail_7.style.transition = '0.2s ease-in-out';
@@ -194,7 +194,7 @@ window.onload = function() {
         if(window.scrollY>=2300 & window.scrollY<=2500) {
             project_title_8.style.visibility = 'visible';
 
-            project_thumbnail_8.style.opacity = '0.85';
+            project_thumbnail_8.style.opacity = '0.75';
             project_thumbnail_8.style.visibility = 'visible';
             project_thumbnail_8.style.transform = 'translateY(0px)';
             project_thumbnail_8.style.transition = '0.2s ease-in-out';
@@ -214,7 +214,7 @@ window.onload = function() {
         if(window.scrollY>=2600 & window.scrollY<=2800) {
             project_title_9.style.visibility = 'visible';
 
-            project_thumbnail_9.style.opacity = '0.85';
+            project_thumbnail_9.style.opacity = '0.75';
             project_thumbnail_9.style.visibility = 'visible';
             project_thumbnail_9.style.transform = 'translateY(0px)';
             project_thumbnail_9.style.transition = '0.2s ease-in-out';
@@ -234,7 +234,7 @@ window.onload = function() {
         if(window.scrollY>=2900 & window.scrollY<=3100) {
             project_title_10.style.visibility = 'visible';
 
-            project_thumbnail_10.style.opacity = '0.85';
+            project_thumbnail_10.style.opacity = '0.75';
             project_thumbnail_10.style.visibility = 'visible';
             project_thumbnail_10.style.transform = 'translateY(0px)';
             project_thumbnail_10.style.transition = '0.2s ease-in-out';
@@ -254,7 +254,7 @@ window.onload = function() {
         if(window.scrollY>=3200 & window.scrollY<=3400) {
             project_title_11.style.visibility = 'visible';
 
-            project_thumbnail_11.style.opacity = '0.85';
+            project_thumbnail_11.style.opacity = '0.75';
             project_thumbnail_11.style.visibility = 'visible';
             project_thumbnail_11.style.transform = 'translateY(0px)';
             project_thumbnail_11.style.transition = '0.2s ease-in-out';
@@ -274,7 +274,7 @@ window.onload = function() {
         if(window.scrollY>=3500 & window.scrollY<=3700) {
             project_title_12.style.visibility = 'visible';
 
-            project_thumbnail_12.style.opacity = '0.85';
+            project_thumbnail_12.style.opacity = '0.75';
             project_thumbnail_12.style.visibility = 'visible';
             project_thumbnail_12.style.transform = 'translateY(0px)';
             project_thumbnail_12.style.transition = '0.2s ease-in-out';
@@ -298,34 +298,47 @@ window.onload = function() {
         else {
             document.querySelector("#footer").style.bottom = '-100px';
         }
+
+        
     }
     tv_scroll();
 
-    // TV ZOOM SCRIPT
-    for(var i = 0, j=project_thumbnail.length; i<j; i++){
-        project_thumbnail[i].addEventListener("mouseover", function(){
-            project_thumbnail_class.forEach(project_thumbnail => {
-                project_thumbnail.style.scale = '110%';
+   // TV ZOOM SCRIPT
+   for(var i = 0, j=project_thumbnail.length; i<j; i++){
+    project_thumbnail[i].addEventListener("mouseover", function(){
+        project_thumbnail_class.forEach(project_thumbnail => {
+            project_thumbnail.style.scale = '110%';
             project_thumbnail.style.transition = '3.0s';
-            })
         })
-    };
-    for(var i = 0, j=project_thumbnail.length; i<j; i++){
-        project_thumbnail[i].addEventListener("mouseout", function(){
-            project_thumbnail_class.forEach(project_thumbnail => {
-                project_thumbnail.style.scale = '100%';
+    })
+};
+for(var i = 0, j=project_thumbnail.length; i<j; i++){
+    project_thumbnail[i].addEventListener("mouseout", function(){
+        project_thumbnail_class.forEach(project_thumbnail => {
+            project_thumbnail.style.scale = '100%';
             project_thumbnail.style.transition = '0.5s';
-            })
+
+            document.getElementById('alpha_tv_cover').style.scale = '100%';
+            document.getElementById('alpha_tv_cover').style.transform = 'translateY(0px)';
+            document.getElementById('alpha_tv_cover').style.transition = '0.5s';
         })
-    };
-    for(var i = 0, j=project_thumbnail.length; i<j; i++){
-        project_thumbnail[i].addEventListener("click", function(){
-            project_thumbnail_class.forEach(project_thumbnail => {
-                project_thumbnail.style.scale = '200%';
-                project_thumbnail.style.transition = '0.3s';
-            })
+    })
+};
+for(var i = 0, j=project_thumbnail.length; i<j; i++){
+    project_thumbnail[i].addEventListener("click", function(){
+        project_thumbnail_class.forEach(project_thumbnail => {
+            project_thumbnail.style.scale = '200%';
+            project_thumbnail.style.transition = '0.2s';
+            project_thumbnail.style.rotate = '360deg';
+
+            document.getElementById('alpha_tv_cover').style.scale = '200%';
+            document.getElementById('alpha_tv_cover').style.transition = '0.3s';
         })
-    };
+        document.getElementById('alpha_tv_cover').style.scale = '125%';
+        document.getElementById('alpha_tv_cover').style.transform = 'translateY(-10px)';
+        document.getElementById('alpha_tv_cover').style.transition = '0.3s';
+    })
+};
 
     // LOADING SCREEN SCRIPT
     window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
@@ -348,7 +361,12 @@ window.onload = function() {
         for(var i = 0, j=project_thumbnail.length; i<j; i++){
             project_thumbnail_class.forEach(project_thumbnail => {
                 project_thumbnail.style.scale = '100%';
-                project_thumbnail.style.transition = '1s';
+                project_thumbnail.style.rotate = '359deg';
+                project_thumbnail.style.transition = '0s';
+
+                document.getElementById('alpha_tv_cover').style.scale = '100%';
+                document.getElementById('alpha_tv_cover').style.transform = 'translateY(0px)';
+                document.getElementById('alpha_tv_cover').style.transition = '0s';
             })
         }
 

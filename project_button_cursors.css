@@ -30,7 +30,7 @@ body {
     width: 20px;
     transform: translate(13px, 14px);
     z-index: 1001;
-    cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
+    pointer-events: none;
 }
 
 video {
