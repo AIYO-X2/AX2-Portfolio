@@ -291,7 +291,7 @@ window.onload = function() {
         }
 
         // FOOTER
-        if(window.scrollY>=3700) {
+        if(window.scrollY>=3700 & window.scrollY<=4300) {
             document.querySelector("#footer").style.bottom = '0';
             document.querySelector("#footer").style.transition = '0.2s ease-in-out';
         }
@@ -299,6 +299,50 @@ window.onload = function() {
             document.querySelector("#footer").style.bottom = '-100px';
         }
 
+        // Secret 1
+        if(window.scrollY>=4300 & window.scrollY<=4500) {
+            document.querySelector("#secret_1").style.visibility = 'visible';
+
+            lingering_screen_static.style.opacity = '0.2';
+            lingering_screen_static.style.transition = '0.2s ease-in-out';
+        }
+        else {
+            document.querySelector("#secret_1").style.visibility = 'hidden';
+        }
+
+        // Secret 2
+        if(window.scrollY>=5300 & window.scrollY<=5500) {
+            document.querySelector("#secret_2").style.visibility = 'visible';
+
+            lingering_screen_static.style.opacity = '0.2';
+            lingering_screen_static.style.transition = '0.2s ease-in-out';
+        }
+        else {
+            document.querySelector("#secret_2").style.visibility = 'hidden';
+        }
+
+        // Secret 3
+        if(window.scrollY>=6300 & window.scrollY<=6500) {
+            document.querySelector("#secret_3").style.visibility = 'visible';
+
+            lingering_screen_static.style.opacity = '0.2';
+            lingering_screen_static.style.transition = '0.2s ease-in-out';
+        }
+        else {
+            document.querySelector("#secret_3").style.visibility = 'hidden';
+        }
+
+          // The End
+        if(window.scrollY>=6500) {
+            document.querySelector("#bsod").style.visibility = 'visible';
+            window.setTimeout("document.querySelector('#bsod').style.opacity = '1';", 1000);
+            document.querySelector("#bsod").style.transition = '10s ease-in-out';
+        }
+        else {
+            document.querySelector("#bsod").style.visibility = 'hidden';
+            document.querySelector("#bsod").style.opacity = '0';
+            document.querySelector("#bsod").style.transition = '0.2s ease-in-out';
+        }
         
     }
     tv_scroll();
@@ -376,51 +420,51 @@ for(var i = 0, j=project_thumbnail.length; i<j; i++){
         fullscreen_static.style.transition = '0s';
     };
 
-    // Controls scale and equidistant spacing for project thumbnails
-    if (alpha_tv_cover.width/alpha_tv_cover.height > 16/9) {
+        // Controls scale and equidistant spacing for project thumbnails
+        if (alpha_tv_cover.width/alpha_tv_cover.height > 16/9) {
             document.querySelector('#animated_tv_static').style.height = 'auto';
-            document.querySelector('#animated_tv_static').style.width = '15.5vw';
-            document.querySelector('#animated_tv_static').style.left = 'calc(50% - 7.25vw)';
+            document.querySelector('#animated_tv_static').style.width = '16.5vw';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - 8.25vw)';
 
             project_thumbnail_class.forEach(project_thumbnail => {
                 project_thumbnail.style.height = 'auto';
-                project_thumbnail.style.width = '15.5vw';
-                project_thumbnail.style.left = 'calc(50% - 7.25vw)';
+                project_thumbnail.style.width = '16.5vw';
+                project_thumbnail.style.left = 'calc(50vw - 8.25vw)';
             });
         }
         else {
-            document.querySelector('#animated_tv_static').style.height = '21vh';
+            document.querySelector('#animated_tv_static').style.height = '22vh';
             document.querySelector('#animated_tv_static').style.width = 'auto';
-            document.querySelector('#animated_tv_static').style.left = 'calc(50% - (18vh * (3/4)))';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - (11vh * (4/3)))';
 
             project_thumbnail_class.forEach(project_thumbnail => {
-                project_thumbnail.style.height = '21vh';
+                project_thumbnail.style.height = '22vh';
                 project_thumbnail.style.width = 'auto';
-                project_thumbnail.style.left = 'calc(50% - (18vh * (3/4)))';
+                project_thumbnail.style.left = 'calc(50vw - (11vh * (4/3)))';
             })
         }
 
     window.addEventListener('resize', function(){
         if (alpha_tv_cover.width/alpha_tv_cover.height > 16/9) {
             document.querySelector('#animated_tv_static').style.height = 'auto';
-            document.querySelector('#animated_tv_static').style.width = '15.5vw';
-            document.querySelector('#animated_tv_static').style.left = 'calc(50% - 7.25vw)';
+            document.querySelector('#animated_tv_static').style.width = '16.5vw';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - 8.25vw)';
 
             project_thumbnail_class.forEach(project_thumbnail => {
                 project_thumbnail.style.height = 'auto';
-                project_thumbnail.style.width = '15.5vw';
-                project_thumbnail.style.left = 'calc(50% - 7.25vw)';
+                project_thumbnail.style.width = '16.5vw';
+                project_thumbnail.style.left = 'calc(50vw - 8.25vw)';
             });
         }
         else {
-            document.querySelector('#animated_tv_static').style.height = '21vh';
+            document.querySelector('#animated_tv_static').style.height = '22vh';
             document.querySelector('#animated_tv_static').style.width = 'auto';
-            document.querySelector('#animated_tv_static').style.left = 'calc(50% - (18vh * (3/4)))';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - (11vh * (4/3)))';
 
             project_thumbnail_class.forEach(project_thumbnail => {
-                project_thumbnail.style.height = '21vh';
+                project_thumbnail.style.height = '22vh';
                 project_thumbnail.style.width = 'auto';
-                project_thumbnail.style.left = 'calc(50% - (18vh * (3/4)))';
+                project_thumbnail.style.left = 'calc(50vw - (11vh * (4/3)))';
             });
         }
     })

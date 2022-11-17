@@ -193,8 +193,8 @@ green_highlight_text {
 }
 
 .project_thumbnail {
-    left: calc(50vw - (18vh * (3/4)));
-    top: 52.75vh;
+    left: calc(50vw - (21vh * (1/2)));
+    top: 51vh;
     position: fixed;
     border: 0;
     height: 21vh;
@@ -208,8 +208,8 @@ green_highlight_text {
 }
 
 #animated_tv_static {
-    left: calc(50% - (18vh * (3/4)));
-    top: 52.75vh;
+    left: calc(50% - (21vh * (1/2)));
+    top: 51vh;
     position: fixed;
     border: 0;
     height: 21vh;

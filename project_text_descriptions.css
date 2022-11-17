@@ -112,29 +112,27 @@ audio {
 #corresponding_project_button {
     text-decoration: none;
     cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
-}
-
-#corresponding_project_button_shape {
     width: 20%;
     min-width: 125px;
     background-color: hsl(0, 0%, 20%);
     border-radius: 9999px;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 0 0 15px 1px hsl(0, 0%, 40%);
     transition: 0.5s;
     color: hsl(0, 0%, 75%);
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
-#corresponding_project_button_shape:hover {
+#corresponding_project_button:hover {
     box-shadow: 0 0 0px 1px hsl(0, 0%, 60%);
     transition: 0.25s;
     color: hsl(0, 0%, 100%);
 }
 
 #corresponding_project_button_text {
-    padding: 15px;
-    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
     text-decoration: none;
     line-height: 100%;
     color: hsl(0, 0%, 75%);

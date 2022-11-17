@@ -333,7 +333,7 @@ window.onload = function() {
         }
 
         // FOOTER
-        if(window.scrollY>=6400 & window.scrollY<=7000) {
+        if(window.scrollY>=6400) {
             document.querySelector("#footer").style.bottom = '0';
             document.querySelector("#footer").style.transition = '0.2s ease-in-out';
         }
@@ -464,48 +464,48 @@ window.onload = function() {
     // Controls scale and equidistant spacing for project thumbnails
     if (alpha_tv_cover.width/alpha_tv_cover.height > 16/9) {
             document.querySelector('#animated_tv_static').style.height = 'auto';
-            document.querySelector('#animated_tv_static').style.width = '15.5vw';
-            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - 7.25vw)';
+            document.querySelector('#animated_tv_static').style.width = '16.5vw';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - 8.25vw)';
 
             project_thumbnail_class.forEach(project_thumbnail => {
                 project_thumbnail.style.height = 'auto';
-                project_thumbnail.style.width = '15.5vw';
-                project_thumbnail.style.left = 'calc(50vw - 7.25vw)';
+                project_thumbnail.style.width = '16.5vw';
+                project_thumbnail.style.left = 'calc(50vw - 8.25vw)';
             });
         }
         else {
-            document.querySelector('#animated_tv_static').style.height = '21vh';
+            document.querySelector('#animated_tv_static').style.height = '22vh';
             document.querySelector('#animated_tv_static').style.width = 'auto';
-            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - (18vh * (3/4)))';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - (11vh * (4/3)))';
 
             project_thumbnail_class.forEach(project_thumbnail => {
-                project_thumbnail.style.height = '21vh';
+                project_thumbnail.style.height = '22vh';
                 project_thumbnail.style.width = 'auto';
-                project_thumbnail.style.left = 'calc(50vw - (18vh * (3/4)))';
+                project_thumbnail.style.left = 'calc(50vw - (11vh * (4/3)))';
             })
         }
 
     window.addEventListener('resize', function(){
         if (alpha_tv_cover.width/alpha_tv_cover.height > 16/9) {
             document.querySelector('#animated_tv_static').style.height = 'auto';
-            document.querySelector('#animated_tv_static').style.width = '15.5vw';
-            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - 7.25vw)';
+            document.querySelector('#animated_tv_static').style.width = '16.5vw';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - 8.25vw)';
 
             project_thumbnail_class.forEach(project_thumbnail => {
                 project_thumbnail.style.height = 'auto';
-                project_thumbnail.style.width = '15.5vw';
-                project_thumbnail.style.left = 'calc(50vw - 7.25vw)';
+                project_thumbnail.style.width = '16.5vw';
+                project_thumbnail.style.left = 'calc(50vw - 8.25vw)';
             });
         }
         else {
-            document.querySelector('#animated_tv_static').style.height = '21vh';
+            document.querySelector('#animated_tv_static').style.height = '22vh';
             document.querySelector('#animated_tv_static').style.width = 'auto';
-            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - (18vh * (3/4)))';
+            document.querySelector('#animated_tv_static').style.left = 'calc(50vw - (11vh * (4/3)))';
 
             project_thumbnail_class.forEach(project_thumbnail => {
-                project_thumbnail.style.height = '21vh';
+                project_thumbnail.style.height = '22vh';
                 project_thumbnail.style.width = 'auto';
-                project_thumbnail.style.left = 'calc(50vw - (18vh * (3/4)))';
+                project_thumbnail.style.left = 'calc(50vw - (11vh * (4/3)))';
             });
         }
     })
