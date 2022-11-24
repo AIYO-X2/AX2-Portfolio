@@ -475,7 +475,7 @@
         style.appendChild(document.createTextNode(css));
       }
     }
-    var css = ".medium-zoom-overlay{position:fixed;top:0;right:0;bottom:0;left:0;opacity:0;transition:opacity .3s;will-change:opacity}.medium-zoom--opened .medium-zoom-overlay{cursor:url(Cursors/ring/ring_default.png) 16 16, auto; cursor: url(Cursors/ring/ring_zoom_out.png) 64 64, auto;opacity:0.90}.medium-zoom-image{cursor: url(Cursors/ring/ring_default.png) 16 16, auto; cursor: url(Cursors/ring/ring_zoom_in.png) 64 64, auto;transition:transform .3s cubic-bezier(.2,0,.2,1)!important}.medium-zoom-image--hidden{visibility:hidden}.medium-zoom-image--opened{position:relative;cursor: url(Cursors/ring/ring_default.png) 16 16, auto;cursor: url(Cursors/ring/ring_zoom_out.png) 64 64, auto;will-change:transform}";
+    var css = ".medium-zoom-overlay{position:fixed;top:0;right:0;bottom:0;left:0;opacity:0;transition:opacity .3s;will-change:opacity}.medium-zoom--opened .medium-zoom-overlay{cursor:url(Cursors/ring/ring_default.png) 16 16, auto; cursor: url(Cursors/ring/ring_zoom_out.png) 64 64, auto;opacity:0.90}.medium-zoom-image{cursor: url(Cursors/ring/ring_default.png) 16 16, auto; cursor: url(Cursors/ring/ring_zoom_in.png) 64 64, auto;transition:transform .3s cubic-bezier(.2,0,.2,1)!important}.medium-zoom-image--hidden{visibility:hidden}.medium-zoom-image--opened{object-fit: contain;position:relative;cursor: url(Cursors/ring/ring_default.png) 16 16, auto;cursor: url(Cursors/ring/ring_zoom_out.png) 64 64, auto;will-change:transform}";
     styleInject(css);
     return mediumZoom;
   });
