@@ -1,0 +1,41 @@
+body, html {
+    background-color: rgb(10, 10, 10);
+    margin: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.grid_photos {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1vw;
+}
+
+.grid_photo {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headline_banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#featured_video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 100%;
+}

@@ -94,7 +94,7 @@ window.onload = function() {
         if(window.scrollY>=2900 & window.scrollY<=3100) {
             project_title_1.style.visibility = 'visible';
 
-            project_thumbnail_1.style.opacity = '0.75';
+            project_thumbnail_1.style.opacity = '0.8';
             project_thumbnail_1.style.visibility = 'visible';
             project_thumbnail_1.style.transform = 'translateY(0px)';
             project_thumbnail_1.style.transition = '0.2s ease-in-out';
@@ -116,7 +116,7 @@ window.onload = function() {
         if(window.scrollY>=3200 & window.scrollY<=3400) {
             project_title_2.style.visibility = 'visible';
 
-            project_thumbnail_2.style.opacity = '0.75';
+            project_thumbnail_2.style.opacity = '0.8';
             project_thumbnail_2.style.visibility = 'visible';
             project_thumbnail_2.style.transform = 'translateY(0px)';
             project_thumbnail_2.style.transition = '0.2s ease-in-out';
@@ -136,7 +136,7 @@ window.onload = function() {
         if(window.scrollY>=3500 & window.scrollY<=3700) {
             project_title_3.style.visibility = 'visible';
 
-            project_thumbnail_3.style.opacity = '0.75';
+            project_thumbnail_3.style.opacity = '0.8';
             project_thumbnail_3.style.visibility = 'visible';
             project_thumbnail_3.style.transform = 'translateY(0px)';
             project_thumbnail_3.style.transition = '0.2s ease-in-out';
@@ -156,7 +156,7 @@ window.onload = function() {
         if(window.scrollY>=3800 & window.scrollY<=4000) {
             project_title_4.style.visibility = 'visible';
 
-            project_thumbnail_4.style.opacity = '0.75';
+            project_thumbnail_4.style.opacity = '0.8';
             project_thumbnail_4.style.visibility = 'visible';
             project_thumbnail_4.style.transform = 'translateY(0px)';
             project_thumbnail_4.style.transition = '0.2s ease-in-out';
@@ -176,7 +176,7 @@ window.onload = function() {
         if(window.scrollY>=4100 & window.scrollY<=4300) {
             project_title_5.style.visibility = 'visible';
 
-            project_thumbnail_5.style.opacity = '0.75';
+            project_thumbnail_5.style.opacity = '0.8';
             project_thumbnail_5.style.visibility = 'visible';
             project_thumbnail_5.style.transform = 'translateY(0px)';
             project_thumbnail_5.style.transition = '0.2s ease-in-out';
@@ -196,7 +196,7 @@ window.onload = function() {
         if(window.scrollY>=4400 & window.scrollY<=4600) {
             project_title_6.style.visibility = 'visible';
 
-            project_thumbnail_6.style.opacity = '0.75';
+            project_thumbnail_6.style.opacity = '0.8';
             project_thumbnail_6.style.visibility = 'visible';
             project_thumbnail_6.style.transform = 'translateY(0px)';
             project_thumbnail_6.style.transition = '0.2s ease-in-out';
@@ -216,7 +216,7 @@ window.onload = function() {
         if(window.scrollY>=4700 & window.scrollY<=4900) {
             project_title_7.style.visibility = 'visible';
 
-            project_thumbnail_7.style.opacity = '0.75';
+            project_thumbnail_7.style.opacity = '0.8';
             project_thumbnail_7.style.visibility = 'visible';
             project_thumbnail_7.style.transform = 'translateY(0px)';
             project_thumbnail_7.style.transition = '0.2s ease-in-out';
@@ -236,7 +236,7 @@ window.onload = function() {
         if(window.scrollY>=5000 & window.scrollY<=5200) {
             project_title_8.style.visibility = 'visible';
 
-            project_thumbnail_8.style.opacity = '0.75';
+            project_thumbnail_8.style.opacity = '0.8';
             project_thumbnail_8.style.visibility = 'visible';
             project_thumbnail_8.style.transform = 'translateY(0px)';
             project_thumbnail_8.style.transition = '0.2s ease-in-out';
@@ -256,7 +256,7 @@ window.onload = function() {
         if(window.scrollY>=5300 & window.scrollY<=5500) {
             project_title_9.style.visibility = 'visible';
 
-            project_thumbnail_9.style.opacity = '0.75';
+            project_thumbnail_9.style.opacity = '0.8';
             project_thumbnail_9.style.visibility = 'visible';
             project_thumbnail_9.style.transform = 'translateY(0px)';
             project_thumbnail_9.style.transition = '0.2s ease-in-out';
@@ -276,7 +276,7 @@ window.onload = function() {
         if(window.scrollY>=5600 & window.scrollY<=5800) {
             project_title_10.style.visibility = 'visible';
 
-            project_thumbnail_10.style.opacity = '0.75';
+            project_thumbnail_10.style.opacity = '0.8';
             project_thumbnail_10.style.visibility = 'visible';
             project_thumbnail_10.style.transform = 'translateY(0px)';
             project_thumbnail_10.style.transition = '0.2s ease-in-out';
@@ -296,7 +296,7 @@ window.onload = function() {
         if(window.scrollY>=5900 & window.scrollY<=6100) {
             project_title_11.style.visibility = 'visible';
 
-            project_thumbnail_11.style.opacity = '0.75';
+            project_thumbnail_11.style.opacity = '0.8';
             project_thumbnail_11.style.visibility = 'visible';
             project_thumbnail_11.style.transform = 'translateY(0px)';
             project_thumbnail_11.style.transition = '0.2s ease-in-out';
@@ -316,7 +316,7 @@ window.onload = function() {
         if(window.scrollY>=6200 & window.scrollY<=6400) {
             project_title_12.style.visibility = 'visible';
 
-            project_thumbnail_12.style.opacity = '0.75';
+            project_thumbnail_12.style.opacity = '0.8';
             project_thumbnail_12.style.visibility = 'visible';
             project_thumbnail_12.style.transform = 'translateY(0px)';
             project_thumbnail_12.style.transition = '0.2s ease-in-out';
