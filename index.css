@@ -35,27 +35,38 @@ body {
     z-index: 10000;
     background: rgb(0, 0, 0);
     opacity: 1;
-    display: block;
     font-size: 12pt;
 }
 
 #loading_text {
-    width: 100%;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
     position: fixed;
     z-index: 10001;
     color: white;
     margin-top: 35vh;
     text-align: center;
     line-height: 150%;
-    animation: loading-color-wipe 2s linear forwards;
+    animation: loading-color-wipe 1s linear forwards;
 }
 
 @keyframes loading-color-wipe {
     0% {
         background: linear-gradient(
         to right,
-        hsl(123, 100%, 50%) 39%,
-        hsl(0, 0%, 100%) 40%
+        hsl(123, 100%, 50%) 0%,
+        hsl(0, 0%, 100%) 1%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    10% {
+        background: linear-gradient(
+        to right,
+        hsl(123, 100%, 50%) 0%,
+        hsl(0, 0%, 100%) 1%
         );
         background-clip: text;
         -webkit-background-clip: text;
@@ -65,7 +76,7 @@ body {
     25% {
         background: linear-gradient(
         to right,
-        hsl(123, 100%, 50%) 39%,
+        hsl(123, 100%, 50%) 0%,
         hsl(0, 0%, 100%) 50%
         );
         background-clip: text;
@@ -76,8 +87,8 @@ body {
     50% {
         background: linear-gradient(
         to right,
-        hsl(123, 100%, 50%) 39%,
-        hsl(0, 0%, 100%) 60%
+        hsl(123, 100%, 50%) 0%,
+        hsl(0, 0%, 100%) 100%
         );
         background-clip: text;
         -webkit-background-clip: text;
@@ -87,8 +98,8 @@ body {
     75% {
         background: linear-gradient(
         to right,
-        hsl(123, 100%, 50%) 49%,
-        hsl(0, 0%, 100%) 60%
+        hsl(123, 100%, 50%) 50%,
+        hsl(0, 0%, 100%) 100%
         );
         background-clip: text;
         -webkit-background-clip: text;
@@ -98,8 +109,8 @@ body {
     100% {
         background: linear-gradient(
         to right,
-        hsl(123, 100%, 50%) 59%,
-        hsl(0, 0%, 100%) 60%
+        hsl(123, 100%, 50%) 99%,
+        hsl(0, 0%, 100%) 100%
         );
         background-clip: text;
         -webkit-background-clip: text;
