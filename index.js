@@ -448,6 +448,12 @@ window.onload = function() {
     };
 
     // LOADING SCREEN SCRIPT
+    const loadingBar = document.getElementById('loading_text');
+    window.addEventListener('load', () => {
+    const pageLoadTime = window.performance.timing.loadEventEnd - window.performance.timing.navigationStart;
+    loadingBar.style.animationDuration = `${pageLoadTime / 1000}s`;
+    });
+    
     window.setTimeout("document.getElementById('loading_screen').style.opacity='0';", 500)
     loading_screen.style.transition = '1.0s ease-in-out';
     window.setTimeout("document.getElementById('loading_screen').style.display='none';", 1500)
