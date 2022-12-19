@@ -47,7 +47,7 @@ body {
     margin-top: 35vh;
     text-align: center;
     line-height: 150%;
-    animation: loading-color-wipe 1s ease forwards;
+    animation: loading-color-wipe 2s linear forwards;
 }
 
 @keyframes loading-color-wipe {
