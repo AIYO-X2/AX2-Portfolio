@@ -40,9 +40,9 @@ window.onload = function() {
     // SCROLL PLAYBACK FUNCTION
    var frameNumber = 0, // start video at frame 0
     // lower numbers = faster playback
-    playbackConst = 300, 
+    playbackConst = 300,
     // get page height from video duration
-    setHeight = document.getElementById("set-height");        
+    setHeight = document.getElementById("set-height");
 
     // dynamically set the page height according to video length
     scroll_video.addEventListener('loadedmetadata', function() {
@@ -50,7 +50,7 @@ window.onload = function() {
     });
 
     // Use requestAnimationFrame for smooth playback
-    function scrollPlay(){  
+    function scrollPlay(){
     var frameNumber  = window.pageYOffset/playbackConst;
     scroll_video.currentTime  = frameNumber;
     window.requestAnimationFrame(scrollPlay);

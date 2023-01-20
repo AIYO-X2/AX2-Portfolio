@@ -14,13 +14,13 @@ body {
     -webkit-backdrop-filter: blur(10px) brightness(75%);
     top: 25px;
     left: 25px;
-    cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
+    cursor: url(Cursors/ring/ring_back.png) 64 64, auto;
     transition: 0.3s;
 }
 
 #back_button:hover {
     background: hsla(0, 0%, 75%, 0.45);
-    cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
+    cursor: url(Cursors/ring/ring_back.png) 64 64, auto;
     transition: 0.3s;
 }
 

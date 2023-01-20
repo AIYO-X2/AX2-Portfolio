@@ -9,7 +9,7 @@ body {
 
 .grid_photos {
     padding-top: 3vh;
-    padding-bottom: 1vh;
+    padding-bottom: 1vw;
     display: grid;
     width: 90vw;
     margin-left: auto;

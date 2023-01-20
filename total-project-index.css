@@ -27,3 +27,7 @@ tr {
 .unlisted_project {
     background-color: hsl(0, 100%, 25%);
 }
+
+table {
+    border-radius: 25px;
+}

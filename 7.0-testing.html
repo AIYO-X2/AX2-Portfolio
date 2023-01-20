@@ -7,64 +7,54 @@
         <meta name="description" content="Architectural Designer & Thinker • Dissolving the barrier between this reality and the next • Sensorial Stimulations"/>
         <link rel="icon" type="image/jpg" href="/favicon.jpg">
     </head>
-    <body>
+    <body style="background: black;">
+      <canvas id="canvas" style="width: 100vw; height: 100vh;"></canvas>
         <script>
-            const numPieces = 15, pieceSize = 50, centerX = innerWidth / 2, centerY = innerHeight / 2;
-const puzzleContainer = document.body.appendChild(document.createElement('div'));
-puzzleContainer.style.position = 'relative';
+          const canvas = document.getElementById('canvas');
+          const ctx = canvas.getContext('2d');
+          canvas.width = 2048;
+          canvas.height = 2048;
 
-for (let i = 0; i < numPieces; i++) {
-  const piece = puzzleContainer.appendChild(document.createElement('div'));
-  piece.style.backgroundColor = 'black';
-  piece.style.width = piece.style.height = `${pieceSize}px`;
-  piece.style.position = 'absolute';
-  piece.style.left = piece.style.top = `${centerX - pieceSize / 2}px`;
-  piece.dx = (Math.random() - 0.5) * 5;
-  piece.dy = (Math.random() - 0.5) * 5;
-  piece.bounceFactor = 0.9;
-  piece.isDragging = false;
-}
+          function randomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+          }
 
-puzzleContainer.addEventListener('mousedown', (event) => {
-  const piece = event.target;
-  piece.isDragging = true;
-  piece.offsetX = event.clientX - piece.offsetLeft;
-  piece.offsetY = event.clientY - piece.offsetTop;
-});
+          function randomPoint() {
+            return {
+              x: randomInt(0, canvas.width),
+              y: randomInt(0, canvas.height)
+            };
+          }
 
-puzzleContainer.addEventListener('mousemove', (event) => {
-  const piece = event.target;
-  if (piece.isDragging) {
-    piece.style.left = `${event.clientX - piece.offsetX}px`;
-    piece.style.top = `${event.clientY - piece.offsetY}px`;
-  }
-});
+          function randomColor() {
+            return `rgb(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(0, 255)})`;
+          }
 
-puzzleContainer.addEventListener('mouseup', (event) => {
-  const piece = event.target;
-  piece.isDragging = false;
-  piece.dx = event.clientX - piece.prevMouseX;
-  piece.dy = event.clientY - piece.prevMouseY;
-});
+          function drawBlob() {
+            ctx.beginPath();
+            ctx.fillStyle = 'hsl(0, 0%, 14%)';
 
-setInterval(() => {
-  for (const piece of puzzleContainer.children) {
-    piece.style.left = `${parseInt(piece.style.left) + piece.dx}px`;
-    piece.style.top = `${parseInt(piece.style.top) + piece.dy}px`;
-    if (parseInt(piece.style.left) + pieceSize > window.innerWidth || parseInt(piece.style.left) < 0) {
-      piece.dx = -piece.dx * piece.bounceFactor;
-    }
-    if (parseInt(piece.style.top) + pieceSize > window.innerHeight || parseInt(piece.style.top) < 0) {
-      piece.dy = -piece.dy * piece.bounceFactor;
-    }
-  }
-}, 20);
+            // Generate a larger set of points for the blob
+            const numPoints = randomInt(10, 50);
+            const points = [];
+            for (let i = 0; i < numPoints; i++) {
+              points.push(randomPoint());
+            }
 
-puzzleContainer.addEventListener('mousemove', (event) => {
-  const piece = event.target;
-  piece.prevMouseX = event.clientX;
-  piece.prevMouseY = event.clientY;
-});
+            // Connect the points with bezier curves to create a more smooth and curvaceous shape
+            ctx.moveTo(points[0].x, points[0].y);
+            for (let i = 1; i < points.length - 3; i += 3) {
+              ctx.bezierCurveTo(points[i].x, points[i].y, points[i+1].x, points[i+1].y, points[i+2].x, points[i+2].y);
+            }
+            ctx.closePath();
+            ctx.fill();
+          }
+
+
+          setInterval(() => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawBlob();
+          }, 2000);
 
         </script>
     </body>
