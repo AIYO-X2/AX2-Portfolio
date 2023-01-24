@@ -28,6 +28,10 @@ tr {
     background-color: hsl(0, 100%, 25%);
 }
 
+.unavailable_project {
+    background-color: hsl(0, 0%, 20%);
+}
+
 table {
     border-radius: 25px;
 }

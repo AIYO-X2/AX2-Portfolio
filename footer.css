@@ -10,7 +10,7 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     bottom: -100px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     /* Top value determines the amount of scrollable space for the projects in TV*/
 }
 
@@ -23,7 +23,8 @@
     font-size: 10pt;
     transform: translate(0, 30px);
     float: left;
-    margin-left: calc(((90vw - 15vw)/4));
+    margin-left: calc(((90vw - 15vw - 5vw)/5));
+    /* Extra 5vw is for even padding on right side of screen, dk why it isn't already even*/
     text-decoration: none;
     cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
 }

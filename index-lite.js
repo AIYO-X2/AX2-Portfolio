@@ -20,7 +20,6 @@ window.onload = function() {
     const project_title_10 = document.querySelector("#project_title_10");
     const project_title_11 = document.querySelector("#project_title_11");
     const project_title_12 = document.querySelector("#project_title_12");
-    const project_title_13 = document.querySelector("#project_title_13");
 
     const project_thumbnail_1 = document.querySelector("#project_thumbnail_1");
     const project_thumbnail_2 = document.querySelector("#project_thumbnail_2");
@@ -34,7 +33,6 @@ window.onload = function() {
     const project_thumbnail_10 = document.querySelector("#project_thumbnail_10");
     const project_thumbnail_11 = document.querySelector("#project_thumbnail_11");
     const project_thumbnail_12 = document.querySelector("#project_thumbnail_12");
-    const project_thumbnail_13 = document.querySelector("#project_thumbnail_13");
 
     // TV SCROLL SCRIPT
     window.addEventListener('scroll', tv_scroll);
@@ -292,28 +290,8 @@ window.onload = function() {
             project_thumbnail_12.style.visibility = 'hidden';
         }
 
-        // TV Channel 13
-        if(window.scrollY>=3800 & window.scrollY<=4000) {
-            project_title_13.style.visibility = 'visible';
-
-            project_thumbnail_13.style.opacity = '0.8';
-            project_thumbnail_13.style.visibility = 'visible';
-            project_thumbnail_13.style.transform = 'translateY(0px)';
-            project_thumbnail_13.style.transition = '0.2s ease-in-out';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = '0.2s ease-in-out';
-        }
-        else {
-            project_title_13.style.visibility = 'hidden';
-
-            project_thumbnail_13.style.opacity = '0';
-            project_thumbnail_13.style.transform = 'translateY(3px)';
-            project_thumbnail_13.style.visibility = 'hidden';
-        }
-
         // FOOTER
-        if(window.scrollY>=4000 & window.scrollY<=4600) {
+        if(window.scrollY>=3700) {
             document.querySelector("#footer").style.bottom = '0';
             document.querySelector("#footer").style.transition = '0.2s ease-in-out';
         }
@@ -322,7 +300,7 @@ window.onload = function() {
         }
 
         // Secret 1
-        if(window.scrollY>=4600 & window.scrollY<=4800) {
+        if(window.scrollY>=4300 & window.scrollY<=4500) {
             document.querySelector("#secret_1").style.visibility = 'visible';
 
             lingering_screen_static.style.opacity = '0.2';
@@ -333,7 +311,7 @@ window.onload = function() {
         }
 
         // Secret 2
-        if(window.scrollY>=5600 & window.scrollY<=5800) {
+        if(window.scrollY>=5300 & window.scrollY<=5500) {
             document.querySelector("#secret_2").style.visibility = 'visible';
 
             lingering_screen_static.style.opacity = '0.2';
@@ -344,7 +322,7 @@ window.onload = function() {
         }
 
         // Secret 3
-        if(window.scrollY>=6600 & window.scrollY<=6800) {
+        if(window.scrollY>=6300 & window.scrollY<=6500) {
             document.querySelector("#secret_3").style.visibility = 'visible';
 
             lingering_screen_static.style.opacity = '0.2';
@@ -355,7 +333,7 @@ window.onload = function() {
         }
 
           // The End
-        if(window.scrollY>=6800) {
+        if(window.scrollY>=6500) {
             document.querySelector("#bsod").style.visibility = 'visible';
             window.setTimeout("document.querySelector('#bsod').style.opacity = '1';", 1000);
             document.querySelector("#bsod").style.transition = '10s ease-in-out';
