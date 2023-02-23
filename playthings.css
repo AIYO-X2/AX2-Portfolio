@@ -4,13 +4,6 @@ body, html {
 }
 
 body {
-    background: linear-gradient(
-        to bottom,
-        black 0%,
-        rgb(31, 30, 31) 100%
-    );
-    background-color: black;
-    background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
     cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
