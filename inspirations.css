@@ -1,0 +1,62 @@
+body, html {
+    background-color: rgb(10, 10, 10);
+    margin: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#headline_banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.grid_panel {
+    padding-top: 5%;
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid_item {
+    width: 70%;
+    height: auto;
+    padding-top: 2.5%;
+    padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0px 20px 0 hsl(0, 0%, 15%);
+    border-radius: 15px;
+    margin-bottom: 15%;
+}
+
+.grid_text {
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#project_title { 
+    color: hsl(0, 0%, 90%);
+    font-size: 40pt;
+}
+
+@media (max-width:900px) {
+    .grid_panel {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:600px) {
+    .grid_panel {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

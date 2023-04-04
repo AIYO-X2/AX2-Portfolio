@@ -6,7 +6,8 @@ body, html {
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    color: white;
+    color: white; 
+    overflow-x: hidden;
 }
 
 .project_description_link_text {
