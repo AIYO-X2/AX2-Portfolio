@@ -1,5 +1,5 @@
 body, html {
-    background-color: rgb(10, 10, 10);
+    background-color: hsl(0, 0%, 4%);
     margin: 0;
 }
 
@@ -36,7 +36,7 @@ body {
     margin-bottom: 15%;
 }
 
-.grid_text {
+.grid_title {
     text-align: center;
     color: white;
     width: 80%;
@@ -44,9 +44,17 @@ body {
     margin-right: auto;
 }
 
+.grid_text {
+    text-align: center;
+    color: hsl(0, 0%, 75%);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #project_title { 
     color: hsl(0, 0%, 90%);
-    font-size: 40pt;
+    font-size: 16pt;
 }
 
 @media (max-width:900px) {

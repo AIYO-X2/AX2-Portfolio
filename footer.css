@@ -7,8 +7,8 @@
     margin-left: auto;
     margin-right: auto;
     border-top: 1px solid hsl(0, 0%, 15%);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
     bottom: -100px;
     grid-template-columns: repeat(6, 1fr);
     /* Top value determines the amount of scrollable space for the projects in TV*/

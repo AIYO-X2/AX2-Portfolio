@@ -1,0 +1,66 @@
+body, html {
+    background-color: rgb(10, 10, 10);
+    margin: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+.grid_photos {
+    padding-top: 0;
+}
+
+.grid_photos2 {
+    padding-top: 0;
+    padding-bottom: 1%;
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto;
+    gap: 1vw;
+}
+
+.grid_photo {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid_video {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headline_banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 1%;
+}
+
+#featured_video {
+    padding-top: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 66%;
+    height: 100%;
+}
+
+iframe {
+    margin: 0;
+    border: 0;
+    scroll-behavior:auto;
+}
