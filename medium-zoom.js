@@ -1,3 +1,8 @@
+var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+
+if (isMobile) {
+}
+else {
 /*! medium-zoom 1.0.6 | MIT License | https://github.com/francoischalifour/medium-zoom */
 (function(global, factory) {
     typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define(factory) : (global = global || self, 
@@ -492,3 +497,4 @@
     background: '#000',
     scrollOffset: 30,
   });
+}

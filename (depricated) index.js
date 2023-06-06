@@ -1,5 +1,5 @@
 window.onload = function() {
-    var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+    // Constant "title" defines what the constant is targeting
     const alpha_tv_cover = document.querySelector("#alpha_tv_cover")
     const lingering_screen_static = document.querySelector("#lingering_screen_static")
     const animated_tv_static = document.querySelector("#animated_tv_static")
@@ -35,48 +35,31 @@ window.onload = function() {
     const project_thumbnail_11 = document.querySelector("#project_thumbnail_11")
     const project_thumbnail_12 = document.querySelector("#project_thumbnail_12")
 
-    if (isMobile) {
-        var ScrollSpace = 0;
-        document.querySelector("#scroll_video").innerHTML = null;
-        document.querySelector("#loading_text").innerHTML = "LOADING • PLEASE WAIT<br> visit site on desktop for full experience";
-        console.log("Lite (Mobile) Interface");
+    // SCROLL PLAYBACK FUNCTION
+   var frameNumber = 0, // start video at frame 0
+    // lower numbers = faster playback
+    playbackConst = 300,
+    // get page height from video duration
+    setHeight = document.getElementById("set-height");
+
+    // dynamically set the page height according to video length
+    scroll_video.addEventListener('loadedmetadata', function() {
+    setHeight.style.height = Math.floor(scroll_video.duration) * playbackConst + "px";
+    });
+
+    // Use requestAnimationFrame for smooth playback
+    function scrollPlay(){
+    var frameNumber  = window.pageYOffset/playbackConst;
+    scroll_video.currentTime  = frameNumber;
+    window.requestAnimationFrame(scrollPlay);
     }
-    else if (navigator.userAgent.indexOf("Firefox") != -1 ) {
-        var ScrollSpace = 0;
-        document.querySelector("#scroll_video").innerHTML = null;
-        document.querySelector("#loading_text").innerHTML = "LOADING • PLEASE WAIT<br> firefox not fully supported, use other browser for full experience";
-        console.log("Lite (Firefox Limited) Interface");
-    }
-    else {
-        var ScrollSpace = 2665;
 
-        // SCROLL PLAYBACK FUNCTION
-        var frameNumber = 0, // start video at frame 0
-        // lower numbers = faster playback
-        playbackConst = 300,
-        // get page height from video duration
-        setHeight = document.getElementById("set-height");
-
-        // dynamically set the page height according to video length
-        scroll_video.addEventListener('loadedmetadata', function() {
-        setHeight.style.height = Math.floor(scroll_video.duration) * playbackConst + "px";
-        });
-
-        // Use requestAnimationFrame for smooth playback
-        function scrollPlay(){
-        var frameNumber  = window.pageYOffset/playbackConst;
-        scroll_video.currentTime  = frameNumber;
-        window.requestAnimationFrame(scrollPlay);
-        }
-
-        window.requestAnimationFrame(scrollPlay);
-    }
-    const ChannelPosOffset = ScrollSpace + 235;
+    window.requestAnimationFrame(scrollPlay);
 
     // TV SCROLL SCRIPT
     window.addEventListener('scroll', tv_scroll);
     function tv_scroll () {
-        if(window.scrollY>=ScrollSpace) {
+        if(window.scrollY>=2665) {
             scroll_instructions2.style.visibility = 'visible';
 
             alpha_tv_cover.style.opacity = '1';
@@ -103,16 +86,16 @@ window.onload = function() {
             scroll_video.style.visibility = 'visible';
         }
 
-        if(window.scrollY>=ChannelPosOffset) {
+        if(window.scrollY>=2900) {
             scroll_instructions2.style.visibility = 'hidden';
         }
 
         // TV Channel 1
-        if(window.scrollY>=ChannelPosOffset & window.scrollY<=(ChannelPosOffset+200)) {
+        if(window.scrollY>=2900 & window.scrollY<=3100) {
             project_title_1.style.visibility = 'visible';
-            
-            project_thumbnail_1.style.visibility = 'visible';
+
             project_thumbnail_1.style.opacity = '0.8';
+            project_thumbnail_1.style.visibility = 'visible';
             project_thumbnail_1.style.transform = 'translateY(0px)';
             project_thumbnail_1.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -120,23 +103,21 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_1.style.visibility = 'hidden';", 200);
+            project_title_1.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_1.style.visibility = 'hidden';", 200);
             project_thumbnail_1.style.opacity = '0';
             project_thumbnail_1.style.transform = 'translateY(3px)';
-            project_thumbnail_1.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_1.style.visibility = 'hidden';
 
             lingering_screen_static.style.opacity = '1';
         }
 
         // TV Channel 2
-        if(window.scrollY>=(ChannelPosOffset+300) & window.scrollY<=(ChannelPosOffset+500)) {
+        if(window.scrollY>=3200 & window.scrollY<=3400) {
             project_title_2.style.visibility = 'visible';
 
-            project_thumbnail_2.style.visibility = 'visible';
             project_thumbnail_2.style.opacity = '0.8';
+            project_thumbnail_2.style.visibility = 'visible';
             project_thumbnail_2.style.transform = 'translateY(0px)';
             project_thumbnail_2.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -144,21 +125,19 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_2.style.visibility = 'hidden';", 200);
+            project_title_2.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_2.style.visibility = 'hidden';", 200);
             project_thumbnail_2.style.opacity = '0';
             project_thumbnail_2.style.transform = 'translateY(3px)';
-            project_thumbnail_2.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_2.style.visibility = 'hidden';
         }
 
         // TV Channel 3
-        if(window.scrollY>=(ChannelPosOffset+600) & window.scrollY<=(ChannelPosOffset+800)) {
+        if(window.scrollY>=3500 & window.scrollY<=3700) {
             project_title_3.style.visibility = 'visible';
 
-            project_thumbnail_3.style.visibility = 'visible';
             project_thumbnail_3.style.opacity = '0.8';
+            project_thumbnail_3.style.visibility = 'visible';
             project_thumbnail_3.style.transform = 'translateY(0px)';
             project_thumbnail_3.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -166,21 +145,19 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_3.style.visibility = 'hidden';", 200);
+            project_title_3.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_3.style.visibility = 'hidden';", 200);
             project_thumbnail_3.style.opacity = '0';
             project_thumbnail_3.style.transform = 'translateY(3px)';
-            project_thumbnail_3.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_3.style.visibility = 'hidden';
         }
 
         // TV Channel 4
-        if(window.scrollY>=(ChannelPosOffset+900) & window.scrollY<=(ChannelPosOffset+1100)) {
+        if(window.scrollY>=3800 & window.scrollY<=4000) {
             project_title_4.style.visibility = 'visible';
 
-            project_thumbnail_4.style.visibility = 'visible';
             project_thumbnail_4.style.opacity = '0.8';
+            project_thumbnail_4.style.visibility = 'visible';
             project_thumbnail_4.style.transform = 'translateY(0px)';
             project_thumbnail_4.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -188,21 +165,19 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_4.style.visibility = 'hidden';", 200);
+            project_title_4.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_4.style.visibility = 'hidden';", 200);
             project_thumbnail_4.style.opacity = '0';
             project_thumbnail_4.style.transform = 'translateY(3px)';
-            project_thumbnail_4.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_4.style.visibility = 'hidden';
         }
 
         // TV Channel 5
-        if(window.scrollY>=(ChannelPosOffset+1200) & window.scrollY<=(ChannelPosOffset+1400)) {
+        if(window.scrollY>=4100 & window.scrollY<=4300) {
             project_title_5.style.visibility = 'visible';
 
-            project_thumbnail_5.style.visibility = 'visible';
             project_thumbnail_5.style.opacity = '0.8';
+            project_thumbnail_5.style.visibility = 'visible';
             project_thumbnail_5.style.transform = 'translateY(0px)';
             project_thumbnail_5.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -210,21 +185,19 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_5.style.visibility = 'hidden';", 200);
+            project_title_5.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_5.style.visibility = 'hidden';", 200);
             project_thumbnail_5.style.opacity = '0';
             project_thumbnail_5.style.transform = 'translateY(3px)';
-            project_thumbnail_5.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_5.style.visibility = 'hidden';
         }
 
         // TV Channel 6
-        if(window.scrollY>=(ChannelPosOffset+1500) & window.scrollY<=(ChannelPosOffset+1700)) {
+        if(window.scrollY>=4400 & window.scrollY<=4600) {
             project_title_6.style.visibility = 'visible';
 
-            project_thumbnail_6.style.visibility = 'visible';
             project_thumbnail_6.style.opacity = '0.8';
+            project_thumbnail_6.style.visibility = 'visible';
             project_thumbnail_6.style.transform = 'translateY(0px)';
             project_thumbnail_6.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -232,21 +205,19 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_6.style.visibility = 'hidden';", 200);
+            project_title_6.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_6.style.visibility = 'hidden';", 200);
             project_thumbnail_6.style.opacity = '0';
             project_thumbnail_6.style.transform = 'translateY(3px)';
-            project_thumbnail_6.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_6.style.visibility = 'hidden';
         }
 
         // TV Channel 7
-        if(window.scrollY>=(ChannelPosOffset+1800) & window.scrollY<=(ChannelPosOffset+2000)) {
+        if(window.scrollY>=4700 & window.scrollY<=4900) {
             project_title_7.style.visibility = 'visible';
 
-            project_thumbnail_7.style.visibility = 'visible';
             project_thumbnail_7.style.opacity = '0.8';
+            project_thumbnail_7.style.visibility = 'visible';
             project_thumbnail_7.style.transform = 'translateY(0px)';
             project_thumbnail_7.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -254,21 +225,19 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_7.style.visibility = 'hidden';", 200);
+            project_title_7.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_7.style.visibility = 'hidden';", 200);
             project_thumbnail_7.style.opacity = '0';
             project_thumbnail_7.style.transform = 'translateY(3px)';
-            project_thumbnail_7.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_7.style.visibility = 'hidden';
         }
 
         // TV Channel 8
-        if(window.scrollY>=(ChannelPosOffset+2100) & window.scrollY<=(ChannelPosOffset+2300)) {
+        if(window.scrollY>=5000 & window.scrollY<=5200) {
             project_title_8.style.visibility = 'visible';
 
-            project_thumbnail_8.style.visibility = 'visible';
             project_thumbnail_8.style.opacity = '0.8';
+            project_thumbnail_8.style.visibility = 'visible';
             project_thumbnail_8.style.transform = 'translateY(0px)';
             project_thumbnail_8.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -276,21 +245,19 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_8.style.visibility = 'hidden';", 200);
+            project_title_8.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_8.style.visibility = 'hidden';", 200);
             project_thumbnail_8.style.opacity = '0';
             project_thumbnail_8.style.transform = 'translateY(3px)';
-            project_thumbnail_8.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_8.style.visibility = 'hidden';
         }
 
         // TV Channel 9
-        if(window.scrollY>=(ChannelPosOffset+2400) & window.scrollY<=(ChannelPosOffset+2600)) {
+        if(window.scrollY>=5300 & window.scrollY<=5500) {
             project_title_9.style.visibility = 'visible';
 
-            project_thumbnail_9.style.visibility = 'visible';
             project_thumbnail_9.style.opacity = '0.8';
+            project_thumbnail_9.style.visibility = 'visible';
             project_thumbnail_9.style.transform = 'translateY(0px)';
             project_thumbnail_9.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -298,21 +265,19 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_9.style.visibility = 'hidden';", 200);
+            project_title_9.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_9.style.visibility = 'hidden';", 200);
             project_thumbnail_9.style.opacity = '0';
             project_thumbnail_9.style.transform = 'translateY(3px)';
-            project_thumbnail_9.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_9.style.visibility = 'hidden';
         }
 
         // TV Channel 10
-        if(window.scrollY>=(ChannelPosOffset+2700) & window.scrollY<=(ChannelPosOffset+2900)) {
+        if(window.scrollY>=5600 & window.scrollY<=5800) {
             project_title_10.style.visibility = 'visible';
 
-            project_thumbnail_10.style.visibility = 'visible';
             project_thumbnail_10.style.opacity = '0.8';
+            project_thumbnail_10.style.visibility = 'visible';
             project_thumbnail_10.style.transform = 'translateY(0px)';
             project_thumbnail_10.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -320,21 +285,19 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_10.style.visibility = 'hidden';", 200);
+            project_title_10.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_10.style.visibility = 'hidden';", 200);
             project_thumbnail_10.style.opacity = '0';
             project_thumbnail_10.style.transform = 'translateY(3px)';
-            project_thumbnail_10.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_10.style.visibility = 'hidden';
         }
 
         // TV Channel 11
-        if(window.scrollY>=(ChannelPosOffset+3000) & window.scrollY<=(ChannelPosOffset+3200)) {
+        if(window.scrollY>=5900 & window.scrollY<=6100) {
             project_title_11.style.visibility = 'visible';
 
-            project_thumbnail_11.style.visibility = 'visible';
             project_thumbnail_11.style.opacity = '0.8';
+            project_thumbnail_11.style.visibility = 'visible';
             project_thumbnail_11.style.transform = 'translateY(0px)';
             project_thumbnail_11.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -342,21 +305,19 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_11.style.visibility = 'hidden';", 200);
+            project_title_11.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_11.style.visibility = 'hidden';", 200);
             project_thumbnail_11.style.opacity = '0';
             project_thumbnail_11.style.transform = 'translateY(3px)';
-            project_thumbnail_11.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_11.style.visibility = 'hidden';
         }
 
         // TV Channel 12
-        if(window.scrollY>=(ChannelPosOffset+3300) & window.scrollY<=(ChannelPosOffset+3500)) {
+        if(window.scrollY>=6200 & window.scrollY<=6400) {
             project_title_12.style.visibility = 'visible';
 
-            project_thumbnail_12.style.visibility = 'visible';
             project_thumbnail_12.style.opacity = '0.8';
+            project_thumbnail_12.style.visibility = 'visible';
             project_thumbnail_12.style.transform = 'translateY(0px)';
             project_thumbnail_12.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
 
@@ -364,17 +325,15 @@ window.onload = function() {
             lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
         }
         else {
-            window.setTimeout("project_title_12.style.visibility = 'hidden';", 200);
+            project_title_12.style.visibility = 'hidden';
 
-            window.setTimeout("project_thumbnail_12.style.visibility = 'hidden';", 200);
             project_thumbnail_12.style.opacity = '0';
             project_thumbnail_12.style.transform = 'translateY(3px)';
-            project_thumbnail_12.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out';
-
+            project_thumbnail_12.style.visibility = 'hidden';
         }
 
         // FOOTER
-        if(window.scrollY>=(ChannelPosOffset+3500)) {
+        if(window.scrollY>=6400) {
             document.querySelector("#footer").style.bottom = '0';
             document.querySelector("#footer").style.transition = 'bottom 0.2s ease-in-out';
         }
@@ -383,7 +342,7 @@ window.onload = function() {
         }
 
         // Secret 1
-        if(window.scrollY>=(ChannelPosOffset+4100) & window.scrollY<=(ChannelPosOffset+4300)) {
+        if(window.scrollY>=7000 & window.scrollY<=7200) {
             document.querySelector("#secret_1").style.visibility = 'visible';
 
             lingering_screen_static.style.opacity = '0.2';
@@ -394,7 +353,7 @@ window.onload = function() {
         }
 
         // Secret 2
-        if(window.scrollY>=(ChannelPosOffset+5100) & window.scrollY<=(ChannelPosOffset+5300)) {
+        if(window.scrollY>=8000 & window.scrollY<=8200) {
             document.querySelector("#secret_2").style.visibility = 'visible';
 
             lingering_screen_static.style.opacity = '0.2';
@@ -405,7 +364,7 @@ window.onload = function() {
         }
 
         // Secret 3
-        if(window.scrollY>=(ChannelPosOffset+6100) & window.scrollY<=(ChannelPosOffset+6300)) {
+        if(window.scrollY>=9000 & window.scrollY<=9200) {
             document.querySelector("#secret_3").style.visibility = 'visible';
 
             lingering_screen_static.style.opacity = '0.2';
@@ -416,7 +375,7 @@ window.onload = function() {
         }
 
           // The End
-        if(window.scrollY>=(ChannelPosOffset+6300)) {
+        if(window.scrollY>=9200) {
             document.querySelector("#bsod").style.visibility = 'visible';
             window.setTimeout("document.querySelector('#bsod').style.opacity = '1';", 1000);
             document.querySelector("#bsod").style.transition = 'opacity 10s ease-in-out';

@@ -1,5 +1,4 @@
 var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
-var index_platform_chooser = document.querySelector
 
 if (isMobile) {
     const index_mobile = document.createElement('script');
