@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior:auto;
+}
+
+body {
+    background-image: url(/Images/DeadTV.jpg);
+    background-size: cover;
+    font-family:monospace;
+    font-size: 30pt;
+    background-position: top;
+    cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+#lingering_screen_static {
+    position: fixed;
+    z-index: 102;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    opacity: 0.15;
+    pointer-events: none;
+    mask-size:cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: top, center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: url(Images/Heavy_Static_Mask.svg);
+    mask-image: url(Images/Heavy_Static_Mask.svg);
+    -moz-mask-image: url(Images/Heavy_Static_Mask.svg);
+}
+
+a {
+    color: black;
+    cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
+}

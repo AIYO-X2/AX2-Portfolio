@@ -11,12 +11,18 @@
     text-align: center;
 }
 
+body {
+    cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
+}
+
 img {
     z-index: 2;
+    object-fit: cover;
 }
 
 video {
     z-index: 2;
+    cursor: url(Cursors/ring/ring_play.png) 64 64, auto;
 }
 
 audio {
@@ -106,6 +112,7 @@ audio {
 .project_description_link_text {
     color: hsl(0, 0%, 75%);
     border: 1px inset rgba(0, 255, 13, 0.5);
+    background-color: rgba(0, 255, 13, 0);
     text-decoration: none;
     cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
     transition: 0.3s;
@@ -180,6 +187,37 @@ audio {
     }
 }
 /* END: Project Pages Text*/
+
+#back_button {
+    position: fixed;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    border: 1px solid white;
+    background: hsla(0, 0%, 0%, 0.45);
+    backdrop-filter: blur(10px) brightness(75%);
+    -webkit-backdrop-filter: blur(10px) brightness(75%);
+    top: 25px;
+    left: 25px;
+    cursor: url(Cursors/ring/ring_back.png) 64 64, auto;
+    transition: 0.3s;
+}
+
+#back_button:hover {
+    background: hsla(0, 0%, 75%, 0.45);
+    cursor: url(Cursors/ring/ring_back.png) 64 64, auto;
+    transition: 0.3s;
+}
+
+#back_button_graphic {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    transform: translate(13px, 14px);
+    z-index: 1001;
+    pointer-events: none;
+}
 
 /* START: Footer*/
 #footer {

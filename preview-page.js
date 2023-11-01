@@ -14,5 +14,4 @@ PreviewPageBanner.style.padding = '2vh';
 PreviewPageBanner.style.textAlign = 'center';
 PreviewPageBanner.style.zIndex = '2';
 
-PreviewPageBanner.id = "PreviewPageBanner";
 text_description.insertAdjacentElement('afterend', PreviewPageBanner);
