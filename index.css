@@ -338,8 +338,9 @@ green_highlight_text {
 #channel_buttons {
     position: fixed;
     display: grid;
-    bottom: 8vh;
+    bottom: 4vh;
     grid-template-columns: repeat(6, 1fr);
+    row-gap: 0.5vh;
     cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
     width: 100vw;
     z-index: 103;
@@ -347,7 +348,14 @@ green_highlight_text {
 
 .channel_button {
     width: 20%;
+    min-width: 32pt;
     margin-left: 40%;
+    color: white;
+    background-color: hsl(0, 0%, 14%);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1%;
+    border-radius: 100px;
+    border: 3px solid hsl(120, 13%, 8%);
 }
 
 /* Project title font controls*/

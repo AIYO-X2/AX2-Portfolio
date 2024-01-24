@@ -4,6 +4,7 @@ window.onload = function() {
     var animated_tv_static = document.querySelector("#animated_tv_static")
     var scroll_instructions2 = document.querySelector("#scroll_instructions2")
     var project_thumbnail = document.getElementsByClassName('project_thumbnail')
+    var channel_buttons = document.querySelector('#channel_buttons')
     var fullscreen_static = document.querySelector("#fullscreen_static")
     var project_thumbnail_class = document.querySelectorAll('.project_thumbnail')
     var scroll_video = document.querySelector("#scroll_video")
@@ -24,12 +25,12 @@ window.onload = function() {
         // document.querySelector("#loading_text").innerHTML = "LOADING • PLEASE WAIT<br> VISIT ON DEKSTOP FOR FULL EXPERIENCE";
         console.log("Lite (Mobile) Interface");
     }
-    else if (navigator.userAgent.indexOf("Firefox") != -1 ) {
-        var ScrollSpace = 0;
-        document.querySelector("#scroll_video").innerHTML = null;
-        // document.querySelector("#loading_text").innerHTML = "LOADING • PLEASE WAIT<br> USE ANOTHER BROWSER FOR FULL EXPERIENCE";
-        console.log("Lite (Firefox Limited) Interface");
-    }
+    // else if (navigator.userAgent.indexOf("Firefox") != -1 ) {
+    //    var ScrollSpace = 0;
+    //    document.querySelector("#scroll_video").innerHTML = null;
+    //    // document.querySelector("#loading_text").innerHTML = "LOADING • PLEASE WAIT<br> USE ANOTHER BROWSER FOR FULL EXPERIENCE";
+    //    console.log("Lite (Firefox Limited) Interface");
+    //}
     else {
         var ScrollSpace = 2665;
         console.log("Full Interface");
@@ -58,41 +59,23 @@ window.onload = function() {
     var ChannelPosOffset = ScrollSpace + 235;
 
     // TV SCROLL SCRIPT
-    var Channel1YPosStart = ChannelPosOffset;
-    var Channel1YPosEnd = ChannelPosOffset+200;
+    var channelPositions = [];
 
-    var Channel2YPosStart = ChannelPosOffset+300;
-    var Channel2YPosEnd = ChannelPosOffset+500;
-
-    var Channel3YPosStart = ChannelPosOffset+600;
-    var Channel3YPosEnd = ChannelPosOffset+800;
-
-    var Channel4YPosStart = ChannelPosOffset+900;
-    var Channel4YPosEnd = ChannelPosOffset+1100;
-
-    var Channel5YPosStart = ChannelPosOffset+1200;
-    var Channel5YPosEnd = ChannelPosOffset+1400;
-
-    var Channel6YPosStart = ChannelPosOffset+1500;
-    var Channel6YPosEnd = ChannelPosOffset+1700;
-
-    var Channel7YPosStart = ChannelPosOffset+1800;
-    var Channel7YPosEnd = ChannelPosOffset+2000;
-
-    var Channel8YPosStart = ChannelPosOffset+2100;
-    var Channel8YPosEnd = ChannelPosOffset+2200;
-
-    var Channel9YPosStart = ChannelPosOffset+2400;
-    var Channel9YPosEnd = ChannelPosOffset+2500;
-
-    var Channel10YPosStart = ChannelPosOffset+2600;
-    var Channel10YPosEnd = ChannelPosOffset+2800;
-
-    var Channel11YPosStart = ChannelPosOffset+2900;
-    var Channel11YPosEnd = ChannelPosOffset+3100;
-
-    var Channel12YPosStart = ChannelPosOffset+3200;
-    var Channel12YPosEnd = ChannelPosOffset+3400;
+    for (let i = 1; i <= 12; i++) {
+        var startPos = ChannelPosOffset + (i - 1) * 300;
+        var endPos = startPos + 200;
+    
+        var channelObj = {
+            start: startPos,
+            end: endPos
+        };
+    
+        channelPositions.push(channelObj);
+    
+        // Optionally, you can also create individual variables if needed
+        window['Channel' + i + 'YPosStart'] = channelObj.start;
+        window['Channel' + i + 'YPosEnd'] = channelObj.end;
+    }
 
     // Channel Buttons
     const buttons = document.querySelectorAll(".channel_button");
@@ -128,6 +111,7 @@ window.onload = function() {
     function tv_scroll () {
         if(window.scrollY>=ScrollSpace) {
             scroll_instructions2.style.visibility = 'visible';
+            channel_buttons.style.visibility = 'visible';
 
             alpha_tv_cover.style.opacity = '1';
             alpha_tv_cover.style.transition = 'opacity 0.2s ease-in-out';
@@ -142,6 +126,7 @@ window.onload = function() {
         }
         else {
             scroll_instructions2.style.visibility = 'hidden';
+            channel_buttons.style.visibility = 'hidden';
             
             alpha_tv_cover.style.opacity = '0';
 
@@ -537,23 +522,25 @@ window.onload = function() {
         });
     }
 
+    // Rescales project thumbnails to 100% after immersive zoom
     window.onpageshow = function(){
-        // Rescales project thumbnails to 100% after immersive zoom
-        for(var i = 0, j=project_thumbnail.length; i<j; i++){
-            project_thumbnail_class.forEach(project_thumbnail => {
-                project_thumbnail.style.scale = '100%';
-                project_thumbnail.style.transition = 'scale transform 0s';
-
-                document.getElementById('alpha_tv_cover').style.scale = '100%';
-                document.getElementById('alpha_tv_cover').style.transform = 'translateY(0px)';
-                document.getElementById('alpha_tv_cover').style.transition = 'scale 0s, transform 0s';
-            })
-        }
-
-        // Hides full screen static on page return
-        fullscreen_static.style.visibility = 'hidden';
-        fullscreen_static.style.opacity = '0';
-        fullscreen_static.style.transition = 'opacity 0s';
+        document.addEventListener("DOMContentLoaded", (event) => {
+            for(var i = 0, j=project_thumbnail.length; i<j; i++){
+                project_thumbnail_class.forEach(project_thumbnail => {
+                    project_thumbnail.style.scale = '100%';
+                    project_thumbnail.style.transition = 'scale transform 0s';
+    
+                    document.getElementById('alpha_tv_cover').style.scale = '100%';
+                    document.getElementById('alpha_tv_cover').style.transform = 'translateY(0px)';
+                    document.getElementById('alpha_tv_cover').style.transition = 'scale 0s, transform 0s';
+                })
+            }
+    
+            // Hides full screen static on page return
+            fullscreen_static.style.visibility = 'hidden';
+            fullscreen_static.style.opacity = '0';
+            fullscreen_static.style.transition = 'opacity 0s';
+          });
     };
 
     // Controls scale and equidistant spacing for project thumbnails
