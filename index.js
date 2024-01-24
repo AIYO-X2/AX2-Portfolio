@@ -524,23 +524,21 @@ window.onload = function() {
 
     // Rescales project thumbnails to 100% after immersive zoom
     window.onpageshow = function(){
-        document.addEventListener("DOMContentLoaded", (event) => {
-            for(var i = 0, j=project_thumbnail.length; i<j; i++){
-                project_thumbnail_class.forEach(project_thumbnail => {
-                    project_thumbnail.style.scale = '100%';
-                    project_thumbnail.style.transition = 'scale transform 0s';
-    
-                    document.getElementById('alpha_tv_cover').style.scale = '100%';
-                    document.getElementById('alpha_tv_cover').style.transform = 'translateY(0px)';
-                    document.getElementById('alpha_tv_cover').style.transition = 'scale 0s, transform 0s';
-                })
-            }
-    
-            // Hides full screen static on page return
-            fullscreen_static.style.visibility = 'hidden';
-            fullscreen_static.style.opacity = '0';
-            fullscreen_static.style.transition = 'opacity 0s';
-          });
+        for(var i = 0, j=project_thumbnail.length; i<j; i++){
+            project_thumbnail_class.forEach(project_thumbnail => {
+                project_thumbnail.style.scale = '100%';
+                project_thumbnail.style.transition = 'scale transform 0s';
+
+                document.getElementById('alpha_tv_cover').style.scale = '100%';
+                document.getElementById('alpha_tv_cover').style.transform = 'translateY(0px)';
+                document.getElementById('alpha_tv_cover').style.transition = 'scale 0s, transform 0s';
+            })
+        }
+
+        // Hides full screen static on page return
+        fullscreen_static.style.visibility = 'hidden';
+        fullscreen_static.style.opacity = '0';
+        fullscreen_static.style.transition = 'opacity 0s';
     };
 
     // Controls scale and equidistant spacing for project thumbnails
