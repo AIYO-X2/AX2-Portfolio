@@ -469,18 +469,3 @@ green_highlight_text {
         opacity: 1;
     }
 }
-
-@-moz-document url-prefix() {
-
-    #scroll_video {
-        visibility: hidden;
-    }
-
-    #scroll_instructions {
-        visibility: hidden;
-    }
-
-    #alpha_tv_cover {
-        opacity: 1;
-    }
-}
