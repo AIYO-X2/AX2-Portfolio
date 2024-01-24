@@ -33,6 +33,12 @@ audio {
 
 
 /* START: Project Pages*/
+#headliner_graphics {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .flex_grid {
     padding-top: 0;
     padding-bottom: 0.75vw;
