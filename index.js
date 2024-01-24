@@ -554,6 +554,8 @@ window.onload = function() {
                 project_thumbnail.style.width = '16.5vw';
                 project_thumbnail.style.left = 'calc(50vw - 8.25vw)';
             });
+
+            channel_buttons.style.gridTemplateColumns = 'repeat(6, 1fr)';
         }
         else {
             document.querySelector('#animated_tv_static').style.height = '22vh';
@@ -565,6 +567,8 @@ window.onload = function() {
                 project_thumbnail.style.width = 'auto';
                 project_thumbnail.style.left = 'calc(50vw - (11vh * (4/3)))';
             })
+
+            channel_buttons.style.gridTemplateColumns = 'repeat(4, 1fr)';
         }
 
     window.addEventListener('resize', function(){
@@ -578,6 +582,8 @@ window.onload = function() {
                 project_thumbnail.style.width = '16.5vw';
                 project_thumbnail.style.left = 'calc(50vw - 8.25vw)';
             });
+
+            channel_buttons.style.gridTemplateColumns = 'repeat(6, 1fr)';
         }
         else {
             document.querySelector('#animated_tv_static').style.height = '22vh';
@@ -589,6 +595,8 @@ window.onload = function() {
                 project_thumbnail.style.width = 'auto';
                 project_thumbnail.style.left = 'calc(50vw - (11vh * (4/3)))';
             });
+
+            channel_buttons.style.gridTemplateColumns = 'repeat(4, 1fr)';
         }
     })
 }
