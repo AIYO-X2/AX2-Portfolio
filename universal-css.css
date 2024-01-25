@@ -50,6 +50,13 @@ audio {
     gap: 0.75vw;
 }
 
+@media only screen and (hover: none) and (pointer: coarse) {
+
+    .flex_grid {
+        display: contents;
+    }
+}
+
 .grid_photo {
     max-height: 100%; /* Limit the height to avoid stretching */
     width: 100%; /* Allow the width to adjust proportionally */
