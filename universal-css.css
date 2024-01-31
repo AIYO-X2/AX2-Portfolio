@@ -17,7 +17,6 @@ body {
 
 img {
     z-index: 2;
-    object-fit: cover;
 }
 
 video {
@@ -34,19 +33,71 @@ audio {
 
 /* START: Project Pages*/
 #headliner_graphics {
+    margin: 0 auto;
     width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .flex_grid {
     padding-top: 0;
     padding-bottom: 0.75vw;
     display: flex;
-    align-items: flex-start;
     width: auto;
+    margin: 0 auto;
+    gap: 0.75vw;
+}
+
+.grid_two_column {
+    padding-top: 0;
+    padding-bottom: 1%;
+    display: grid;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    grid-template-columns: auto auto;
+    gap: 0.75vw;
+}
+
+.grid_three_column {
+    padding-top: 0;
+    padding-bottom: 1%;
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto;
+    gap: 0.75vw;
+}
+
+.grid_four_column {
+    padding-top: 0;
+    padding-bottom: 1%;
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.75vw;
+}
+
+.grid_five_column {
+    padding-top: 0;
+    padding-bottom: 1%;
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 0.75vw;
+}
+
+.grid_six_column {
+    padding-top: 0;
+    padding-bottom: 1%;
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto auto auto auto;
     gap: 0.75vw;
 }
 
@@ -58,11 +109,14 @@ audio {
 }
 
 .grid_photo {
+    height: 100%;
     max-height: 100%; /* Limit the height to avoid stretching */
     width: 100%; /* Allow the width to adjust proportionally */
+    max-width: 100%;
     flex-shrink: 1;
     margin-left: auto;
     margin-right: auto;
+    object-fit: cover;
 }
 
 .grid_video {
@@ -263,7 +317,7 @@ audio {
 
 /* START: Footer*/
 #footer {
-    position: fixed;
+    position: relative;
     z-index: 1000;
     background: hsl(0, 0%, 10%);
     height: 100px;
@@ -273,12 +327,11 @@ audio {
     border-top: 1px solid hsl(0, 0%, 15%);
     /* border-top-left-radius: 15px;
     border-top-right-radius: 15px; */
-    bottom: -100px;
     grid-template-columns: repeat(6, 1fr);
     /* Top value determines the amount of scrollable space for the projects in TV*/
 }
 
-.footer_text {
+.footer_link {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -291,14 +344,6 @@ audio {
     /* Extra 5vw is for even padding on right side of screen, dk why it isn't already even*/
     text-decoration: none;
     cursor: url(Cursors/ring/ring_clickable.png) 64 64, auto;
-    transition: 0.3s;
-    background: hsla(0, 0%, 75%, 0.45);
-}
-
-.footer_text:hover {
-    transition: 0.3s;
-    background: hsla(0, 0%, 75%, 0.45);
-    color: hsl(0, 0%, 100%);
 }
 
 #footer_favicon {
