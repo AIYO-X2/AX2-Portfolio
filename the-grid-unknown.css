@@ -1,0 +1,33 @@
+body, html {
+    background-color: rgb(10, 10, 10);
+    margin: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project_description_link_text {
+    color: hsl(0, 0%, 75%);
+    background-color: rgba(0, 255, 13, 0.5);
+    text-decoration: none;
+}
+
+#headline_banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 1%;
+}
+
+#featured_video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 66%;
+    height: 100%;
+    padding-bottom: 6%;
+}

@@ -1,7 +1,7 @@
 /* START: Install Fonts */
 @font-face {
-    font-family: Futura;
-    src: url(/fonts/Futura.ttc);
+    font-family: Nexa;
+    src: url(fonts/Nexa-Heavy.ttf);
 }
 
 .text_ServiceNoticeLarge {
@@ -17,6 +17,7 @@ body {
 
 img {
     z-index: 2;
+    max-width: 100%;
 }
 
 video {
@@ -43,6 +44,27 @@ audio {
     display: flex;
     width: auto;
     margin: 0 auto;
+    gap: 0.75vw;
+}
+
+.grid_unspecified_column {
+    padding-top: 0;
+    padding-bottom: 1%;
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0.75vw;
+}
+
+.grid_one_column {
+    padding-top: 0;
+    padding-bottom: 1%;
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto;
     gap: 0.75vw;
 }
 
@@ -183,7 +205,7 @@ audio {
     font-size: 12pt;
 }
 .right_dialogue {
-    font-family: Futura;
+    font-family: Nexa;
     width: 66%;
     margin-right: 0;
     margin-left: auto;
@@ -278,7 +300,7 @@ audio {
     color: hsl(0, 0%, 75%);
 }
 @media (max-width:700px) {
-    p {
+    #text_description {
         font-size: 10pt;
     }
 }
@@ -302,7 +324,6 @@ audio {
 
 #back_button:hover {
     background: hsla(0, 0%, 75%, 0.45);
-    cursor: url(Cursors/ring/ring_back.png) 64 64, auto;
     transition: 0.3s;
 }
 
@@ -312,7 +333,7 @@ audio {
     width: 20px;
     transform: translate(13px, 14px);
     z-index: 1001;
-    pointer-events: none;
+    cursor: url(Cursors/ring/ring_back.png) 64 64, auto;
 }
 
 /* START: Footer*/

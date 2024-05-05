@@ -24,16 +24,12 @@ window.onload = function() {
         document.querySelector("#scroll_video").innerHTML = null;
         // document.querySelector("#loading_text").innerHTML = "LOADING • PLEASE WAIT<br> VISIT ON DEKSTOP FOR FULL EXPERIENCE";
         console.log("Lite (Mobile) Interface");
+        document.querySelector("#blank_space_for_scroll_animation").style.height = '4835px';
     }
-    // else if (navigator.userAgent.indexOf("Firefox") != -1 ) {
-    //    var ScrollSpace = 0;
-    //    document.querySelector("#scroll_video").innerHTML = null;
-    //    // document.querySelector("#loading_text").innerHTML = "LOADING • PLEASE WAIT<br> USE ANOTHER BROWSER FOR FULL EXPERIENCE";
-    //    console.log("Lite (Firefox Limited) Interface");
-    //}
     else {
         var ScrollSpace = 2665;
         console.log("Full Interface");
+        document.querySelector("#blank_space_for_scroll_animation").style.height = '7500px';
 
         // SCROLL PLAYBACK FUNCTION
         var frameNumber = 0, // start video at frame 0
@@ -417,50 +413,6 @@ window.onload = function() {
             document.querySelector("#footer").style.bottom = '-100px';
         }
 
-        // S1
-        if(window.scrollY>=(Channel12YPosEnd+600) & window.scrollY<=(Channel12YPosEnd+800)) {
-            document.querySelector("#secret_1").style.visibility = 'visible';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
-        }
-        else {
-            document.querySelector("#secret_1").style.visibility = 'hidden';
-        }
-
-        // S2
-        if(window.scrollY>=(Channel12YPosEnd+1600) & window.scrollY<=(Channel12YPosEnd+1800)) {
-            document.querySelector("#secret_2").style.visibility = 'visible';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
-        }
-        else {
-            document.querySelector("#secret_2").style.visibility = 'hidden';
-        }
-
-        // S3
-        if(window.scrollY>=(Channel12YPosEnd+2600) & window.scrollY<=(Channel12YPosEnd+2800)) {
-            document.querySelector("#secret_3").style.visibility = 'visible';
-
-            lingering_screen_static.style.opacity = '0.2';
-            lingering_screen_static.style.transition = 'opacity 0.2s ease-in-out';
-        }
-        else {
-            document.querySelector("#secret_3").style.visibility = 'hidden';
-        }
-
-          // The End
-        if(window.scrollY>=(Channel12YPosEnd+2800)) {
-            document.querySelector("#bsod").style.visibility = 'visible';
-            window.setTimeout("document.querySelector('#bsod').style.opacity = '1';", 1000);
-            document.querySelector("#bsod").style.transition = 'opacity 10s ease-in-out';
-        }
-        else {
-            document.querySelector("#bsod").style.visibility = 'hidden';
-            document.querySelector("#bsod").style.opacity = '0';
-            document.querySelector("#bsod").style.transition = 'opacity 0.2s ease-in-out';
-        }
     }
     tv_scroll();
 
