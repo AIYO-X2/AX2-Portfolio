@@ -10,8 +10,10 @@ PreviewPageBanner.style.position = 'fixed';
 PreviewPageBanner.style.width = '100vw';
 PreviewPageBanner.style.fontFamily = 'Nexa';
 PreviewPageBanner.style.color = 'black';
-PreviewPageBanner.style.padding = '2vh';
+PreviewPageBanner.style.paddingBottom = '2vh';
+PreviewPageBanner.style.paddingTop = '2vh';
 PreviewPageBanner.style.textAlign = 'center';
+PreviewPageBanner.style.margin = 'auto';
 PreviewPageBanner.style.zIndex = '3';
 
 text_description.insertAdjacentElement('afterend', PreviewPageBanner);
