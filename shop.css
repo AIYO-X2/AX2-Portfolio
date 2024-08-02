@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior:auto;
+}
+
+body {
+    background-image: url(/Images/euphoria-smoke/Euphoria\ Smoke\ 8.png);
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: url(Cursors/ring/ring_default.png) 16 16, auto;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+}
+
+.home_tile {
+    margin-bottom: 50px;
+    width: 80vw;
+    height: 60vh;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background: hsla(0, 0%, 0%, 0.45);
+    border: 1px solid hsl(0, 0%, 35%);
+    border-radius: 25px;
+    position: fixed;
+    z-index: 1;
+    cursor: url(Cursors/ring_clickable.svg) 64 64, auto;
+    text-decoration: none;
+}

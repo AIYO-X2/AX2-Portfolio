@@ -45,7 +45,7 @@ body {
     position: fixed;
     z-index: 10001;
     color: white;
-    margin-top: 35vh;
+    margin-top: 5vh;
     text-align: center;
     line-height: 150%;
     animation: loading-color-wipe 1s linear forwards;
@@ -129,19 +129,29 @@ body {
 }
 
 #loading_icon {
-    position: fixed;
-    display: inline-flex;
-    justify-content: center;
-    margin-left: calc(50vw - (15vw/2));
+    position: relative;
+    left: 40vw;
+    width: 20vw;
     margin-top: 35vh;
-    width: 15vw;
+    height: auto;
+    justify-content: center;
     height: auto;
     visibility: visible;
-    animation: draw 1s linear reverse;
-    stroke-dasharray: 193;
+    animation: draw 1s linear reverse infinite;
+    stroke-dasharray: 100;
     stroke-dashoffset: 0;
     fill: white;
     z-index: 10001;
+    
+    user-drag: none; /* Standard syntax */
+    -webkit-user-drag: none; /* WebKit (Safari, Chrome) */
+    -moz-user-drag: none; /* Mozilla Firefox */
+    -ms-user-drag: none; /* Microsoft Edge */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 #loading_icon_background {
@@ -226,10 +236,6 @@ body {
 green_highlight_text {
     background-color: hsl(123, 100%, 50%);
     color: black;
-}
-
-#blank_space_for_scroll_animation {
-    height: 10125px;
 }
 
 /* Video scroll playback controls */
@@ -328,6 +334,43 @@ green_highlight_text {
     rotate: 359deg;
 }
 
+#channel_buttons {
+    position: fixed;
+    display: grid;
+    bottom: 4vh;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 0.5vh;
+    width: 100vw;
+    z-index: 103;
+}
+
+.channel_button {
+    width: 40%;
+    min-width: 32pt;
+    margin-left: 40%;
+    color: white;
+    background-color: hsl(0, 0%, 14%);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5vh;
+    border-radius: 100px;
+    border: 3px solid hsl(120, 13%, 8%);
+    cursor: url(Cursors/ring/ring_clickable.png) 64 64, pointer;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis;
+    transition-delay: 0.15s;
+}
+
+.channel_button:active {
+    cursor: url(Cursors/ring/ring_clicked.png) 64 64, pointer;
+    background-color: hsl(120, 7%, 15%);
+    box-shadow: 
+    0px 0px 5px hsl(120, 7%, 3%) inset,
+    0px 0px 15px hsl(120, 13%, 21%) ;
+    color: hsl(0, 0%, 30%);
+    transition-delay: 0s;
+}
+
 /* Project title font controls*/
 .project_title {
     width: 90vw;
@@ -345,102 +388,7 @@ green_highlight_text {
     font-size: 20pt;
 }
 
-#secret_1 {
-    position: fixed;
-    top: 0px;
-    color: hsl(123, 100%, 50%);
-    background: linear-gradient(
-        to bottom,
-        #00ff0d 5%,
-        hsl(123, 100%, 15%) 95%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    width: auto;
-    top: 5vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 101;
-    visibility: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
-    line-height: 3vh;
-}
-
-#secret_2 {
-    position: fixed;
-    top: 0px;
-    color: hsl(123, 100%, 50%);
-    background: linear-gradient(
-        to bottom,
-        hsl(123, 100%, 30%) 5%,
-        hsl(123, 100%, 15%) 95%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20pt;
-    width: auto;
-    top: 5vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 101;
-    visibility: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
-    line-height: 3vh;
-}
-
-#secret_3 {
-    position: fixed;
-    top: 0px;
-    color: hsl(123, 100%, 50%);
-    background: linear-gradient(
-        to bottom,
-        hsl(124, 100%, 10%) 5%,
-        hsl(123, 100%, 20%) 95%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40pt;
-    width: auto;
-    top: 5vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 101;
-    visibility: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
-    line-height: 3vh;
-}
-
 @media only screen and (hover: none) and (pointer: coarse) {
-
-    #scroll_video {
-        visibility: hidden;
-    }
-
-    #scroll_instructions {
-        visibility: hidden;
-    }
-
-    #alpha_tv_cover {
-        opacity: 1;
-    }
-}
-
-@-moz-document url-prefix() {
 
     #scroll_video {
         visibility: hidden;
